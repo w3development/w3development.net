@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: /fileadmin/user_upload/notimportant/      # Exclude only folders with no link from frontend, like templates, css, js.
+Disallow: /typo3_src/                               # Nothing to see here
+Disallow: /typo3/                                   # Nothing to see here
+Disallow: /index.php?id=*                           # Disable non-realurl
+Disallow: /*&type=98                                # Disable print pages
+#Disallow: /*.html                                   # Disable html pages
+
+
+Sitemap: https://w3development.net/sitemap.xml
+Sitemap: https://w3development.net/sq/sitemap.xml
+Sitemap: https://w3development.net/it/sitemap.xml

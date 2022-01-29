@@ -1,0 +1,10 @@
+# Ecluded processed files
+fileadmin/_processed_/
+fileadmin/_temp_/
+!fileadmin/_temp_/.htaccess
+!fileadmin/_temp_/index.html
+
+stats/
+error/
+.history/
+.vscode/

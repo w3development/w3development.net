@@ -1,4 +1,7 @@
-typo3conf/ext/theme/
+fileadmin/_processed_/
+fileadmin/_temp_/
+
+typo3conf/ext/theme
 
 .history/
 .vscode/

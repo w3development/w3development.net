@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="it" datatype="plaintext" original="messages" date="2019-07-29T01:02:14Z" product-name="core">
+		<header/>
+		<body>
+			<trans-unit id="wizard.button.cancel" approved="yes">
+				<source>Cancel</source>
+				<target state="translated">Annulla</target>
+			</trans-unit>
+			<trans-unit id="wizard.button.next" approved="yes">
+				<source>Next</source>
+				<target state="translated">Successivo</target>
+			</trans-unit>
+			<trans-unit id="wizard.processing.title" approved="yes">
+				<source>Processing...</source>
+				<target state="translated">Elaborazione in corso...</target>
+			</trans-unit>
+			<trans-unit id="wizard.progress" approved="yes">
+				<source>Step {0} of {1}</source>
+				<target state="translated">Fase {0} di {1}</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

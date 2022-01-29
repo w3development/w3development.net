@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="it" type="array">
+			<label index="pages.tx_fed_page_controller_action">Layout di pagina - pagina corrente</label>
+			<label index="pages.tx_fed_page_controller_action.default">Eredita dalla pagina padre</label>
+			<label index="pages.tx_fed_page_controller_action_sub">Layout di pagina - sottopagine</label>
+			<label index="pages.tx_fed_page_flexform">Configurazione di pagina</label>
+			<label index="pages.tx_fed_page_flexform_sub">Configurazione di pagina - sottopagine</label>
+			<label index="pages.tx_fed_page_package">Pacchetto</label>
+			<label index="pages.tx_fed_page_layoutselect">Layout di pagina</label>
+			<label index="pages.tx_fed_page_configuration">Configurazione di pagina</label>
+			<label index="pages.doktype.187">Modello Fluid grezzo</label>
+			<label index="pages.tx_fluidpages_templatefile">Riferimento al file di modello</label>
+			<label index="pages.tx_fluidpages_templatefile.placeholder">EXT:.... oppure percorso relativo al sito</label>
+			<label index="pages.tx_fluidpages_layout">Layout da utilizzare per il rendering</label>
+			<label index="fluidContentArea">Area di Contenuto Fluid</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

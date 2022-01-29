@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="it" datatype="plaintext" original="messages" date="2019-07-29T00:06:08Z" product-name="backend">
+		<header/>
+		<body>
+			<trans-unit id="overview.addSiteConfiguration">
+				<source>Add new site configuration for this site</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Aggiungi una nuova configurazione per questo sito</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.baseUrl">
+				<source>Base URLs</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>URL base</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.configuration">
+				<source>Configuration Folder</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Folder di configurazione</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.deleteSiteConfiguration">
+				<source>Delete site configuration</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Elimina la configurazione del sito</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.fullUrlPrefix">
+				<source>Full URL prefix</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Prefisso URL completo</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.noPages.message">
+				<source>Please add at least one page through the Page module.</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Aggiungi almeno un pagina tramite il modulo Pagina.</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.noPages.title">
+				<source>No pages found!</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Nessuna pagina trovata!</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.noSiteConfiguration">
+				<source>This site does not have a configuration, yet.</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Questo sito non ha ancora una configurazione.</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.site">
+				<source>Site</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Sito</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.title">
+				<source>Site Configuration</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Configurazione del sito</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.unassignedSites.description">
+				<source>The following sites don't belong to any page anymore and can be removed.</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>I siti seguenti non appartengono più ad alcuna pagina e possono essere rimossi.</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="overview.unassignedSites.title">
+				<source>Unassigned site configurations</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Configurazioni di sito non assegnate</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="validation.duplicateErrorCode.message">
+				<source>Two error handler configurations for error code "%1s" found. This would be an invalid configuration, the dangling one has been removed.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation.duplicateErrorCode.title">
+				<source>Duplicate error code removed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation.duplicateLanguageId.message">
+				<source>Two language configurations for language "%1s" found. This would be an invalid configuration, the dangling one has been removed.</source>
+			</trans-unit>
+			<trans-unit id="validation.duplicateLanguageId.message">
+				<source>Two language configurations for language "%1s" found. This would be an invalid configuration, the dangling one has been removed.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation.duplicateLanguageId.title">
+				<source>Duplicate language configuration removed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation.identifierExists.message">
+				<source>Given site identifier "%1s" already exists and points to a different site. The existing identifier "%2s" for this site is kept.';</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>L'identificativo di sito "%1s" esiste già e punta ad un sito diverso. L'identificativo esistente "%s" per questo sito viene mantenuto.';</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="validation.identifierExists.title">
+				<source>Identifier not changed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation.identifierRenamed.message">
+				<source>Given site identifier "%1s" already exists. It has been renamed to "%2s". Maybe you want to edit the site again and give it a better name.</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>L'identificativo di sito "%1s" esiste già. È stato rinominato in "%2s". Potresti voler modificare di nuovo questo sito e assegnargli un nome migliore.</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="validation.identifierRenamed.title">
+				<source>Renamed identifier</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Identificativo rimosso</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="validation.required.message">
+				<source>Field "%1s" is a required field, but no value has been provided.</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Il campo "%1s" è obbligatorio, ma non è stato immesso alcun valore.</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="validation.required.title">
+				<source>Site configuration not saved</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Configurazione del sito non salvata</target>
+				</alt-trans>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="fluidpages" date="2014-04-17T12:00:00+01:00" target-language="it">
+		<header/>
+		<body>
+			<trans-unit id="pages.tx_fed_page_controller_action" approved="yes">
+				<source>Page Layout - this page</source>
+			<target state="translated">Layout di pagina - pagina corrente</target><alt-trans xml:space="preserve" origin="erredeco"><target>Layout di pagina - pagina corrente</target></alt-trans></trans-unit>
+			<trans-unit id="pages.tx_fed_page_controller_action.default" approved="yes">
+				<source>Parent decides</source>
+			<target state="translated">Eredita dalla pagina padre</target><alt-trans xml:space="preserve" origin="erredeco"><target>Eredita dalla pagina padre</target></alt-trans></trans-unit>
+			<trans-unit id="pages.tx_fed_page_controller_action_sub" approved="yes">
+				<source>Page Layout - subpages</source>
+			<target state="translated">Layout di pagina - sottopagine</target><alt-trans xml:space="preserve" origin="erredeco"><target>Layout di pagina - sottopagine</target></alt-trans></trans-unit>
+			<trans-unit id="pages.tx_fed_page_flexform" approved="yes">
+				<source>Page Configuration</source>
+			<target state="translated">Configurazione di pagina</target><alt-trans xml:space="preserve" origin="erredeco"><target>Configurazione di pagina</target></alt-trans></trans-unit>
+			<trans-unit id="pages.tx_fed_page_flexform_sub" approved="yes">
+				<source>Page Configuration - subpages</source>
+			<target state="translated">Configurazione di pagina - sottopagine</target><alt-trans xml:space="preserve" origin="erredeco"><target>Configurazione di pagina - sottopagine</target></alt-trans></trans-unit>
+			<trans-unit id="pages.tx_fed_page_package" approved="yes">
+				<source>Package</source>
+			<target state="translated">Pacchetto</target><alt-trans xml:space="preserve" origin="erredeco"><target>Pacchetto</target></alt-trans></trans-unit>
+			<trans-unit id="pages.tx_fed_page_layoutselect" approved="yes">
+				<source>Page Layouts</source>
+			<target state="translated">Layout di pagina</target><alt-trans xml:space="preserve" origin="erredeco"><target>Layout di pagina</target></alt-trans></trans-unit>
+			<trans-unit id="pages.tx_fed_page_configuration" approved="yes">
+				<source>Page Configuration</source>
+			<target state="translated">Configurazione di pagina</target><alt-trans xml:space="preserve" origin="erredeco"><target>Configurazione di pagina</target></alt-trans></trans-unit>
+			<trans-unit id="pages.doktype.187" approved="yes">
+				<source>Raw Fluid template</source>
+			<target state="translated">Modello Fluid grezzo</target><alt-trans xml:space="preserve" origin="erredeco"><target>Modello Fluid grezzo</target></alt-trans></trans-unit>
+			<trans-unit id="pages.tx_fluidpages_templatefile" approved="yes">
+				<source>Template file reference</source>
+			<target state="translated">Riferimento al file di modello</target><alt-trans xml:space="preserve" origin="erredeco"><target>RIferimento al File di Modello </target></alt-trans></trans-unit>
+			<trans-unit id="pages.tx_fluidpages_templatefile.placeholder" approved="yes">
+				<source>EXT:... or site-relative path</source>
+			<target state="translated">EXT:.... oppure percorso relativo al sito</target><alt-trans xml:space="preserve" origin="erredeco"><target>EXT:....  oppure percorso relativo al sito</target></alt-trans></trans-unit>
+			<trans-unit id="pages.tx_fluidpages_layout" approved="yes">
+				<source>Layout to use for rendering</source>
+			<target state="translated">Layout da utilizzare per il rendering</target><alt-trans xml:space="preserve" origin="erredeco"><target>Layout da utilizzare per il rendering</target></alt-trans></trans-unit>
+			<trans-unit id="fluidContentArea" approved="yes">
+				<source>Fluid Content Area</source>
+			<target state="translated">Area di Contenuto Fluid</target><alt-trans xml:space="preserve" origin="erredeco"><target>Area di Contenuto Fluid</target></alt-trans></trans-unit>
+		</body>
+	</file>
+</xliff>

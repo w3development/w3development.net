@@ -1,10 +1,4 @@
-# Ecluded processed files
-fileadmin/_processed_/
-fileadmin/_temp_/
-!fileadmin/_temp_/.htaccess
-!fileadmin/_temp_/index.html
+typo3conf/ext/theme/
 
-stats/
-error/
 .history/
 .vscode/

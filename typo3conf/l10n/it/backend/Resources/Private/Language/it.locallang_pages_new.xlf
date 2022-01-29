@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="it" datatype="plaintext" original="messages" date="2019-07-29T00:06:08Z" product-name="backend">
+		<header/>
+		<body>
+			<trans-unit id="addMoreLines" approved="yes">
+				<source>Add more lines</source>
+				<target state="translated">Aggiungi altre linee</target>
+			</trans-unit>
+			<trans-unit id="canNotCreateNew.message">
+				<source>Sorry, you are not allowed to create new subpages to this page due to access restrictions.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="canNotCreateNew.title">
+				<source>Insufficient permissions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="create" approved="yes">
+				<source>Create pages</source>
+				<target state="translated">Crea pagine</target>
+			</trans-unit>
+			<trans-unit id="hidePages" approved="yes">
+				<source>Hide new pages</source>
+				<target state="translated">Nascondi le pagine appena create</target>
+			</trans-unit>
+			<trans-unit id="hidePagesInMenus" approved="yes">
+				<source>Hide new pages in menus</source>
+				<target state="translated">Nascondi le nuove pagine nei menu</target>
+			</trans-unit>
+			<trans-unit id="listEnd" approved="yes">
+				<source>Place new pages after the existing subpages</source>
+				<target state="translated">Inserisci le nuove pagine dopo le sottopagine esistenti</target>
+			</trans-unit>
+			<trans-unit id="newPage" approved="yes">
+				<source>Page</source>
+				<target state="translated">Pagina</target>
+			</trans-unit>
+			<trans-unit id="newSubPages" approved="yes">
+				<source>New page structure</source>
+				<target state="translated">Nuova struttura delle pagine</target>
+			</trans-unit>
+			<trans-unit id="noPagesCreated.message" approved="no">
+				<source>No pages were created.</source>
+				<target state="needs-translation">Nessuna pagina creata!</target>
+			</trans-unit>
+			<trans-unit id="noPagesCreated.title">
+				<source>No pages added</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pagesCreated.message">
+				<source>The pages were created successfully.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pagesCreated.title">
+				<source>Pages added</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="reset" approved="yes">
+				<source>Clear fields</source>
+				<target state="translated">Cancella i campi</target>
+			</trans-unit>
+			<trans-unit id="title" approved="yes">
+				<source>Create multiple pages</source>
+				<target state="translated">Crea pagine multiple</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

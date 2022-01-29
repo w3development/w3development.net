@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="it" type="array">
+			<label index="title.description">Aggiungi una descrizione a questa pagina</label>
+			<label index="fields.description">Aggiungi dei record al tuo form</label>
+			<label index="css.description">Scegli un layout (questo può cambiare il layout a frontend - per favore chiedi al tuo amministratore per maggiori informazioni)</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

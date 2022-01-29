@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="it" datatype="plaintext" original="messages" date="2019-07-29T06:12:34Z" product-name="tstemplate">
+		<header/>
+		<body>
+			<trans-unit id="allowedExtensions" approved="no">
+				<source>Allowed extensions</source>
+				<target state="needs-translation">Estensioni consentite:</target>
+			</trans-unit>
+			<trans-unit id="constants" approved="yes">
+				<source>Constants</source>
+				<target state="translated">Costanti</target>
+			</trans-unit>
+			<trans-unit id="copyResource">
+				<source>Make a copy of resource</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="delete" approved="no">
+				<source>Delete</source>
+				<target state="needs-translation">Elimina:</target>
+			</trans-unit>
+			<trans-unit id="description" approved="yes">
+				<source>Description</source>
+				<target state="translated">Descrizione</target>
+			</trans-unit>
+			<trans-unit id="editResource" approved="no">
+				<source>Edit Resource</source>
+				<target state="needs-translation">Modifica la risorsa:</target>
+			</trans-unit>
+			<trans-unit id="editTemplateRecord">
+				<source>Edit the whole template record</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editToView">
+				<source>(edit to view, %s lines)</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>(modifica per visualizzare, %s linee)</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="file" approved="no">
+				<source>File</source>
+				<target state="needs-translation">File:</target>
+			</trans-unit>
+			<trans-unit id="fileChanged" approved="yes">
+				<source>File changed</source>
+				<target state="translated">File modificato</target>
+			</trans-unit>
+			<trans-unit id="filesizeExceeded" approved="yes">
+				<source>Filesize exceeded %s KBytes</source>
+				<target state="translated">La dimensione del file supera i %s KByte</target>
+			</trans-unit>
+			<trans-unit id="maxFilesize" approved="no">
+				<source>Max filesize</source>
+				<target state="needs-translation">Dimensione massima file:</target>
+			</trans-unit>
+			<trans-unit id="newTextResource">
+				<source>New text resource (enter name)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="notAllowed" approved="yes">
+				<source>Files larger than %s KBytes are not allowed to be edited.</source>
+				<target state="translated">Non è consentito modificare files più grandi di %s KBytes</target>
+			</trans-unit>
+			<trans-unit id="resources" approved="yes">
+				<source>Resources</source>
+				<target state="translated">Risorse</target>
+			</trans-unit>
+			<trans-unit id="resourceUpdated" approved="yes">
+				<source>Resource '%s' has been updated.</source>
+				<target state="translated">La risorsa '%s' è stata aggiornata.</target>
+			</trans-unit>
+			<trans-unit id="setup" approved="yes">
+				<source>Setup</source>
+				<target state="translated">Configurazione</target>
+			</trans-unit>
+			<trans-unit id="sitetitle">
+				<source>Sitetitle</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Titolo del sito</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="templateInformation">
+				<source>Template information</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Informazioni del modello</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="title" approved="yes">
+				<source>Title</source>
+				<target state="translated">Titolo</target>
+			</trans-unit>
+			<trans-unit id="toTop">
+				<source>To top</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Torna su:</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="updateResourceList">
+				<source>Update resource list</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Aggiorna lista risorse</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="uploadResource">
+				<source>Upload resource</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Carica risorsa</target>
+				</alt-trans>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

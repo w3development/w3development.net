@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-02T12:00:00Z" product-name="powermail" target-language="it">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>Enter a title for this form</source>
+			<target></target><alt-trans xml:space="preserve" origin="erredeco"><target>Inserisci un titolo per questo form</target></alt-trans></trans-unit>
+			<trans-unit id="pages.description">
+				<source>Add one or more pages to this form</source>
+			<target></target><alt-trans xml:space="preserve" origin="erredeco"><target>Aggiungi una o più pagine a questo form</target></alt-trans></trans-unit>
+			<trans-unit id="css.description">
+				<source>Choose a Layout (This may change the Frontend Rendering - please ask your administrator for more information)</source>
+			<target></target><alt-trans xml:space="preserve" origin="erredeco"><target>Scegli un Layout (questo potrebbe modificare l'aspetto sul frontend - contatta il tuo amministratore per ulteriori informazioni)</target></alt-trans></trans-unit>
+		</body>
+	</file>
+</xliff>

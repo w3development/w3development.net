@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="it" datatype="plaintext" original="messages" date="2019-07-29T06:12:34Z" product-name="tstemplate">
+		<header/>
+		<body>
+			<trans-unit id="addButton">
+				<source>Add</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Aggiungi</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="addKey">
+				<source>Add key "%s" to Object List</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="addProperty">
+				<source>Add object property</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="all">
+				<source>All</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="back" approved="yes">
+				<source>Back</source>
+				<target state="translated">Indietro</target>
+			</trans-unit>
+			<trans-unit id="badProperty">
+				<source>Bad property!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="browse" approved="no">
+				<source>Browse</source>
+				<target state="needs-translation">Sfoglia:</target>
+			</trans-unit>
+			<trans-unit id="clear">
+				<source>Clear?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="clearButton">
+				<source>Clear</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="clearObject">
+				<source>Clear object</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="conditions" approved="yes">
+				<source>Conditions</source>
+				<target state="translated">Condizioni</target>
+			</trans-unit>
+			<trans-unit id="constantRoot">
+				<source>constants root</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="constants" approved="yes">
+				<source>Constants</source>
+				<target state="translated">Costanti</target>
+			</trans-unit>
+			<trans-unit id="cropLines">
+				<source>Crop lines</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="currentTemplate">
+				<source>Current template</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Modello attuale</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="displayComments">
+				<source>Display comments</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Mostra i commenti</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="displayConstants">
+				<source>Display constants</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Mostra costanti:</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="displayOptions">
+				<source>Display options</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Opzioni di visualizzazione</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="edit" approved="no">
+				<source>Edit</source>
+				<target state="needs-translation">Modifica:</target>
+			</trans-unit>
+			<trans-unit id="editProperty">
+				<source>Edit object/property value</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Modifica proprietà dell'elemento/progetto</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="error.1446559458">
+				<source>Error evaluating regular expression "%s".</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Errore nella valutazione dell'espressione regolare "%s".</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="errorShowDetails" approved="yes">
+				<source>Show details</source>
+				<target state="translated">Mostra i dettagli</target>
+			</trans-unit>
+			<trans-unit id="errorsWarnings" approved="yes">
+				<source>Errors and warnings</source>
+				<target state="translated">Errori e avvisi</target>
+			</trans-unit>
+			<trans-unit id="noCurrentTemplate">
+				<source>You cannot edit properties and values, if there's no current template.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="noSpaces">
+				<source>You must enter a property with characters a-z, A-Z and 0-9, no spaces!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="nothingUpdated">
+				<source>Nothing was updated!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="objectCleared">
+				<source>Object cleared</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="objectList">
+				<source>Object List</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="plainSubstitution">
+				<source>Plain substitution (default)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="propertyAdded" approved="yes">
+				<source>Property added</source>
+				<target state="translated">Proprietà aggiunta</target>
+			</trans-unit>
+			<trans-unit id="regExp" approved="yes">
+				<source>Regular expressions</source>
+				<target state="translated">Espressioni regolari</target>
+			</trans-unit>
+			<trans-unit id="removeKey">
+				<source>Remove key from OL</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="search">
+				<source>Search</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Cerca:</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="setConditions">
+				<source>Set conditions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="setup">
+				<source>Setup</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Configurazione</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="setupRoot">
+				<source>setup root</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="severity.1" approved="yes">
+				<source>Info</source>
+				<target state="translated">Informazioni</target>
+			</trans-unit>
+			<trans-unit id="severity.2" approved="yes">
+				<source>Warning</source>
+				<target state="translated">Attenzione</target>
+			</trans-unit>
+			<trans-unit id="severity.3" approved="yes">
+				<source>Error</source>
+				<target state="translated">Errore</target>
+			</trans-unit>
+			<trans-unit id="sortAlphabetically" approved="yes">
+				<source>Sort alphabetically</source>
+				<target state="translated">Metti in ordine alfabetico</target>
+			</trans-unit>
+			<trans-unit id="substitutedGreen">
+				<source>Substituted constants in green</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="unsubstitutedGreen">
+				<source>UN-substituted constants in green</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Costanti non sostituite in verde</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="updateButton">
+				<source>Update</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Aggiorna</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="valueUpdated" approved="yes">
+				<source>Value updated</source>
+				<target state="translated">Valore aggiornato</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,44 @@
+rootPageId: 1
+base: /
+baseVariants: {  }
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: '0'
+    base: /
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    navigationTitle: ''
+    hreflang: en-US
+    direction: ''
+    flag: gb
+  -
+    title: Italian
+    enabled: true
+    languageId: '2'
+    base: /it
+    typo3Language: it
+    locale: it_IT.UTF-8
+    iso-639-1: it
+    navigationTitle: ''
+    hreflang: it-IT
+    direction: ''
+    fallbackType: strict
+    flag: it
+  -
+    title: Albanian
+    enabled: true
+    languageId: '1'
+    base: /sq
+    typo3Language: sq
+    locale: sq_AL.UTF-8
+    iso-639-1: sq
+    navigationTitle: ''
+    hreflang: sq-AL
+    direction: ''
+    fallbackType: strict
+    flag: al
+errorHandling: {  }
+routes: {  }

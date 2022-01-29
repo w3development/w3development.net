@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="it" datatype="plaintext" original="messages" date="2019-07-29T03:00:17Z" product-name="install">
+		<header/>
+		<body>
+			<trans-unit id="mlang_labels_tabdescr">
+				<source>Provides a simple link to the Install Tool. Notice the Install Tool (in typo3/install/) must be enabled.&lt;br /&gt;&lt;em&gt;Access for 'admin' users only!&lt;/em&gt;</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tablabel">
+				<source>Maintenance</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Manutenzione</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="mlang_tabs_tab">
+				<source>Maintenance</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Manutenzione</target>
+				</alt-trans>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

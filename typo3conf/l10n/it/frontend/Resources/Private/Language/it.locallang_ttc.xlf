@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="it" datatype="plaintext" original="messages" date="2019-07-29T02:19:00Z" product-name="frontend">
+		<header/>
+		<body>
+			<trans-unit id="accessibility_bypass">
+				<source>Add link to bypass block</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="accessibility_bypass_text">
+				<source>Link text to bypass block</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="accessibility_title">
+				<source>Block title</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Titolo del blocco</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="ALT.imgDimensions">
+				<source>Image Dimensions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="ALT.imgLinks">
+				<source>Image Links</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="ALT.imgOptions">
+				<source>Image Options</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Opzioni immagine</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="altText_formlabel">
+				<source>Alternative Labels (one per line)</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Etichette alternative (una per linea)</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="bodytext.ALT.bulletlist_formlabel" approved="yes">
+				<source>Bullet List</source>
+				<target state="translated">Elenco puntato</target>
+			</trans-unit>
+			<trans-unit id="bodytext.ALT.html" approved="no">
+				<source>HTML</source>
+				<target state="needs-translation">HTML:</target>
+			</trans-unit>
+			<trans-unit id="bodytext.ALT.html_formlabel">
+				<source>HTML Code</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Codice HTML</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="bodytext.ALT.mailform" approved="no">
+				<source>Configuration</source>
+				<target state="needs-translation">Configurazione:</target>
+			</trans-unit>
+			<trans-unit id="bodytext.ALT.mailform_formlabel">
+				<source>Form Structure</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bodytext.ALT.media_formlabel" approved="yes">
+				<source>Alternative Content</source>
+				<target state="translated">Contenuto alternativo</target>
+			</trans-unit>
+			<trans-unit id="bodytext.ALT.script_formlabel" approved="yes">
+				<source>Parameters to pass to the script</source>
+				<target state="translated">Parametri da passare allo script</target>
+			</trans-unit>
+			<trans-unit id="bodytext.ALT.table_formlabel">
+				<source>Table Structure</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bodytext.ALT.textbox_formlabel" approved="yes">
+				<source>Text</source>
+				<target state="translated">Testo</target>
+			</trans-unit>
+			<trans-unit id="bodytext_formlabel" approved="yes">
+				<source>Text</source>
+				<target state="translated">Testo</target>
+			</trans-unit>
+			<trans-unit id="bodytext.W.forms">
+				<source>Forms wizard</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bullets_type">
+				<source>Type of bullets</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bullets_type.0">
+				<source>Unordered list (bullets)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bullets_type.1">
+				<source>Ordered list (numbers)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bullets_type.2">
+				<source>Definition list</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="category_field">
+				<source>Category field</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="colPos" approved="no">
+				<source>Columns</source>
+				<target state="needs-translation">Colonne:</target>
+			</trans-unit>
+			<trans-unit id="colPos_formlabel" approved="yes">
+				<source>Column</source>
+				<target state="translated">Colonna</target>
+			</trans-unit>
+			<trans-unit id="colPos.I.0" approved="yes">
+				<source>Left</source>
+				<target state="translated">Sinistra</target>
+			</trans-unit>
+			<trans-unit id="colPos.I.1" approved="yes">
+				<source>Normal</source>
+				<target state="translated">Normale</target>
+			</trans-unit>
+			<trans-unit id="colPos.I.2" approved="yes">
+				<source>Right</source>
+				<target state="translated">Destra</target>
+			</trans-unit>
+			<trans-unit id="colPos.I.3" approved="yes">
+				<source>Border</source>
+				<target state="translated">Bordo</target>
+			</trans-unit>
+			<trans-unit id="colPos.I.unused">
+				<source>Unused</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cols" approved="yes">
+				<source>Columns</source>
+				<target state="translated">Colonne</target>
+			</trans-unit>
+			<trans-unit id="cols.I.0">
+				<source>Auto</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.div.forms" approved="yes">
+				<source>Forms</source>
+				<target state="translated">Moduli</target>
+			</trans-unit>
+			<trans-unit id="CType.div.lists" approved="yes">
+				<source>Lists</source>
+				<target state="translated">Elenchi</target>
+			</trans-unit>
+			<trans-unit id="CType.div.menu">
+				<source>Menu</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.div.special" approved="yes">
+				<source>Special</source>
+				<target state="translated">Speciale</target>
+			</trans-unit>
+			<trans-unit id="CType.div.standard" approved="yes">
+				<source>Standard</source>
+				<target state="translated">Predefinito</target>
+			</trans-unit>
+			<trans-unit id="CType_formlabel" approved="yes">
+				<source>Type</source>
+				<target state="translated">Tipo</target>
+			</trans-unit>
+			<trans-unit id="CType.I.0" approved="yes">
+				<source>Header</source>
+				<target state="translated">Intestazione</target>
+			</trans-unit>
+			<trans-unit id="CType.I.1" approved="yes">
+				<source>Text</source>
+				<target state="translated">Testo</target>
+			</trans-unit>
+			<trans-unit id="CType.I.10" approved="yes">
+				<source>Login</source>
+				<target state="translated">Login</target>
+			</trans-unit>
+			<trans-unit id="CType.I.11" approved="yes">
+				<source>Textbox</source>
+				<target state="translated">Casella di testo</target>
+			</trans-unit>
+			<trans-unit id="CType.I.12" approved="yes">
+				<source>Special Menus</source>
+				<target state="translated">Menu Speciali</target>
+			</trans-unit>
+			<trans-unit id="CType.I.13" approved="yes">
+				<source>Insert Records</source>
+				<target state="translated">Inserisci Record</target>
+			</trans-unit>
+			<trans-unit id="CType.I.14" approved="yes">
+				<source>Insert Plugin</source>
+				<target state="translated">Inserisci Plugin</target>
+			</trans-unit>
+			<trans-unit id="CType.I.15" approved="yes">
+				<source>Script</source>
+				<target state="translated">Script</target>
+			</trans-unit>
+			<trans-unit id="CType.I.16" approved="yes">
+				<source>Divider</source>
+				<target state="translated">Separatore</target>
+			</trans-unit>
+			<trans-unit id="CType.I.17" approved="yes">
+				<source>HTML</source>
+				<target state="translated">HTML</target>
+			</trans-unit>
+			<trans-unit id="CType.I.2" approved="yes">
+				<source>Text &amp; Images</source>
+				<target state="translated">Testo e Immagini</target>
+			</trans-unit>
+			<trans-unit id="CType.I.3" approved="yes">
+				<source>Images</source>
+				<target state="translated">Immagini</target>
+			</trans-unit>
+			<trans-unit id="CType.I.4" approved="yes">
+				<source>Bullet List</source>
+				<target state="translated">Elenco puntato</target>
+			</trans-unit>
+			<trans-unit id="CType.I.5" approved="yes">
+				<source>Table</source>
+				<target state="translated">Tabella</target>
+			</trans-unit>
+			<trans-unit id="CType.I.6">
+				<source>File Links</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.I.8" approved="yes">
+				<source>Form</source>
+				<target state="translated">Modulo</target>
+			</trans-unit>
+			<trans-unit id="CType.I.9" approved="yes">
+				<source>Search</source>
+				<target state="translated">Ricerca</target>
+			</trans-unit>
+			<trans-unit id="CType.menu_abstract">
+				<source>Abstracts</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.menu_categorized_content">
+				<source>Categorized content</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.menu_categorized_pages">
+				<source>Categorized pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.menu_pages">
+				<source>Pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.menu_recently_updated" approved="yes">
+				<source>Recently updated pages</source>
+				<target state="translated">Pagine aggiornate recentemente</target>
+			</trans-unit>
+			<trans-unit id="CType.menu_related_pages">
+				<source>Related pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.menu_section">
+				<source>Section index</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.menu_section_pages">
+				<source>Section index of subpages from selected pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.menu_sitemap" approved="yes">
+				<source>Sitemap</source>
+				<target state="translated">Mappa del sito</target>
+			</trans-unit>
+			<trans-unit id="CType.menu_sitemap_pages" approved="yes">
+				<source>Sitemaps of selected pages</source>
+				<target state="translated">Mappa del sito per le pagine selezionate</target>
+			</trans-unit>
+			<trans-unit id="CType.menu_subpages">
+				<source>Subpages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="CType.textmedia">
+				<source>Text &amp; Media</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="date" approved="yes">
+				<source>Date</source>
+				<target state="translated">Data</target>
+			</trans-unit>
+			<trans-unit id="date_formlabel" approved="yes">
+				<source>Date</source>
+				<target state="translated">Data</target>
+			</trans-unit>
+			<trans-unit id="endtime_formlabel" approved="yes">
+				<source>Expiration Date</source>
+				<target state="translated">Data di scadenza</target>
+			</trans-unit>
+			<trans-unit id="fe_group_formlabel">
+				<source>Usergroup Access Rights</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="field.default.hidden" approved="yes">
+				<source>Visibility of content element</source>
+				<target state="translated">Visibilità dell'elemento di contenuto</target>
+			</trans-unit>
+			<trans-unit id="field.table.bodytext">
+				<source>Table content</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_collections">
+				<source>File collections</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_collections.ALT.uploads_formlabel">
+				<source>Select file collections</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_size" approved="no">
+				<source>Show File Size</source>
+				<target state="needs-translation">Mostra dimensione file:</target>
+			</trans-unit>
+			<trans-unit id="filelink_size_formlabel">
+				<source>Display File Size Information</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting">
+				<source>Sort file list</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting.creation_date">
+				<source>by file creation date</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting_direction">
+				<source>Sorting direction</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting_direction.ascending">
+				<source>Ascending (default)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting_direction.descending">
+				<source>Descending</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting.extension">
+				<source>by file extension</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting.modification_date">
+				<source>by file modification date</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting.name">
+				<source>by filename</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting.none" approved="yes">
+				<source>no sorting</source>
+				<target state="translated">nessun ordinamento</target>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>nessuno</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="filelink_sorting.size">
+				<source>by file size</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting.title">
+				<source>by file metadata title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filelink_sorting.type">
+				<source>by file type</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="frame_class" approved="no">
+				<source>Frame</source>
+				<target state="needs-translation">Cornice:</target>
+			</trans-unit>
+			<trans-unit id="frame_class.default">
+				<source>Default</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="frame_class_formlabel" approved="no">
+				<source>Frame</source>
+				<target state="needs-translation">Cornice:</target>
+			</trans-unit>
+			<trans-unit id="frame_class.indent" approved="yes">
+				<source>Indent</source>
+				<target state="translated">Indentazione</target>
+			</trans-unit>
+			<trans-unit id="frame_class.indent_left" approved="yes">
+				<source>Indent, 33/66%</source>
+				<target state="translated">Indentazione, 33/66%</target>
+			</trans-unit>
+			<trans-unit id="frame_class.indent_right" approved="yes">
+				<source>Indent, 66/33%</source>
+				<target state="translated">Indentazione, 66/33%</target>
+			</trans-unit>
+			<trans-unit id="frame_class.none">
+				<source>No Frame</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="frame_class.ruler_after">
+				<source>Ruler After</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="frame_class.ruler_before">
+				<source>Ruler Before</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="header" approved="no">
+				<source>Header</source>
+				<target state="needs-translation">Intestazione:</target>
+			</trans-unit>
+			<trans-unit id="header.ALT.div_formlabel" approved="yes">
+				<source>Name (not visible in frontend)</source>
+				<target state="translated">Nome (non visibile in frontend)</target>
+			</trans-unit>
+			<trans-unit id="header.ALT.html_formlabel" approved="yes">
+				<source>Name (not visible in frontend)</source>
+				<target state="translated">Nome (non visibile in frontend)</target>
+			</trans-unit>
+			<trans-unit id="header.ALT.script_formlabel" approved="yes">
+				<source>Name (not visible in frontend)</source>
+				<target state="translated">Nome (non visibile in frontend)</target>
+			</trans-unit>
+			<trans-unit id="header.ALT.shortcut_formlabel" approved="yes">
+				<source>Name (not visible in frontend)</source>
+				<target state="translated">Nome (non visibile in frontend)</target>
+			</trans-unit>
+			<trans-unit id="header_formlabel" approved="yes">
+				<source>Header</source>
+				<target state="translated">Intestazione</target>
+			</trans-unit>
+			<trans-unit id="header_layout_formlabel" approved="yes">
+				<source>Type</source>
+				<target state="translated">Tipo</target>
+			</trans-unit>
+			<trans-unit id="header_layout.I.1" approved="yes">
+				<source>Layout 1</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="header_layout.I.2" approved="yes">
+				<source>Layout 2</source>
+				<target state="translated">Layout 2</target>
+			</trans-unit>
+			<trans-unit id="header_layout.I.3" approved="yes">
+				<source>Layout 3</source>
+				<target state="translated">Layout 3</target>
+			</trans-unit>
+			<trans-unit id="header_layout.I.4" approved="yes">
+				<source>Layout 4</source>
+				<target state="translated">Layout 4</target>
+			</trans-unit>
+			<trans-unit id="header_layout.I.5" approved="yes">
+				<source>Layout 5</source>
+				<target state="translated">Layout 5</target>
+			</trans-unit>
+			<trans-unit id="header_layout.I.6" approved="yes">
+				<source>Hidden</source>
+				<target state="translated">Nascosto</target>
+			</trans-unit>
+			<trans-unit id="header_link" approved="no">
+				<source>Link</source>
+				<target state="needs-translation">Collegamento:</target>
+			</trans-unit>
+			<trans-unit id="header_link_formlabel" approved="yes">
+				<source>Link</source>
+				<target state="translated">Collegamento</target>
+			</trans-unit>
+			<trans-unit id="header_position" approved="no">
+				<source>Align</source>
+				<target state="needs-translation">Allinea:</target>
+			</trans-unit>
+			<trans-unit id="header_position_formlabel" approved="yes">
+				<source>Alignment</source>
+				<target state="translated">Allineamento</target>
+			</trans-unit>
+			<trans-unit id="header_position.I.1" approved="yes">
+				<source>Center</source>
+				<target state="translated">Centro</target>
+			</trans-unit>
+			<trans-unit id="header_position.I.2" approved="yes">
+				<source>Right</source>
+				<target state="translated">Destra</target>
+			</trans-unit>
+			<trans-unit id="header_position.I.3" approved="yes">
+				<source>Left</source>
+				<target state="translated">Sinistra</target>
+			</trans-unit>
+			<trans-unit id="hidden_formlabel">
+				<source>Content Element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="hidden.I.0">
+				<source>Disable</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="image_altText" approved="no">
+				<source>Alternative Text</source>
+				<target state="needs-translation">Testo alternativo:</target>
+			</trans-unit>
+			<trans-unit id="image.ALT.textbox_formlabel">
+				<source>Image Files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imageborder" approved="no">
+				<source>Border</source>
+				<target state="needs-translation">Bordo:</target>
+			</trans-unit>
+			<trans-unit id="imageborder_formlabel" approved="yes">
+				<source>Border</source>
+				<target state="translated">Bordo</target>
+			</trans-unit>
+			<trans-unit id="imagecaption.ALT.script" approved="no">
+				<source>Comments</source>
+				<target state="needs-translation">Commenti:</target>
+			</trans-unit>
+			<trans-unit id="imagecaption.ALT.script_formlabel" approved="yes">
+				<source>Comments</source>
+				<target state="translated">Commenti</target>
+			</trans-unit>
+			<trans-unit id="imagecaption.ALT.uploads" approved="no">
+				<source>Descriptions</source>
+				<target state="needs-translation">Descrizioni:</target>
+			</trans-unit>
+			<trans-unit id="imagecaption.ALT.uploads_formlabel" approved="yes">
+				<source>File Descriptions (one per line)</source>
+				<target state="translated">Descrizioni dei files (una per linea)</target>
+			</trans-unit>
+			<trans-unit id="imagecaption_formlabel">
+				<source>Captions (one per line)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imagecols" approved="no">
+				<source>Columns</source>
+				<target state="needs-translation">Colonne:</target>
+			</trans-unit>
+			<trans-unit id="imagecols_formlabel" approved="yes">
+				<source>Number of Columns</source>
+				<target state="translated">Numero di colonne</target>
+			</trans-unit>
+			<trans-unit id="image_formlabel" approved="yes">
+				<source>Images</source>
+				<target state="translated">Immagini</target>
+			</trans-unit>
+			<trans-unit id="image_frames" approved="no">
+				<source>Frames</source>
+				<target state="needs-translation">Cornice:</target>
+			</trans-unit>
+			<trans-unit id="image_frames_formlabel">
+				<source>Graphical Frames</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="image_frames.I.0">
+				<source>(None)</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>(Nessuno)</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="image_frames.I.1" approved="yes">
+				<source>Frame 1</source>
+				<target state="translated">Cornice 1</target>
+			</trans-unit>
+			<trans-unit id="image_frames.I.2" approved="yes">
+				<source>Frame 2</source>
+				<target state="translated">Cornice 2</target>
+			</trans-unit>
+			<trans-unit id="image_frames.I.3" approved="no">
+				<source>Frame 3</source>
+				<target state="needs-translation">Cornice 1</target>
+			</trans-unit>
+			<trans-unit id="image_frames.I.4" approved="no">
+				<source>Frame 4</source>
+				<target state="needs-translation">Cornice 1</target>
+			</trans-unit>
+			<trans-unit id="image_frames.I.5" approved="no">
+				<source>Frame 5</source>
+				<target state="needs-translation">Cornice 1</target>
+			</trans-unit>
+			<trans-unit id="image_frames.I.6" approved="no">
+				<source>Frame 6</source>
+				<target state="needs-translation">Cornice 1</target>
+			</trans-unit>
+			<trans-unit id="image_frames.I.7" approved="no">
+				<source>Frame 7</source>
+				<target state="needs-translation">Cornice 1</target>
+			</trans-unit>
+			<trans-unit id="image_frames.I.8" approved="no">
+				<source>Frame 8</source>
+				<target state="needs-translation">Cornice 1</target>
+			</trans-unit>
+			<trans-unit id="imageheight" approved="no">
+				<source>Height (pixels)</source>
+				<target state="needs-translation">Altezza (pixel):</target>
+			</trans-unit>
+			<trans-unit id="imageheight_formlabel" approved="yes">
+				<source>Height (px)</source>
+				<target state="translated">Altezza (px)</target>
+			</trans-unit>
+			<trans-unit id="image_link" approved="no">
+				<source>Link</source>
+				<target state="needs-translation">Collegamento:</target>
+			</trans-unit>
+			<trans-unit id="image_link_formlabel">
+				<source>Links (one per line, one link per image)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="image_longdescURL" approved="no">
+				<source>Long Description URL</source>
+				<target state="needs-translation">URL della descrizione lunga:</target>
+			</trans-unit>
+			<trans-unit id="imageorient" approved="no">
+				<source>Position</source>
+				<target state="needs-translation">Posizione:</target>
+			</trans-unit>
+			<trans-unit id="imageorient_formlabel" approved="yes">
+				<source>Position and Alignment</source>
+				<target state="translated">Posizione e Allineamento</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.0" approved="yes">
+				<source>Above, center</source>
+				<target state="translated">Sopra, centrato</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.1" approved="yes">
+				<source>Above, right</source>
+				<target state="translated">Sopra, a destra</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.10" approved="yes">
+				<source>Beside Text, Left</source>
+				<target state="translated">A fianco al testo, a sinistra</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.2" approved="yes">
+				<source>Above, left</source>
+				<target state="translated">Sopra, a sinistra</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.3" approved="yes">
+				<source>Below, center</source>
+				<target state="translated">Sotto, centrato</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.4" approved="yes">
+				<source>Below, right</source>
+				<target state="translated">Sotto, a destra</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.5" approved="yes">
+				<source>Below, left</source>
+				<target state="translated">Sotto, a sinistra</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.6" approved="yes">
+				<source>In text, right</source>
+				<target state="translated">Nel testo, destra</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.7" approved="yes">
+				<source>In text, left</source>
+				<target state="translated">Nel testo, sinistra</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.8" approved="yes">
+				<source>__No wrap:__</source>
+				<target state="translated">__No wrap:__</target>
+			</trans-unit>
+			<trans-unit id="imageorient.I.9" approved="yes">
+				<source>Beside Text, Right</source>
+				<target state="translated">A fianco al testo, a destra</target>
+			</trans-unit>
+			<trans-unit id="images.addFileReference" approved="yes">
+				<source>Add image</source>
+				<target state="translated">Aggiungi immagine</target>
+			</trans-unit>
+			<trans-unit id="image_titleText" approved="no">
+				<source>Title Text</source>
+				<target state="needs-translation">Testo del titolo:</target>
+			</trans-unit>
+			<trans-unit id="imagewidth" approved="no">
+				<source>Width (pixels)</source>
+				<target state="needs-translation">Larghezza (pixel):</target>
+			</trans-unit>
+			<trans-unit id="imagewidth_formlabel" approved="yes">
+				<source>Width (px)</source>
+				<target state="translated">Larghezza (px)</target>
+			</trans-unit>
+			<trans-unit id="image_zoom">
+				<source>Click-enlarge</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="image_zoom_formlabel" approved="yes">
+				<source>Enlarge on Click</source>
+				<target state="translated">Ingrandisci con un clic</target>
+			</trans-unit>
+			<trans-unit id="layout_formlabel" approved="no">
+				<source>Layout</source>
+				<target state="needs-translation">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="layout.I.1" approved="yes">
+				<source>Layout 1</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="layout.I.2" approved="yes">
+				<source>Layout 2</source>
+				<target state="translated">Layout 2</target>
+			</trans-unit>
+			<trans-unit id="layout.I.3" approved="yes">
+				<source>Layout 3</source>
+				<target state="translated">Layout 3</target>
+			</trans-unit>
+			<trans-unit id="linkToTop">
+				<source>To top</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="linkToTop_formlabel">
+				<source>Append with Link to Top of Page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="list_type" approved="no">
+				<source>Plugin</source>
+				<target state="needs-translation">Plugin:</target>
+			</trans-unit>
+			<trans-unit id="list_type_formlabel" approved="yes">
+				<source>Selected Plugin</source>
+				<target state="translated">Plugin selezionato</target>
+			</trans-unit>
+			<trans-unit id="longdescURL_formlabel" approved="yes">
+				<source>Long Description URLs (one per line)</source>
+				<target state="translated">URL delle descrizioni lunghe (una per linea)</target>
+			</trans-unit>
+			<trans-unit id="media" approved="yes">
+				<source>Files</source>
+				<target state="translated">File</target>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Files</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="media.addFileReference" approved="yes">
+				<source>Add file</source>
+				<target state="translated">Aggiungi file</target>
+			</trans-unit>
+			<trans-unit id="media.ALT.uploads_formlabel">
+				<source>Select single files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="media.dataAttributes" approved="yes">
+				<source>Additional data-* Attributes for HTML5 video tag</source>
+				<target state="translated">Attributi data-* aggiuntivi per tag video HTML5</target>
+			</trans-unit>
+			<trans-unit id="media.dataAttributes.attributeName" approved="yes">
+				<source>Name of attribute (without data-)</source>
+				<target state="translated">Nome dell'attributo (senza data- )</target>
+			</trans-unit>
+			<trans-unit id="media.dataAttributes.content" approved="yes">
+				<source>Content</source>
+				<target state="translated">Contenuto</target>
+			</trans-unit>
+			<trans-unit id="menu.ALT.accessibility_bypass_formlabel">
+				<source>Add link to bypass navigation block</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="menu.ALT.accessibility_bypass_text_formlabel">
+				<source>Link text to bypass navigation block</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="menu.ALT.accessibility_title_formlabel">
+				<source>Menu block title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="menu_type" approved="yes">
+				<source>Menu Type</source>
+				<target state="translated">Tipo di menu</target>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Tipo di menu</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="menu_type_formlabel" approved="yes">
+				<source>Menu Type</source>
+				<target state="translated">Tipo di menu</target>
+			</trans-unit>
+			<trans-unit id="menu_type.I.0">
+				<source>Menu of selected pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="menu_type.I.1">
+				<source>Menu of subpages of selected pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="menu_type.I.2">
+				<source>Menu of subpages of selected pages including abstracts</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="menu_type.I.3">
+				<source>Menu of subpages of selected pages including sections</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="menu_type.I.4" approved="yes">
+				<source>Sitemap</source>
+				<target state="translated">Mappa del sito</target>
+			</trans-unit>
+			<trans-unit id="menu_type.I.5">
+				<source>Section index (page content marked for section menus)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="menu_type.I.6" approved="yes">
+				<source>Recently updated pages</source>
+				<target state="translated">Pagine aggiornate recentemente</target>
+			</trans-unit>
+			<trans-unit id="menu_type.I.7" approved="yes">
+				<source>Related pages (based on keywords)</source>
+				<target state="translated">Pagine correlate (in base a parole chiave)</target>
+			</trans-unit>
+			<trans-unit id="menu_type.I.8" approved="yes">
+				<source>Sitemaps of selected pages</source>
+				<target state="translated">Mappa del sito per le pagine selezionate</target>
+			</trans-unit>
+			<trans-unit id="menu_type.I.categorized_content">
+				<source>Content elements for selected categories</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="menu_type.I.categorized_pages">
+				<source>Pages for selected categories</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="multimedia" approved="no">
+				<source>File</source>
+				<target state="needs-translation">File:</target>
+			</trans-unit>
+			<trans-unit id="multimedia_formlabel">
+				<source>Selected Media File</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pages.ALT.list_formlabel">
+				<source>Record Storage Page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pages.ALT.login">
+				<source>Send to Page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pages.ALT.loginform">
+				<source>Selected pages: Target (1st), Frontend user container (2nd)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pages.ALT.mailform">
+				<source>Target Page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pages.ALT.menu_formlabel" approved="yes">
+				<source>Selected Pages</source>
+				<target state="translated">Pagine selezionate</target>
+			</trans-unit>
+			<trans-unit id="pages.ALT.script_formlabel">
+				<source>Starting Point for This Script</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pages.ALT.search">
+				<source>Send to Page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pages.ALT.searchform">
+				<source>Target page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.access">
+				<source>Publish Dates and Access Rights</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.appearanceLinks" approved="yes">
+				<source>Links</source>
+				<target state="translated">Collegamenti</target>
+			</trans-unit>
+			<trans-unit id="palette.frames">
+				<source>Content Element Layout</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.general">
+				<source>Content Element</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Elemento di contenuto</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="palette.header" approved="yes">
+				<source>Header</source>
+				<target state="translated">Intestazione</target>
+			</trans-unit>
+			<trans-unit id="palette.headers">
+				<source>Headlines</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.image_accessibility" approved="yes">
+				<source>Accessibility</source>
+				<target state="translated">Accessibilità</target>
+			</trans-unit>
+			<trans-unit id="palette.imageblock">
+				<source>Image Alignment</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Allineamento dell'immagine</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="palette.imagefiles">
+				<source>Images and Captions</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Immagini e Didascalie</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="palette.imagelinks" approved="no">
+				<source>Behavior</source>
+				<target state="needs-translation">Comportamento</target>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Comportamento</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="palette.image_settings">
+				<source>Image Adjustments</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.loginform">
+				<source>Redirect Target and Frontend User Container</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.mailform">
+				<source>Target and Recipient</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.menu" approved="yes">
+				<source>Menu and Sitemap</source>
+				<target state="translated">Menu e mappa del sito</target>
+			</trans-unit>
+			<trans-unit id="palette.menu_accessibility" approved="yes">
+				<source>Accessibility</source>
+				<target state="translated">Accessibilità</target>
+			</trans-unit>
+			<trans-unit id="palette.multimediafiles">
+				<source>Media Files and Parameters</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.searchform">
+				<source>Search Results</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Risultati della ricerca</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="palette.table_layout">
+				<source>Table Layout</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.textbox">
+				<source>Render Text into Images</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.textlayout">
+				<source>Text Layout</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.uploads_layout">
+				<source>Filelinks Layout</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.visibility" approved="yes">
+				<source>Visibility</source>
+				<target state="translated">Visibilità</target>
+			</trans-unit>
+			<trans-unit id="pi_flexform">
+				<source>Plugin Options</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="records">
+				<source>Items</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="records_formlabel">
+				<source>Records</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="recursive.I.0" approved="yes">
+				<source>0 levels (only selected page)</source>
+				<target state="translated">0 livelli (solo la pagina selezionata)</target>
+			</trans-unit>
+			<trans-unit id="recursive.I.1" approved="yes">
+				<source>1 level</source>
+				<target state="translated">1 livello</target>
+			</trans-unit>
+			<trans-unit id="recursive.I.2" approved="yes">
+				<source>2 levels</source>
+				<target state="translated">2 livelli</target>
+			</trans-unit>
+			<trans-unit id="recursive.I.3" approved="yes">
+				<source>3 levels</source>
+				<target state="translated">3 livelli</target>
+			</trans-unit>
+			<trans-unit id="recursive.I.4" approved="no">
+				<source>4 levels</source>
+				<target state="needs-translation">2 livelli</target>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>4 livelli</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="recursive.I.5">
+				<source>Infinite</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Infinito</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="rte_enabled">
+				<source>Disable Rich Text Editor</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Disabilita Editor di Testo Avanzato:</target>
+				</alt-trans>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Disabilita editor RTE:</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="rte_enabled_formlabel">
+				<source>Rich Text Editor</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="erredeco">
+					<target>Editor di Testo Avanzato</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="rte_enabled.I.0">
+				<source>Disable</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sectionIndex">
+				<source>Index</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Indice:</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="sectionIndex_formlabel">
+				<source>Show in Section Menus</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="selected_categories">
+				<source>Selected categories</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="select_key.ALT.script_formlabel" approved="yes">
+				<source>PHP Code</source>
+				<target state="translated">Codice PHP</target>
+			</trans-unit>
+			<trans-unit id="select_key.ALT.uploads">
+				<source>Read from Path</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="select_key.ALT.uploads_formlabel">
+				<source>Path</source>
+				<target/>
+				<alt-trans xml:space="preserve" origin="c_strizzolo">
+					<target>Percorso</target>
+				</alt-trans>
+			</trans-unit>
+			<trans-unit id="select_key_formlabel">
+				<source>Plugin Mode</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="space_after_class">
+				<source>Space After</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="space_after_class_formlabel">
+				<source>Space After</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="space_before_class">
+				<source>Space Before</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="space_before_class_formlabel">
+				<source>Space Before</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="space_class_extra_large">
+				<source>Extra Large</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="space_class_extra_small">
+				<source>Extra Small</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="space_class_large">
+				<source>Large</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="space_class_medium">
+				<source>Medium</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="space_class_none" approved="yes">
+				<source>None</source>
+				<target state="translated">Nessuno</target>
+			</trans-unit>
+			<trans-unit id="space_class_small">
+				<source>Small</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="splash_layout">
+				<source>Textbox Type</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="splash_layout_formlabel" approved="yes">
+				<source>Type</source>
+				<target state="translated">Tipo</target>
+			</trans-unit>
+			<trans-unit id="splash_layout.I.1" approved="yes">
+				<source>Image Shadow</source>
+				<target state="translated">Ombra dell'immagine</target>
+			</trans-unit>
+			<trans-unit id="splash_layout.I.2">
+				<source>Image Frame 1</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="splash_layout.I.3">
+				<source>Image Frame 2</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="splash_layout.I.4" approved="yes">
+				<source>__Graphical:__</source>
+				<target state="translated">__Graphical:__</target>
+			</trans-unit>
+			<trans-unit id="splash_layout.I.5">
+				<source>Postit 1</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="starttime_formlabel">
+				<source>Publish Date</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="subheader.ALT.mailform" approved="no">
+				<source>Recipient Email</source>
+				<target state="needs-translation">Email del destinatario:</target>
+			</trans-unit>
+			<trans-unit id="subheader.ALT.mailform_formlabel" approved="yes">
+				<source>Recipient Email</source>
+				<target state="translated">Email del destinatario</target>
+			</trans-unit>
+			<trans-unit id="subheader_formlabel">
+				<source>Subheader</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_language_uid_formlabel" approved="yes">
+				<source>Language</source>
+				<target state="translated">Lingua</target>
+			</trans-unit>
+			<trans-unit id="tabs.access" approved="yes">
+				<source>Access</source>
+				<target state="translated">Accesso</target>
+			</trans-unit>
+			<trans-unit id="tabs.accessibility" approved="yes">
+				<source>Accessibility</source>
+				<target state="translated">Accessibilità</target>
+			</trans-unit>
+			<trans-unit id="tabs.appearance">
+				<source>Appearance</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tabs.behaviour" approved="yes">
+				<source>Behaviour</source>
+				<target state="translated">Comportamento</target>
+			</trans-unit>
+			<trans-unit id="tabs.extended">
+				<source>Extended</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tabs.images" approved="yes">
+				<source>Images</source>
+				<target state="translated">Immagini</target>
+			</trans-unit>
+			<trans-unit id="tabs.media" approved="yes">
+				<source>Media</source>
+				<target state="translated">Media</target>
+			</trans-unit>
+			<trans-unit id="tabs.plugin" approved="yes">
+				<source>Plugin</source>
+				<target state="translated">Plugin</target>
+			</trans-unit>
+			<trans-unit id="tabs.script" approved="yes">
+				<source>Script</source>
+				<target state="translated">Script</target>
+			</trans-unit>
+			<trans-unit id="tabs.text" approved="yes">
+				<source>Text</source>
+				<target state="translated">Testo</target>
+			</trans-unit>
+			<trans-unit id="target">
+				<source>Target</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="target.I.1" approved="yes">
+				<source>New window</source>
+				<target state="translated">Nuova finestra</target>
+			</trans-unit>
+			<trans-unit id="titleText_formlabel" approved="yes">
+				<source>Titles (one per line)</source>
+				<target state="translated">Titoli (uno per linea)</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

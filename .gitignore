@@ -5,3 +5,7 @@ typo3conf/ext/theme/
 
 .history/
 .vscode/
+
+# TYPO3 libraries & scripts
+typo3_src*
+typo3conf/ENABLE_INSTALL_TOOL

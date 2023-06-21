@@ -1,13 +1,17 @@
-[globalString = IENV:HTTP_HOST = local.w3development.net]
+[globalString = IENV:HTTP_HOST = w3development.local]
  page.config {
       no_cache = 1
-      absRefPrefix = https://local.w3development.net/
+      absRefPrefix = https://w3development.local/
 
       concatenateJs = 0
       concatenateCss = 0
 
       compressJs = 0
       compressCss = 0
+      cssInline >
+      includeCSS{
+         styles = EXT:theme/Resources/Public/CSS/style.min.css
+      }
    }
 [end]
 

@@ -1,0 +1,125 @@
+lib.mainNavigation = HMENU
+lib.mainNavigation {
+    1 = TMENU
+    1 {
+      expAll = 1
+      wrap = <ul class="nav nav-pills" id="mainNav">|</ul>
+
+      NO{
+        wrapItemAndSub = <li>|</li>
+        ATagParams = class="nav-link"
+      }
+
+      ACT = 1
+      ACT{
+        wrapItemAndSub = <li>|</li>
+        ATagParams = class="nav-link active"
+      }
+
+      IFSUB = 1
+      IFSUB{
+        wrapItemAndSub = <li class="dropdown">|</li>
+        ATagParams = class="dropdown-item dropdown-toggle"
+      }
+
+      CURIFSUB = 1
+      CURIFSUB{
+        wrapItemAndSub = <li class="dropdown">|</li>
+        ATagParams = class="dropdown-item dropdown-toggle"
+      }
+
+      ACTIFSUB = 1
+      ACTIFSUB{
+        wrapItemAndSub = <li class="dropdown">|</li>
+        ATagParams = class="dropdown-item dropdown-toggle active"
+      }
+    }
+
+    2 < .1
+    2{
+      wrap = <input type="checkbox" id="submenu" ><label for="submenu" class="submenuexpanded"><i class="fas fa-caret-down"></i></label><ul class="dropdown-menu">|</ul>
+
+      NO {
+        wrapItemAndSub = <li>|</li>
+        ATagParams = class="dropdown-item"
+      }
+
+      ACT = 1
+      ACT{
+        wrapItemAndSub = <li>|</li>
+        ATagParams = class="dropdown-item"
+      }
+    }
+}
+
+
+lib.mainlanguagesiwtcher = HMENU
+lib.mainlanguagesiwtcher {
+  special = language
+  special.value = {$global.languageLabels.availableSysLanguageUids}
+  1 = TMENU
+  1 {
+    NO = 1
+    NO {
+      doNotLinkIt = 1
+      ATagTitle {
+          data = LLL:EXT:theme/Resources/Private/Language/locallang.xlf:languageMenu.title.{field: _PAGES_OVERLAY_LANGUAGE}
+          data {
+            insertData = 1
+          }
+      }
+      stdWrap.cObject = COA
+      stdWrap.cObject {
+        5 = LOAD_REGISTER
+        5 {
+          languageLink.cObject = TEXT
+          languageLink.cObject.typolink {
+            parameter.data = page:uid
+            additionalParams = {$global.languageLabels.additionalParams}
+            returnLast = url
+          }
+        }
+
+        10 = TEXT
+        10 {
+          data <lib.mainlanguagesiwtcher.1.NO.ATagTitle.data
+          dataWrap = <option value="{REGISTER:languageLink}">|</option>
+        }
+      }
+    }
+    ACT < .NO
+    ACT.stdWrap.cObject.10.dataWrap = <option selected="selected" value="{REGISTER:languageLink}" style="display:none">|</option>
+    USERDEF2 < .ACT
+  }
+  wrap = <select class="languageSelect" onchange="window.location = this.options[this.selectedIndex].value">|</select>
+}
+
+
+[globalVar = GP:amp > 0]
+  lib.mainlanguagesiwtcher >
+  lib.mainlanguagesiwtcher = TEXT
+[global]
+
+
+lib.language = HMENU
+lib.language {
+  special = language
+  special.value = {$global.languageLabels.availableSysLanguageUids}
+  special.normalWhenNoLanguage = 0
+
+  wrap = |
+
+  1 = TMENU
+  1 {
+      NO = 1
+      NO.allWrap = |
+      NO.doNotShowLink = 1
+
+      USERDEF1 = 1
+      USERDEF1.allWrap = |
+      USERDEF1.stdWrap.override.cObject = TEXT
+      USERDEF1.stdWrap.override.cObject.value = no
+      USERDEF1.doNotLinkIt = 1
+  }
+}
+

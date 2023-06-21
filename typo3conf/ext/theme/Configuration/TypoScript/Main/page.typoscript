@@ -5,7 +5,6 @@ page {
 
   # Favicon Configurations
   shortcutIcon = /typo3conf/ext/theme/Resources/Public/Images/Favicon/favicon-16x16.png
-
   config.htmlTag_setParams = none
   config.htmlTag_stdWrap {
      setContentToCurrent = 1
@@ -15,9 +14,23 @@ page {
         10.value = <html lang="en">
      }
   }
-
+  meta {
+    X-UA-Compatible = IE=edge
+    X-UA-Compatible.attribute = http-equiv
+    robots = index, follow
+    keywords = {$page.meta.keywords}
+    keywords.override.field = keywords
+    description = {$page.meta.description}
+    description.override.field = description
+    author = w3development.net
+    msapplication-TileColor = #da532c
+    theme-color = #ffffff
+    viewport = width=device-width, initial-scale=1.0, minimum-scale=1.0
+    msvalidate\.01 = F4570B6CF9303302640959810103F14C
+    yandex-verification=1ae4de3597e2db92
+    google-site-verification=RPR50Qap0Tyvw5081Ff25zG9r-4-nYi4CFaENRFytr4
+  }
   headerData{
-
     # Title Tag Configurations
     10 = TEXT
     10{
@@ -47,12 +60,92 @@ page {
       )
     }
 
+    86399 = TEXT
+    86399{
+      value (
+        <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://www.w3development.net",
+            "name": "W3Development SHPK",
+            "logo": "https://lh5.googleusercontent.com/p/AF1QipNj53DBDMNlkdErZR5oJUk4TgkZBes3F0o5BQ8m=w160-h160-k-no",
+            "contactPoint": [{
+              "@type": "ContactPoint",
+              "telephone": "+355693858950",
+              "contactType": "Customer service",
+              "areaServed": "US"
+            },{
+              "@type": "ContactPoint",
+              "telephone": "+355693858950",
+              "contactType": "Sherbimi i klientit",
+              "areaServed": "AL"
+            }],
+            "sameAs": [
+              "https://www.facebook.com/w3developmentshpk",
+              "https://www.linkedin.com/company/w3development/",
+              "https://twitter.com/w3devel",
+              "https://www.instagram.com/w3developmentshpk/",
+              "https://www.xing.com/companies/w3developmentshpk"
+            ]
+          }
+        </script>
+      )
+    }
+
     # Google Tag Configurations
     86999 = FILE
     86999{
       file = EXT:theme/Resources/Private/Partials/GoogleTagJs.html
     }
   }
+  cssInline {
+    // 10 = FILE
+    // 10.file = typo3conf/ext/theme/Resources/Public/CSS/style.min.css
+
+    // 20 = FILE
+    // 20.file = typo3conf/ext/theme/Resources/Public/CSS/slick/slick.css
+
+    // 30 = FILE
+    // 30.file = typo3conf/ext/theme/Resources/Public/CSS/slick/slick-theme.css
+
+    // 40 = FILE
+    // 40.file = typo3conf/ext/theme/Resources/Public/custom.min.css
+  }
+
+  // includeCSSLibs{
+  //   fontawesome = https://use.fontawesome.com/releases/v5.6.3/css/all.css
+  //   fontawesome.external = 1
+  //   fontawesome.disableCompression = 1
+  //   fontawesome.excludeFromConcatenation = 1
+
+  //   ptsans = https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i
+  //   ptsans.external = 1
+  //   ptsans.disableCompression = 1
+  //   ptsans.excludeFromConcatenation = 1
+  // }
+
+  includeJSFooterlibs {
+    // jQuery = https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+    // jQuery {
+    //   external = 1
+    //   disableCompression = 1
+    //   excludeFromConcatenation = 1
+    // }
+
+    // jQueryMigrate = https://code.jquery.com/jquery-migrate-1.2.1.min.js
+    // jQueryMigrate {
+    //   external = 1
+    //   async = 1
+    //   disableCompression = 1
+    //   excludeFromConcatenation = 1
+    // }
+  }
+
+  // includeJSFooter{
+  //   Slick  = /typo3conf/ext/theme/Resources/Public/Js/slick.min.js
+  //   Script = /typo3conf/ext/theme/Resources/Public/Js/main.js
+  // }
 }
 
 lib.GoogleTagManager = TEXT
@@ -64,11 +157,6 @@ lib.GoogleTagManager.value(
     </noscript>
   <!-- End Google Tag Manager (noscript) -->
 )
-
-
-
-
-
 
 page.headerData.87010 = TEXT
 
@@ -102,12 +190,39 @@ page.headerData.87010 = TEXT
       86999 >
     }
     javascriptLibs.jQuery >
+    cssInline.40 >
+    cssInline.20 >
+    cssInline.30 >
+
+    includeJS >
+    includeJSFooter >
+    includeJSFooterlibs >
+    includeCSS >
   }
 
   lib.GoogleTagManager.value(
     <!-- Google Tag Manager -->
     <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-PXX2558&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
   )
+[global]
+
+[PIDinRootline = 6]
+//   page.includeJSFooter{
+//     ShareThis = https://platform-api.sharethis.com/js/sharethis.js#property=5c0cd5987b0b4500110a1a50&product=sticky-share-buttons
+//     ShareThis.external = 1
+//     ShareThis.async = 1
+//   }
+[global]
+
+[globalVar = GP:amp > 0]
+
+[global]
+
+[PIDinRootline = 6]  && [treeLevel = 2] && [globalVar = GP:amp > 0]
+ page.includeJS >
+ page.includeJS >
+ page.includeJSFooter >
+ page.includeJSFooterlibs >
 [global]
 
 

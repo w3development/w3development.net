@@ -1,0 +1,72 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+  <f:layout name="Content/Default" />
+
+  <f:section name="Configuration">
+    <flux:form id="tabs" label="Tabs">
+      <flux:form.section name="settings.tabs" label="Tabs">
+        <flux:form.object name="newtab" label="Add Tab">
+          <flux:field.input name="accordation" label="Accordation" />
+          <flux:field.input name="icon" label="Icon" />
+          <flux:field.input name="title" label="Title" />
+          <flux:field.input name="id" label="ID" />
+          <flux:field.text name="text" rows="10" cols="50" label="Text" />
+          <flux:field.input label="Tab->Page link" name="pagelink">
+            <flux:wizard.link activeTab="link"/>
+          </flux:field.input>
+        </flux:form.object>
+      </flux:form.section>
+    </flux:form>
+  </f:section>
+
+  <f:section name="Preview">
+    <f:for each="{settings.tabs}" as="obj" key="id">
+      <f:if condition="{obj.newtab}">Tab title:{obj.newtab.title}</f:if>
+      <br />
+    </f:for>
+  </f:section>
+
+  <f:section name="Main">
+
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.condition')} == Amp">
+      <f:then>
+        <amp-selector class="tabs-with-flex" role="tablist">
+          <f:for each="{settings.tabs}" as="obj" iteration="itemIteration">
+            <div id="tab-{obj.newtab.id}" role="tab" aria-controls="{obj.newtab.id}" option selected>
+              <i class="{obj.newtab.icon}"></i>{obj.newtab.title}</div>
+            <div id="{obj.newtab.id}" role="tabpanel" aria-labelledby="{obj.newtab.id}">
+              <f:format.html>{obj.newtab.text}</f:format.html>
+              <div>
+              <f:if condition="{obj.newtab.pagelink}">
+                <f:link.typolink parameter="{obj.newtab.pagelink}" target="_blank" class="tablink">Checkout {obj.newtab.title}</f:link.typolink>
+              </f:if>
+            </div>
+            </div>
+          </f:for>
+        </amp-selector>
+      </f:then>
+      <f:else>
+        <div class="tabs">
+          <f:for each="{settings.tabs}" as="obj" iteration="itemIteration">
+            <div class="tab  {f:if(condition: itemIteration.isFirst, then: 'active')}" style=" width: calc(100%/{itemIteration.total});text-align: center;">
+              <a href="{obj.newtab.accordation}">
+                <i class="{obj.newtab.icon}"></i>
+                <p>{obj.newtab.title}</p>
+              </a>
+              <div class="content" id="{obj.newtab.id}">
+                <f:format.html>{obj.newtab.text}</f:format.html>
+                <div>
+                <f:if condition="{obj.newtab.pagelink}">
+                  <f:link.typolink parameter="{obj.newtab.pagelink}" target="_blank" class="tablink">Checkout {obj.newtab.title}</f:link.typolink>
+                </f:if>
+                </div>
+              </div>
+
+            </div>
+          </f:for>
+
+        </div>
+      </f:else>
+    </f:if>
+  </f:section>
+</div>

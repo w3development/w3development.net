@@ -1,0 +1,78 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+
+<f:layout name="Page/Home" />
+
+<f:section name="Configuration">
+
+    <flux:form id="home">
+
+        <!-- Input field for Fluid variable 'pageClass' -->
+        <!-- <flux:field.input name="settings.pageClass" default="some-css-class" /> -->
+
+        <!-- Backend layout grid (TYPO3 6.x and greater only) -->
+        <flux:grid>
+            <flux:grid.row>
+                <flux:grid.column colPos="10" name="Slider" label="Home Slider" />
+            </flux:grid.row>
+
+            <flux:grid.row>
+                <flux:grid.column colPos="0" name="Intro" label="Home Intro" />
+            </flux:grid.row>
+
+            <flux:grid.row>
+                <flux:grid.column colPos="1" name="Services" label="Services" />
+            </flux:grid.row>
+
+            <flux:grid.row>
+                <flux:grid.column colPos="2" name="WhoWeAre" label="Who We Are" />
+            </flux:grid.row>
+
+            <flux:grid.row>
+                <flux:grid.column colPos="3" name="RecentWork" label="Recent Work" />
+            </flux:grid.row>
+
+            <flux:grid.row>
+                <flux:grid.column colPos="4" name="Counters" label="Counters" />
+            </flux:grid.row>
+
+            <flux:grid.row>
+                <flux:grid.column colPos="5" name="ContactForm" label="ContactForm" style="width: 100%" />
+            </flux:grid.row>
+        </flux:grid>
+
+    </flux:form>
+
+</f:section>
+
+<f:section name="Slider">
+    <v:content.render column="10" />
+</f:section>
+
+<f:section name="Intro">
+    <v:content.render column="0" />
+</f:section>
+
+<f:section name="Services">
+    <v:content.render column="1" />
+</f:section>
+
+<f:section name="WhoWeAre">
+    <v:content.render column="2" />
+</f:section>
+
+<f:section name="RecentWork">
+    <v:content.render column="3" />
+</f:section>
+
+<f:section name="Counters">
+    <v:content.render column="4" />
+</f:section>
+
+<f:section name="ContactForm">
+    <v:content.render column="5" />
+</f:section>
+</div>

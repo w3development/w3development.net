@@ -1,0 +1,76 @@
+<f:layout name="Services" />
+<f:render partial="GoogleTag" />
+<div class="body">
+	<header id="header">
+    <f:render partial="Header" />
+	</header>
+	<div role="main" class="main">
+		<section class="section  section-center mt-0">
+			<div class="section-inner">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<f:render section="Teaser" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-default mt-0 servicefocus">
+			<div class="container">
+				<div class="row align-items-center">
+				    <f:render section="Focus" />
+				</div>
+			</div>
+		</section>
+		<section class="m-5 pb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<f:render section="Help" />
+					</div>
+				</div>
+				<div class="row justify-content-center mt-5" >
+						<f:render section="Strategy" />
+				</div>
+			</div>
+		</section>
+		<section class="pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+						<f:render section="Wedo" />
+					</div>
+			   </div>
+			 </div>
+	 </section>
+		<div class="container-fluid">
+			<div class="row featured-boxes-full featured-boxes-full-scale clearfix">
+				<div class="col-lg-4 featured-box-full featured-box-full-primary">
+						<f:render section="Brief" />
+				</div>
+				<div class="col-lg-4 featured-box-full featured-box-full-primary">
+					<f:render section="Creation" />
+				</div>
+				<div class="col-lg-4 featured-box-full featured-box-full-primary">
+					<f:render section="Launch" />
+				</div>
+			</div>
+		</div>
+		<section class="section section-default section-footer section-color-custom mt-0 pt-2 pb-5">
+			<div class="container">
+				<div class="row mt-2 mb-4">
+					<div class="col-lg-4 text-center">
+					 <f:image src="fileadmin/user_upload/services/inovation.jpeg" width="200" height="200"  alt="layout styles" class="img-fluid"/>        
+          </div>
+					<div class="col-lg-7 col-lg-offset-1">
+					 <f:render section="Startup" />
+				 </div>
+				</div>
+			</div>
+		</section>
+	</div>
+ <footer class="short" id="footer">  
+    <f:render partial="Footer" />    
+ </footer>
+</div>

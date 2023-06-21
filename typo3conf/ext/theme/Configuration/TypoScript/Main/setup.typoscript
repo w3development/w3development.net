@@ -1,0 +1,32 @@
+// Including TypoScript Code.
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Extensions/seo.typoscript">
+
+// Including TypoScript Code.
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Configurations/settings.typoscript">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Page/header.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Page/meta.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Page/schema.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Page/stylesheet.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Page/javascript.typoscript">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/topnavigation.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/languageswitcher.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/alternatelanguage.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/getcontent.typoscript">
+
+// Custom Content elements
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/header1.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Configurations/development.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Extensions/powermail.typoscript">
+
+[PIDinRootline = 66]
+page = PAGE
+page.config.no_cache = 1
+page.5 >
+page.10 = FLUIDTEMPLATE
+page.10{
+    templateName = Homepage
+    templateRootPaths.1 = typo3conf/ext/theme/Resources/Private/Templates/Page/
+}
+[global]

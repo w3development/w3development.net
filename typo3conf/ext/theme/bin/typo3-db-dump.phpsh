@@ -1,0 +1,47 @@
+#!/usr/bin/env php
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+$configFile = dirname ( dirname(__FILE__) ) . "/public/typo3conf/LocalConfiguration.php";
+$config = array();
+$date = date("Y-m-d_H\hi");
+$cacheTables = array(
+  "cache_md5params",
+  "cache_treelist",
+  "cf_cache_hash",
+  "cf_cache_hash_tags",
+  "cf_cache_imagesizes",
+  "cf_cache_imagesizes_tags",
+  "cf_cache_pages",
+  "cf_cache_pagesection",
+  "cf_cache_pagesection_tags",
+  "cf_cache_pages_tags",
+  "cf_cache_rootline",
+  "cf_cache_rootline_tags",
+  "sys_log",
+  "tx_extensionmanager_domain_model_extension",
+  "tx_realurl_uniqalias_cache_map"
+);
+
+if( file_exists($configFile) ){
+  $config = include( $configFile );
+}
+
+$host     = $config["DB"]["Connections"]["Default"]["host"];
+$username = $config["DB"]["Connections"]["Default"]["user"];
+$password = $config["DB"]["Connections"]["Default"]["password"];
+$database = $config["DB"]["Connections"]["Default"]["dbname"];
+
+$dumpFile = dirname( dirname(__FILE__) ) . "/data/sql/dump_". $database ."_". $date .".sql";
+
+echo "Backing up database to: {$dumpFile} \n";
+$ignoreTables = "";
+foreach ($cacheTables as $key => $value) {
+  $ignoreTables .= " --ignore-table=$database." . $value;
+}
+
+exec("mysqldump --user={$username} --password={$password} --host={$host} {$database} {$ignoreTables} --result-file={$dumpFile}");
+
+?>

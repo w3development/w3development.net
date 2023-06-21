@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages"
+          date="2012-10-17T17:55:17Z" product-name="theme">
+        <header/>
+          <body>
+
+            <trans-unit id="flux.home">
+              <source>Home Page</source>
+            </trans-unit>
+
+            <trans-unit id="flux.about">
+              <source>About Page</source>
+            </trans-unit>
+
+            <trans-unit id="messagesend">
+              <source>Send Message</source>
+            </trans-unit>
+
+            <trans-unit id="contact">
+              <source>Contact Us</source>
+            </trans-unit>
+
+            <trans-unit id="contactus">
+              <source>Contact us or give us a call to discover how we can help.</source>
+            </trans-unit>
+
+            <trans-unit id="flux.newContentWizard.grids"><source>Grid elements</source></trans-unit>
+            <trans-unit id="flux.newContentWizard.contents"><source>Custom contents</source></trans-unit>
+
+            <trans-unit id="flux.about.columns.About">
+              <source>About</source>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.Company">
+              <source>Company</source>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.Mission">
+                <source>Mission</source>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.Team">
+                <source>Team</source>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.Elvis">
+                <source>Elvis Tavasja</source>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.Clients">
+                <source>Clients</source>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.">
+                <source>Mission</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services">
+                <source>Service Page</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Teaser">
+                <source>Teaser</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Focus">
+                <source>Focus</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Helpp">
+                <source>We help</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Strategy">
+                <source>Stategy,Development,Marketing</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Wedo">
+                <source>We do</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Brief">
+                <source>Brief</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Creation">
+                <source>Creation</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Launch">
+                <source>Launch</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Startup">
+                <source>Startup</source>
+            </trans-unit>
+
+            <trans-unit id="flux.work">
+                <source>Work Page</source>
+            </trans-unit>
+
+            <trans-unit id="flux.blog">
+                <source>Blog Page</source>
+            </trans-unit>
+
+            <trans-unit id="flux.blog-detail">
+                <source>Blog Detail Page</source>
+            </trans-unit>
+
+            <trans-unit id="flux.contact">
+                <source>Contact Page</source>
+            </trans-unit>
+            <trans-unit id="flux.contact.columns.Sayhello">
+                <source>Say hello</source>
+            </trans-unit>
+            <trans-unit id="flux.contact.columns.Address">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="flux.contact.columns.Message">
+                <source>Message</source>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Strategy">
+                <source>Types of services</source>
+            </trans-unit>
+
+            <trans-unit id="flux.work.columns.Weput">
+                <source>Work</source>
+            </trans-unit>
+
+            <trans-unit id="flux.work.columns.Links">
+                <source>Show All,Magenti,Typo3,Wordpress</source>
+            </trans-unit>
+
+            <trans-unit id="flux.work.columns.Projects">
+                <source>Projects</source>
+            </trans-unit>
+
+            <trans-unit id="pages.tx_fed_page_controller_action">
+      				<source>Page Layout - this page</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_controller_action.default">
+      				<source>Parent decides</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_controller_action_sub">
+      				<source>Page Layout - subpages</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_flexform">
+      				<source>Page Configuration</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_flexform_sub">
+      				<source>Page Configuration - subpages</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_package">
+      				<source>Package</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_layoutselect">
+      				<source>Page Layouts</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_configuration">
+      				<source>Page Configuration</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.doktype.187">
+      				<source>Raw Fluid template</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fluidpages_templatefile">
+      				<source>Template file reference</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fluidpages_templatefile.placeholder">
+      				<source>EXT:... or site-relative path</source>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fluidpages_layout">
+      				<source>Layout to use for rendering</source>
+      			</trans-unit>
+
+      			<trans-unit id="fluidContentArea">
+      				<source>Fluid Content Area</source>
+      			</trans-unit>
+
+            <trans-unit id="tt_content.teaser">
+      				<source>Fluid Content type not selected - edit this element to fix this!</source>
+      			</trans-unit>
+
+            <trans-unit id="name">
+              <source>Your name *</source>
+            </trans-unit>
+
+            <trans-unit id="address">
+              <source>Your email address *</source>
+            </trans-unit>
+
+            <trans-unit id="subject">
+              <source>Subject</source>
+            </trans-unit>
+
+            <trans-unit id="message">
+              <source>Message *</source>
+            </trans-unit>
+
+
+            <trans-unit id="your_name">
+              <source>Your Name</source>
+            </trans-unit>
+
+            <trans-unit id="email">
+              <source>Your E-mail</source>
+            </trans-unit>
+
+            <trans-unit id="contactsubject">
+              <source>Subject</source>
+            </trans-unit>
+
+            <trans-unit id="contactmessage">
+              <source>Message</source>
+            </trans-unit>
+
+            <trans-unit id="international">
+             <source>Shkoder, ALBANIA</source>
+            </trans-unit>
+
+            <trans-unit id="phone">
+             <source>+355 (0) 69 38 58 950</source>
+            </trans-unit>
+
+            <trans-unit id="footercopyright">
+             <source>© Copyright W3Development Sh.p.k 2021. All Rights Reserved.</source>
+            </trans-unit>
+
+            <trans-unit id="blog">
+             <source>News, Happenings, Tips and Resources.</source>
+            </trans-unit>
+
+            <trans-unit id="languageMenu.title.">
+             <source>English</source>
+            </trans-unit>
+
+            <trans-unit id="languageMenu.title.1">
+             <source>Albanian</source>
+            </trans-unit>
+
+            <trans-unit id="languageMenu.title.2">
+             <source>Italian</source>
+            </trans-unit>
+
+
+
+
+
+
+
+        </body>
+    </file>
+</xliff>

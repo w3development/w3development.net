@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo -ne "DB Name: "
+read name
+
+echo -ne "DB User: "
+read user
+
+if [ -z $name ] || [ -z $user ] 
+
+then
+
+ echo "Please set both database name & database user."
+
+else
+
+ QUERY="CREATE DATABASE IF NOT EXISTS $name; GRANT ALL ON $name.* to '$user'@'localhost'; FLUSH PRIVILEGES;"
+ echo $QUERY
+ mysql -u root -p -e"$QUERY"
+
+fi
+
+#FLUSH PRIVILEGES; SELECT User,Host FROM mysql.user;";

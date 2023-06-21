@@ -1,0 +1,17 @@
+#####################################
+###    Content - Section Frames   ###
+#####################################
+TCEFORM.tt_content.frame_class {
+
+    removeItems  = 11,12,20,21,66
+    altLabels{
+
+        0  = Default Style
+        1  = Default Style - Without Bottom Space
+        10 = Default Style - Bottom Space - 20
+        5  = Default Style - Bottom Space - 30
+        6  = Default Style - Bottom Space - 50
+
+    }
+
+}

@@ -1,0 +1,31 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+<f:layout name="Content/Default"/>
+
+<f:section name="Configuration">
+    <flux:form id="video" label="Video">
+        <flux:field.input name="src" label="Src" />
+        <flux:field.select name="alignment" label="Alignment" items="Default,Right,Left" default="Left" maxItems="1"  />
+        <flux:field.input name="width" label="Width(px)" />
+        <flux:field.input name="height" label="Height(px)" />
+    </flux:form>
+</f:section>
+
+<f:section name="Preview">
+    <table width="100%">
+        <tr>
+            <td width="100%">
+                <h3>{src}</h3>
+
+            </td>
+        </tr>
+    </table>
+</f:section>
+
+<f:section name="Main">
+  <iframe width="{width}" height="{height}" align="{alignment}" src="{src}"> </iframe>
+</f:section>
+</div>

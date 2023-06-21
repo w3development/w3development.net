@@ -1,0 +1,51 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+<f:layout name="Page/About" />
+    <f:section name="Configuration">
+        <flux:form id="about">
+            <flux:grid>
+                <flux:grid.row>
+                    <flux:grid.column colPos="0" name="About" colspan="4" />
+                </flux:grid.row>
+                <flux:grid.row>
+                    <flux:grid.column colPos="1" name="Company" colspan="2" />
+                    <flux:grid.column colPos="2" name="Mission" colspan="2" />
+                </flux:grid.row>
+                <flux:grid.row>
+                    <flux:grid.column colPos="3" name="Team" colspan="4" />
+                </flux:grid.row>
+                <flux:grid.row>
+                    <flux:grid.column colPos="4" name="TeamItems" colspan="4" />
+                </flux:grid.row>
+                <flux:grid.row>
+                    <flux:grid.column colPos="8" name="Clients" colspan="4" />
+                </flux:grid.row>
+            </flux:grid>
+        </flux:form>
+    </f:section>
+
+    <f:section name="About">
+        <v:content.render column="0" />
+    </f:section>
+    <f:section name="Sidebar">
+        <v:content.render column="1" />
+    </f:section>
+    <f:section name="Company">
+        <v:content.render column="1" />
+    </f:section>
+    <f:section name="Mission">
+        <v:content.render column="2" />
+    </f:section>
+    <f:section name="Team">
+        <v:content.render column="3" />
+    </f:section>
+    <f:section name="TeamItems">
+        <v:content.render column="4" />
+    </f:section>
+    <f:section name="Clients">
+        <v:content.render column="8" />
+    </f:section>
+</div>

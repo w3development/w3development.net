@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+QUERY="SELECT User, Host FROM mysql.user;"
+
+mysql -u root -p -e"$QUERY"

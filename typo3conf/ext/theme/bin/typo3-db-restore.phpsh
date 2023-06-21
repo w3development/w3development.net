@@ -1,0 +1,44 @@
+#!/usr/bin/env php
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+$configFile = dirname ( dirname(__FILE__) ) . "/public/typo3conf/LocalConfiguration.php";
+$config = array();
+
+if( file_exists($configFile) ){
+  $config = include( $configFile );
+}
+
+$host     = $config["DB"]["Connections"]["Default"]["host"];
+$username = $config["DB"]["Connections"]["Default"]["user"];
+$password = $config["DB"]["Connections"]["Default"]["password"];
+$database = $config["DB"]["Connections"]["Default"]["dbname"];
+
+$dumpDir = dirname( dirname(__FILE__) ) . "/data/sql/";
+$dumpFiles = array_diff( scandir($dumpDir), array('..', '.') );
+$dumpFiles = array_filter(scandir($dumpDir), function($item) {
+  return $item[0] !== '.';
+});
+
+echo "Select database to restore:\n";
+foreach ($dumpFiles as $key => $value) {
+  $val_key = $key - 1;
+  echo " [". $val_key ."]: " . $value . "\n";
+}
+echo "----------------------------------\n";
+$input = readline(" Input your choice (number): ");
+$input = intval($input);
+$restoreFile = $dumpDir . $dumpFiles[ $input + 1 ];
+
+echo "\nRestoring database {$restoreFile} \n";
+exec("mysql --user={$username} --password={$password} --host='{$host}' {$database} < {$restoreFile}" , $output , $is_not_ok );
+
+if ( !$is_not_ok ){
+  echo "\033[01;32m[DONE] Database {$database} has been restored successfully.\n\033[0m";
+} else{
+  echo "\033[01;31m[ERROR] There has been an error with the restore.\n\033[0m";
+}
+
+?>

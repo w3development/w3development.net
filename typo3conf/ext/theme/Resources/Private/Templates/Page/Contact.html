@@ -1,0 +1,43 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+
+<f:layout name="Page/Contact" />
+
+<f:section name="Configuration">
+
+    <flux:form id="contact">
+        <!-- Input field for Fluid variable 'pageClass' -->
+        <!-- <flux:field.input name="settings.pageClass" default="some-css-class" /> -->
+        <!-- Backend layout grid (TYPO3 6.x and greater only) -->
+        <flux:grid>
+            <flux:grid.row>
+                <flux:grid.column colPos="0" name="Sayhello" />
+            </flux:grid.row>
+            <flux:grid.row>
+                <flux:grid.column colPos="2" name="Address" />
+            </flux:grid.row>
+            <flux:grid.row>
+                <flux:grid.column colPos="3" name="Message" />
+            </flux:grid.row>
+            <flux:grid.row>
+                <flux:grid.column colPos="4" name="ContactForm" />
+            </flux:grid.row>
+        </flux:grid>
+    </flux:form>
+</f:section>
+<f:section name="Sayhello">
+    <v:content.render column="0" />
+</f:section>
+<f:section name="Address">
+    <v:content.render column="2" />
+</f:section>
+<f:section name="Message">
+    <v:content.render column="3" />
+</f:section>
+<f:section name="ContactForm">
+    <v:content.render column="4" />
+</f:section>
+</div>

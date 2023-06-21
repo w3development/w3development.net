@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file target-language="it" datatype="plaintext" original="messages"
+          date="2012-10-17T17:55:17Z" product-name="theme">
+        <header/>
+          <body>
+
+            <trans-unit id="flux.home">
+              <target>Home</target>
+            </trans-unit>
+
+            <trans-unit id="flux.about">
+              <target>CHI SIAMO</target>
+            </trans-unit>
+            <trans-unit id="contact">
+              <target>Contatto</target>
+            </trans-unit>
+
+            <trans-unit id="contactus">
+              <target>Mandaci un'email o chiamaci per scoprire come possiamo aiutarti.</target>
+            </trans-unit>
+
+            <trans-unit id="messagesend">
+              <target>Invia messaggio</target>
+            </trans-unit>
+            <trans-unit id="flux.about.columns.About">
+              <target>chi siamo</target>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.Company">
+              <target>società</target>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.Mission">
+                <target>missione</target>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.Team">
+                <target>squadra</target>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.Elvis">
+                <target>Elvis Tavasja</target>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.Clients">
+                <target>clienti</target>
+            </trans-unit>
+
+      		  <trans-unit id="flux.about.columns.">
+                <target>missione</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services">
+                <target>SERVIZZI</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Teaser">
+                <target>Teaser</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Focus">
+                <target>Messa a fuoco</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Help">
+                <target>Aiutiamo</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Strategy">
+                <target>Stategy, sviluppo, marketing</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Wedo">
+                <target>Noi facciamo</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Brief">
+                <target>Breve</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Creation">
+                <target>Creazione</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Launch">
+                <target>Lanciare</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Startup">
+                <target>Avviare</target>
+            </trans-unit>
+
+            <trans-unit id="flux.work">
+                <target>PORTOFOGLIO</target>
+            </trans-unit>
+
+            <trans-unit id="flux.blog">
+                <target>Pagina del blog</target>
+            </trans-unit>
+
+            <trans-unit id="flux.contact">
+                <target>CONTATTI</target>
+            </trans-unit>
+            <trans-unit id="flux.contact.columns.Sayhello">
+                <target>Di Ciao</target>
+            </trans-unit>
+            <trans-unit id="flux.contact.columns.Address">
+                <target>Indirizzo</target>
+            </trans-unit>
+            <trans-unit id="flux.contact.columns.Message">
+                <target>Messaggio</target>
+            </trans-unit>
+
+            <trans-unit id="flux.services.columns.Strategy">
+                <target>Tipi di servizi</target>
+            </trans-unit>
+
+            <trans-unit id="flux.work.columns.Weput">
+                <target>Lavoro</target>
+            </trans-unit>
+
+            <trans-unit id="flux.work.columns.Links">
+                <target>Mostra tutto,Wordpress,Magento</target>
+            </trans-unit>
+
+            <trans-unit id="flux.work.columns.Projects">
+                <target>progetti</target>
+            </trans-unit>
+
+            <trans-unit id="pages.tx_fed_page_controller_action">
+      				<target>Page Layout - this page</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_controller_action.default">
+      				<target>Parent decides</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_controller_action_sub">
+      				<target>Page Layout - subpages</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_flexform">
+      				<target>Page Configuration</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_flexform_sub">
+      				<target>Page Configuration - subpages</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_package">
+      				<target>Package</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_layoutselect">
+      				<target>Page Layouts</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fed_page_configuration">
+      				<target>Page Configuration</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.doktype.187">
+      				<target>Raw Fluid template</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fluidpages_templatefile">
+      				<target>Template file reference</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fluidpages_templatefile.placeholder">
+      				<target>EXT:... or site-relative path</target>
+      			</trans-unit>
+
+      			<trans-unit id="pages.tx_fluidpages_layout">
+      				<target>Layout to use for rendering</target>
+      			</trans-unit>
+
+      			<trans-unit id="fluidContentArea">
+      				<target>Fluid Content Area</target>
+      			</trans-unit>
+
+            <trans-unit id="tt_content.teaser">
+      				<target>Fluid Content type not selected - edit this element to fix this!</target>
+      			</trans-unit>
+
+            <trans-unit id="name">
+              <target>Il tuo nome *</target>
+            </trans-unit>
+
+            <trans-unit id="address">
+              <target>Il tuo indirizzo email *</target>
+            </trans-unit>
+
+            <trans-unit id="subject">
+              <target>Soggetto</target>
+            </trans-unit>
+
+            <trans-unit id="message">
+              <target>Messaggio *</target>
+            </trans-unit>
+
+
+            <trans-unit id="your_name">
+              <target>Il tuo nome</target>
+            </trans-unit>
+
+            <trans-unit id="email">
+              <target>La tua email</target>
+            </trans-unit>
+
+            <trans-unit id="contactsubject">
+              <target>Soggetto</target>
+            </trans-unit>
+
+            <trans-unit id="contactmessage">
+              <target>Messaggio</target>
+            </trans-unit>
+
+            <trans-unit id="international">
+             <target>Shkoder, Albania</target>
+            </trans-unit>
+
+            <trans-unit id="phone">
+             <target>+355 (0) 69 3858 950</target>
+            </trans-unit>
+
+            <trans-unit id="footercopyright">
+             <target>© Copyright W3Development Sh.p.k 2021. Tutti i diritti riservati.</target>
+            </trans-unit>
+
+            <trans-unit id="blog">
+             <target>Notizie, Avvenimenti, Consigli e Risorse.</target>
+            </trans-unit>
+
+             <trans-unit id="languageMenu.title.">
+             <target>Inglese</target>
+            </trans-unit>
+
+            <trans-unit id="languageMenu.title.1">
+             <target>Albanese</target>
+            </trans-unit>
+
+            <trans-unit id="languageMenu.title.2">
+             <target>Italiano</target>
+            </trans-unit>
+
+
+
+
+
+        </body>
+    </file>
+</xliff>

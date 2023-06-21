@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo -ne "DB Username: "
+read username
+
+echo -ne "DB Password: "
+read password
+
+if [ -z $username ] || [ -z $password ] 
+
+then
+
+ echo "Please set both username & password."
+
+else
+
+ QUERY="CREATE USER '$username'@'localhost' IDENTIFIED BY '$password';FLUSH PRIVILEGES;"
+ echo $QUERY
+ mysql -u root -p -e"$QUERY"
+
+fi
+
+#FLUSH PRIVILEGES; SELECT User,Host FROM mysql.user;";

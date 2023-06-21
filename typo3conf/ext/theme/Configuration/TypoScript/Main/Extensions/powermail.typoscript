@@ -1,0 +1,30 @@
+plugin.tx_powermail {
+	view {
+
+		templateRootPaths >
+		templateRootPaths {
+		    0 = EXT:powermail/Resources/Private/Templates/
+				1 = EXT:theme/Resources/Private/Extensions/Powermail/Templates/
+		}
+
+		partialRootPaths >
+		partialRootPaths {
+				0 = EXT:powermail/Resources/Private/Partials/
+				1 = EXT:theme/Resources/Private/Extensions/Powermail/Partials/
+		}
+
+		layoutRootPaths >
+		layoutRootPaths {
+				0 = EXT:powermail/Resources/Private/Layouts/
+				1 = EXT:theme/Resources/Private/Extensions/Powermail/Layouts/
+		}
+	}
+}
+
+[PIDinRootline = 1]
+ plugin.tx_powermail.view.partialRootPaths.2 = EXT:theme/Resources/Private/Extensions/Powermail/Homepage/Partials/
+[end]
+
+[PIDinRootline = 7]
+ plugin.tx_powermail.view.partialRootPaths.3 = EXT:theme/Resources/Private/Extensions/Powermail/Contact/Partials/
+[end]

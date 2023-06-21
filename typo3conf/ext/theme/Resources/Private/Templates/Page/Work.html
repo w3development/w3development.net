@@ -1,0 +1,52 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+
+<f:layout name="Page/Work" />
+
+<f:section name="Configuration">
+
+    <flux:form id="work">
+
+        <!-- Input field for Fluid variable 'pageClass' -->
+        <!-- Backend layout grid (TYPO3 6.x and greater only) -->
+        <flux:grid>
+            <flux:grid.row>
+                <flux:grid.column colPos="1" name="Weput" />
+            </flux:grid.row>
+
+            <flux:grid.row>
+                <flux:grid.column colPos="2" name="Links" />
+
+            </flux:grid.row>
+
+            <flux:grid.row>
+                <flux:grid.column colPos="3" name="Projects" />
+            </flux:grid.row>
+        </flux:grid>
+
+    </flux:form>
+
+</f:section>
+
+<f:section name="Weput">
+    <v:content.render column="1" />
+</f:section>
+
+<f:section name="Links">
+    <v:content.render column="2" />
+</f:section>
+
+<f:section name="Projects">
+    <v:content.render column="3" />
+</f:section>
+
+
+
+
+
+
+
+</div>

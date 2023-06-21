@@ -1,0 +1,21 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+<fieldset class="powermail_fieldset powermail_fieldset_{page.uid} {page.css}">
+	<f:if condition="{page.css} != 'nolabel'">
+		<legend class="powermail_legend">{page.title}</legend>
+	</f:if>
+
+	<f:for each="{page.fields}" as="field" iteration="iteration">
+    <f:if condition="{field.css}=='form-group col-lg-6'">
+				<f:then>
+					<vh:misc.createRowTags columns="2" class="powermail_fieldwrap powermail_fieldwrap_type_input powermail_fieldwrap_{field.marker} {settings.styles.framework.rowClasses}" iteration="{iteration}" tagName="div" >
+						<f:render partial="Form/Field/{vh:String.Upper(string:field.type)}" arguments="{field:field}" />
+					</vh:misc.createRowTags>
+				</f:then>
+			<f:else>
+					<vh:misc.createRowTags columns="{settings.styles.numberOfColumns}" class="{settings.styles.framework.rowClasses}" iteration="{iteration}">
+						<f:render partial="Form/Field/{vh:String.Upper(string:field.type)}" arguments="{field:field}" />
+					</vh:misc.createRowTags>
+			</f:else>
+    </f:if>
+	</f:for>
+</fieldset>

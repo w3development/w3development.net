@@ -1,0 +1,34 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+<f:layout name="Content/Default"/>
+
+<f:section name="Configuration">
+    <flux:form id="text" label="Text" description="Adds a text element.">
+        <flux:field.text name="text" rows="20" cols="70" label="Text Content" enableRichText="1" required="1" />
+    </flux:form>
+</f:section>
+
+<f:section name="Preview">
+    <table width="100%">
+        <tr>
+            <td width="100%">
+                <h5><strong>Text</strong></h5>
+            </td>
+        </tr>
+        <tr>
+          <td width="100%">
+            <f:format.crop maxCharacters="250">
+              <f:format.html>{text}</f:format.html>
+            </f:format.crop>
+          </td>
+        </tr>
+    </table>
+</f:section>
+
+<f:section name="Main">
+  <f:format.html parseFuncTSPath="">{text}</f:format.html>
+</f:section>
+</div>

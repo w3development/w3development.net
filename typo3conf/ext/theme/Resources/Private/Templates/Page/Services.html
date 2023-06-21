@@ -1,0 +1,92 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+
+<f:layout name="Page/Services" />
+
+<f:section name="Configuration">
+
+    <flux:form id="services">
+
+        <!-- Input field for Fluid variable 'pageClass' -->
+        <!-- <flux:field.input name="settings.pageClass" default="some-css-class" /> -->
+
+        <!-- Backend layout grid (TYPO3 6.x and greater only) -->
+        <flux:grid>
+            <flux:grid.row>
+                <flux:grid.column colPos="0" name="Teaser" colspan="3"/>
+            </flux:grid.row>
+            <flux:grid.row>
+                <flux:grid.column colPos="1" name="Focus" colspan="3"/>
+            </flux:grid.row>
+            <flux:grid.row>
+                <flux:grid.column colPos="3" name="Help" colspan="3"/>
+             </flux:grid.row>
+            <flux:grid.row>
+                <flux:grid.column colPos="4" name="Strategy" colspan="3"/>
+            </flux:grid.row>
+            <flux:grid.row>
+                <flux:grid.column colPos="7" name="Wedo" colspan="3"/>
+             </flux:grid.row>
+            <flux:grid.row>
+                <flux:grid.column colPos="8" name="Brief"  />
+                <flux:grid.column colPos="9" name="Creation" />
+                <flux:grid.column colPos="10" name="Launch"  />
+            </flux:grid.row>
+            <flux:grid.row>
+              <flux:grid.column colPos="11" name="Startup" colspan="3" />
+            </flux:grid.row>
+        </flux:grid>
+    </flux:form>
+</f:section>
+<f:section name="Teaser">
+    <!-- Render colPos=0 in this section -->
+    <v:content.render column="0" />
+</f:section>
+<f:section name="Focus">
+    <!-- Render colPos=1 in this section -->
+    <v:content.render column="1" />
+</f:section>
+<f:section name="Help">
+    <!-- Render colPos=3 in this section -->
+    <v:content.render column="3" />
+</f:section>
+<f:section name="Strategy">
+    <!-- Render colPos=4 in this section -->
+    <v:content.render column="4" />
+</f:section>
+<f:section name="Development">
+    <!-- Render colPos=5 in this section -->
+    <v:content.render column="5" />
+</f:section>
+<f:section name="Marketing">
+    <!-- Render colPos=6 in this section -->
+    <v:content.render column="6" />
+</f:section>
+<f:section name="Wedo">
+    <!-- Render colPos=7 in this section -->
+    <v:content.render column="7" />
+</f:section>
+<f:section name="Brief">
+    <!-- Render colPos=8 in this section -->
+    <v:content.render column="8" />
+</f:section>
+<f:section name="Creation">
+    <!-- Render colPos=9 in this section -->
+    <v:content.render column="9" />
+</f:section>
+<f:section name="Launch">
+    <!-- Render colPos=10 in this section -->
+    <v:content.render column="10" />
+</f:section>
+<f:section name="Startup">
+    <!-- Render colPos=11 in this section -->
+    <v:content.render column="11" />
+</f:section>
+<f:section name="Sidebar">
+    <!-- Render colPos=1 in this section -->
+    <v:content.render column="1" />
+</f:section>
+</div>

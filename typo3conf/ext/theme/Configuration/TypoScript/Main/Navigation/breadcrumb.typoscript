@@ -1,0 +1,293 @@
+lib.mainNavigation = HMENU
+lib.mainNavigation {
+	  1 = TMENU
+	  1 {
+	    expAll = 1
+	    wrap = <ul id="mainNav" class="nav navbar-nav">|</ul>
+
+		    NO{
+		    	#wrapItemAndSub = <li class="first">|</li> |*| <li>|</li> |*| <li class="last">|</li>
+		    	wrapItemAndSub = <li>|</li>
+		    }
+
+		    ACT = 1
+		    ACT{
+		    	#wrapItemAndSub = <li class="active">|</li> |*| <li class="active">|</li> |*| <li class="active">|</li>
+		    	wrapItemAndSub = <li class="active">|</li>
+
+		    }
+
+		    //IFSUB = 1
+		    //IFSUB{
+			  // wrapItemAndSub = <li class="dropdown">|</li>
+               // ATagParams = class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"
+               // stdWrap.innerWrap = |
+          // }
+
+          // ACTIFSUB = 1
+         //  ACTIFSUB{
+			   // wrapItemAndSub = <li class="dropdown active">|</li>
+               // ATagParams = class="dropdown-toggle" data-toggle="dropdown"
+              //  stdWrap.innerWrap = |
+         //}
+
+	  }
+
+	//  2 < .1
+           // 2 {
+               // wrap = <ul class="dropdown-menu">|</ul>
+            //}
+}
+
+lib.secondNavigation = HMENU
+lib.secondNavigation {
+	  entryLevel = 1
+	  1 = TMENU
+	  1 {
+	    expAll = 1
+	    wrap = <ul > | </ul>
+
+	    NO{
+	    	#wrapItemAndSub = <li class="first">|</li> |*| <li>|</li> |*| <li class="last">|</li>
+	    	wrapItemAndSub = <li>|</li>
+	    }
+
+	    ACT = 1
+	    ACT{
+	    	#wrapItemAndSub = <li class="first active">|</li> |*| <li class="active">|</li> |*| <li class="last active">|</li>
+	    	wrapItemAndSub = <li class=" ">|</li>
+	    }
+	  }
+}
+
+
+lib.subNavigation = HMENU
+lib.subNavigation {
+	  entryLevel = 0
+	  1 = TMENU
+	  1 {
+
+	      expAll = 1
+	      wrap =<ul  class="first-level nav nav-list bs-docs-sidenav">|</ul>
+
+  	    NO{
+
+  	    	#wrapItemAndSub = <li class="first"></li> |*| <li>|</li> |*| <li class="last">|</li>
+  	    	wrapItemAndSub = <li>|</li>
+
+  	    }
+
+  	    ACT = 1
+  	    ACT{
+
+  	    	  #wrapItemAndSub = <li class="first active">|</li> |*| <li class="active">|</li> |*| <li class="last active">|</li>
+  	    	  wrapItemAndSub = <li class="active">|</li>
+  	        #stdWrap.innerWrap = <span class="glyphicon glyphicon-triangle-down"></span>|
+
+  	    }
+
+        IFSUB = 1
+		    IFSUB{
+
+            wrapItemAndSub = <li  class="dropdown">|</li>
+            ATagParams =  class="dropdown-toggle"  role="button" aria-expanded="false"
+            #stdWrap.innerWrap = <span class="glyphicon glyphicon-triangle-right"></span>|
+
+        }
+
+        ACTIFSUB = 1
+        ACTIFSUB{
+
+		        wrapItemAndSub = <li  class="dropdown active">|</li>
+            ATagParams =  class="dropdown-toggle" data-toggle="dropdown"
+            #stdWrap.innerWrap = <span class="glyphicon glyphicon-triangle-down"></span>|
+
+        }
+
+	  }
+
+     2 < .1
+     2 {
+          wrap = <ul   class="second-level dropdown-menu">|</ul>
+      }
+
+     3 < .1
+     3 {
+          wrap = <ul  class="third-level dropdown-menu">|</ul>
+      }
+
+}
+
+
+lib.breadcrumb1 = HMENU
+lib.breadcrumb1 {
+  special = rootline
+  special.range = 0|-1
+  1 = TMENU
+  wrap = <ul class="breadcrumb">|</ul>
+  1 {
+  	NO.wrapItemAndSub = <li>|</li>
+    CUR.wrapItemAndSub = <li>|</li>
+  }
+}
+
+
+lib.breadcrumb = COA
+lib.breadcrumb {
+    10 = LOAD_REGISTER
+    10 {
+       Counter = 1
+    }
+    20 = HMENU
+    20 {
+          special = rootline
+          special.range = 0|-1
+          1 = TMENU
+          1 {
+                wrap =  <ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">|</ul>
+                    NO = 1
+                    NO {
+                      wrapItemAndSub =  <li property="itemListElement" typeof="ListItem">|</li>
+
+                      ATagParams = property="item" typeof="WebPage"
+                      forceAbsoluteUrl = 1
+
+                      stdWrap2.dataWrap.cObject = COA
+                      stdWrap2.dataWrap.cObject {
+                          10 = LOAD_REGISTER
+                          10 {
+                            Counter.cObject = TEXT
+                            Counter.cObject.data = register:Counter
+                            Counter.cObject.wrap = |+1
+                            Counter.prioriCalc = intval
+                          }
+                      }
+                      stdWrap.wrap = <span property="name">|</span><meta property="position" content="{register:Counter}"/>
+                      stdWrap.wrap.insertData = 1
+                    }
+                CUR = 1
+                CUR {
+                         wrapItemAndSub =  <li property="itemListElement" typeof="ListItem">|</li>
+                    }
+          }
+    }
+}
+
+
+lib.sideNavigation = COA
+lib.sideNavigation {
+
+	10 = TEXT
+	10{
+		data = leveltitle:2
+		wrap = <h4 class="headline">|</h4>
+		required = 1
+	}
+
+	20 = HMENU
+	20{
+	  entryLevel = 2
+	  1 = TMENU
+	  1 {
+		    expAll = 1
+		    wrap = <ul class="nav nav-sidenav">|</ul>
+
+		    NO{
+		    	#wrapItemAndSub = <li class="first">|</li> |*| <li>|</li> |*| <li class="last">|</li>
+		    	wrapItemAndSub = <li>|</li>
+		    }
+
+		    ACT = 1
+		    ACT{
+		    	#wrapItemAndSub = <li class="first active">|</li> |*| <li class="active">|</li> |*| <li class="last active">|</li>
+		    	wrapItemAndSub = <li class="active">|</li>
+		    }
+	  	}
+	}
+}
+
+lib.language = HMENU
+lib.language {
+    special = language
+    special.value = 0,1,2
+    special.normalWhenNoLanguage = 0
+    wrap = <ul id="langNav" class="nav navbar-nav navbar-right">|</ul>
+
+    1 = TMENU
+    1 {
+        noBlur = 1
+
+        NO = 1
+        NO {
+            linkWrap = <li class="hide">|</li> |*| <li>|</li> |*| <li>|</li>
+            stdWrap.override = EN || DE || ES
+        }
+    }
+}
+
+
+
+lib.tutorials = HMENU
+lib.tutorials {
+    special = directory
+    special.value = 37
+    wrap = <ul>|</ul>
+
+    1 = TMENU
+    1 {
+        noBlur = 1
+
+        NO = 1
+        NO {
+            wrapItemAndSub = <li>|</li>
+
+        }
+    }
+}
+
+lib.learnmore = HMENU
+lib.learnmore {
+    special = directory
+    special.value = 38
+    wrap = <ul>|</ul>
+
+    1 = TMENU
+    1 {
+        noBlur = 1
+
+        NO = 1
+        NO {
+            wrapItemAndSub = <li>|</li>
+
+        }
+    }
+}
+
+lib.links = HMENU
+lib.links {
+    special = directory
+    special.value = 39
+    wrap = <ul>|</ul>
+
+    1 = TMENU
+    1 {
+        noBlur = 1
+
+        NO = 1
+        NO {
+            wrapItemAndSub = <li>|</li>
+
+        }
+    }
+}
+
+
+[globalVar = GP:L=1]
+
+  lib.language.1.NO.linkWrap = <li>|</li> |*| <li class="hide">|</li> |*| <li>|</li>
+
+[globalVar = GP:L=2]
+
+  lib.language.1.NO.linkWrap = <li>|</li> |*| <li>|</li> |*| <li class="hide">|</li>
+
+[global]

@@ -1,0 +1,41 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+    xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+    xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers">
+
+    <f:layout name="Content/Default" />
+
+    <f:section name="Configuration">
+        <flux:form id="grid-columns-3-6-3-3" label="3 Columns" description="Adds a 3 columns (50% - 25%  - 25%) row.">
+            <flux:form.option.group value="grids" />
+            <flux:form.option.sorting value="101" />
+            <flux:form.option.icon  value="/typo3conf/ext/theme/Resources/Public/Images/Backend/Icons/grid-columns-3-6-3-3.svg" />
+            <!-- grid to insert any other typo3 content in backend -->
+            <flux:grid>
+                <flux:grid.row>
+                    <flux:grid.column name="column-1" colPos="1" label="Content Left" />
+                    <flux:grid.column name="column-2" colPos="2" label="Content Center" />
+                    <flux:grid.column name="column-3" colPos="3" label="Content Right" />
+                </flux:grid.row>
+            </flux:grid>
+            <!-- select box with predefined frame classes -->
+            <flux:field.select label="Frame" name="settings.frame_type" items="frame1,frame2" />
+        </flux:form>
+    </f:section>
+
+    <!-- used in backend preview -->
+    <f:section name="Preview">
+        <strong>Wrapper with frame {settings.frame_type}</strong>
+        <p>{column-1}</p>
+        <p>{column-2}</p>
+        <p>{column-3}</p>
+    </f:section>
+
+    <!-- rendered frontend output -->
+    <f:section name="Main">
+      <div class="row frame {settings.frame_type}">
+        <div class="col-xs-6 col-sm-6 col-md-6"><flux:content.render area="column-1" /></div>
+        <div class="col-xs-3 col-sm-3 col-md-3"><flux:content.render area="column-2" /></div>
+        <div class="col-xs-3 col-sm-3 col-md-3"><flux:content.render area="column-3" /></div>
+      </div>
+    </f:section>
+</div>

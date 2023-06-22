@@ -113,6 +113,10 @@ page {
     // 40.file = typo3conf/ext/theme/Resources/Public/custom.min.css
   }
 
+  includeCSS{
+    file1 = typo3conf/ext/theme/Resources/Public/CSS/style.min.css
+  }
+
   // includeCSSLibs{
   //   fontawesome = https://use.fontawesome.com/releases/v5.6.3/css/all.css
   //   fontawesome.external = 1
@@ -149,14 +153,14 @@ page {
 }
 
 lib.GoogleTagManager = TEXT
-lib.GoogleTagManager.value(
+// lib.GoogleTagManager.value(
 
-  <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNNHMC5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-)
+//   <!-- Google Tag Manager (noscript) -->
+//     <noscript>
+//       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNNHMC5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+//     </noscript>
+//   <!-- End Google Tag Manager (noscript) -->
+// )
 
 page.headerData.87010 = TEXT
 

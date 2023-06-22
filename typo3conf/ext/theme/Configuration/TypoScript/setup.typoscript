@@ -2,21 +2,63 @@
 # <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Extensions/seo.typoscript">
 
 // Including TypoScript Code.
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/config.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/page.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/menu.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/content.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/header1.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/development.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/extensions.typoscript">
+// <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/config.typoscript">
+// <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/page.typoscript">
+// <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/menu.typoscript">
+// <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/content.typoscript">
+// <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/header1.typoscript">
+// <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/development.typoscript">
+// <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/extensions.typoscript">
 
-[PIDinRootline = 66]
+// [PIDinRootline = 66]
+// page = PAGE
+// page.config.no_cache = 1
+// page.5 >
+// page.10 = FLUIDTEMPLATE
+// page.10{
+//     templateName = Homepage
+//     templateRootPaths.1 = typo3conf/ext/theme/Resources/Private/Templates/Page/
+// }
+// [global]
+
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+
+config.no_cache = 1
+
 page = PAGE
-page.config.no_cache = 1
-page.5 >
-page.10 = FLUIDTEMPLATE
-page.10{
-    templateName = Homepage
-    templateRootPaths.1 = typo3conf/ext/theme/Resources/Private/Templates/Page/
+page{
+  typeNum = 0
+
+  5 = TEXT
+  5.value = Hello World
+
+  10 = FLUIDTEMPLATE
+  10 {
+    templateName = TEXT
+    templateName.stdWrap.cObject = CASE
+    templateName.stdWrap.cObject {
+      key.data = pagelayout
+
+      pagets__site_theme = TEXT
+      pagets__site_theme.value = Default
+
+      default = TEXT
+      default.value = Default
+    }
+
+    templateRootPaths {
+      0 = EXT:theme/Resources/Private/Templates/Page/
+      1 = {$page.fluidtemplate.templateRootPath}
+    }
+
+    partialRootPaths {
+        0 = EXT:theme/Resources/Private/Partials/Page/
+        1 = {$page.fluidtemplate.partialRootPath}
+    }
+
+    layoutRootPaths {
+        0 = EXT:theme/Resources/Private/Layouts/Page/
+        1 = {$page.fluidtemplate.layoutRootPath}
+    }
+  }
 }
-[global]

@@ -1,0 +1,29 @@
+{
+  "name": "w3development.net",
+  "version": "1.0.0",
+  "description": "Agency website",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch typo3conf/ext/theme/Resources/Private/Stylesheets/Sass/Theme/Main.scss typo3conf/ext/theme/Resources/Public/CSS/style.min.css --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3development/w3development.net.git"
+  },
+  "keywords": [
+    "typo3.",
+    "website",
+    "business",
+    "agency"
+  ],
+  "author": "Elvis Tavasja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w3development/w3development.net/issues"
+  },
+  "homepage": "w3development.net",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

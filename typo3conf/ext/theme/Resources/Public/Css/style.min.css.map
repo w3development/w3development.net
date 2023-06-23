@@ -2,7 +2,7 @@
 	"version": 3,
 	"file": "style.min.css",
 	"sources": [
-		"../../Private/Stylesheets/Sass/Theme/Main.scss"
+		"../../Private/Stylesheets/sass/theme/main.scss"
 	],
 	"names": [],
 	"mappings": "AAcA,AAAA,IAAI,EAAC,IAAI,CAAA;EACL,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI,GAClB;;AAED,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,OAAO,GAC5B"

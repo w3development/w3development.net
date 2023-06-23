@@ -1,7 +1,7 @@
 [globalString = IENV:HTTP_HOST = w3development.local]
  page.config {
       no_cache = 1
-      absRefPrefix = https://w3development.local/
+      absRefPrefix = http://w3development.local:8080/
 
       concatenateJs = 0
       concatenateCss = 0

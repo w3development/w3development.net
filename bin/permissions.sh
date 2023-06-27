@@ -22,17 +22,17 @@ cmd_end
 
 sleep 1
 echo_inline "[2] Setting directory rights to 770 ... "
-find . -type d -exec chmod 770 {} \;
+find . -type d -exec chmod 2770 {} \;
 cmd_end
 
 sleep 1
 echo_inline "[3] Setting file rights to 660 ... "
-find . -type f -exec chmod 660 {} \;
+find . -type f -exec chmod 0660 {} \;
 cmd_end
 
 sleep 1
 echo_inline "[4] Making bin files executable ... "
-find bin/ -type f -exec chmod 770 {} \;
+find bin/ -type f -exec chmod 0770 {} \;
 cmd_end
 
 ## END

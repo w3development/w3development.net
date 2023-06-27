@@ -20,9 +20,11 @@ services:
     build: ./docker/service/web
     ports:
       - "8081:80"
+      - "443:443"
     volumes:
       - ./:/var/www/html
       - ./docker/service/web/etc/php.ini:/usr/local/etc/php/php.ini
+      - ./docker/service/web/etc/vhosts:/etc/apache2/sites-enabled
     links:
       - db
 

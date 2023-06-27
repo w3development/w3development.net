@@ -34,3 +34,15 @@ RUN docker-php-ext-install \
     intl \
     ctype \
     tokenizer
+
+ RUN pecl install apcu \
+  && docker-php-ext-enable apcu
+
+RUN openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
+    -keyout /etc/ssl/private/ssl-cert-docker.key \
+    -out /etc/ssl/certs/ssl-cert-docker.pem \
+    -subj "/C=us/ST=state/L=city/O=company/OU=ltd/CN=Docker"
+
+RUN a2enmod ssl rewrite
+
+EXPOSE 443

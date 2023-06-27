@@ -9,29 +9,25 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array (
-	'title' => 'W3Development Theme',
-	'description' => 'TYPO3 Themes configured and ready to use.',
-	'category' => 'template',
-	'version' => '0.0.2',
-	'state' => 'stable',
-	'clearcacheonload' => 1,
-	'author' => 'Elvis Tavasja',
-	'author_email' => 'elvis@w3development.net',
-	'author_company' => 'W3Development SHPK',
+    'title' => 'W3Development Theme',
+    'description' => 'TYPO3 Themes configured and ready to use.',
+    'category' => 'template',
+    'version' => '0.0.2',
+    'state' => 'stable',
+    'clearcacheonload' => 1,
+    'author' => 'Elvis Tavasja',
+    'author_email' => 'elvis@w3development.net',
+    'author_company' => 'W3Development SHPK',
 
-	'constraints' => array (
-		'depends' => array (
-			'typo3' => '9-9.99.99',
+    'constraints' => array (
+        'depends' => array (
+            'typo3' => '9-9.99.99',
             'fluid_styled_content' => '9.5.24',
-            'flux' => '9.4.2',
-            'vhs' => '6.0.5',
-		),
-	),
-
-	'autoload' => array (
-		'psr-4' => array (
-			'W3Development\\Theme\\' => 'Classes/',
-		),
-	),
-	
+        ),
+    ),
+    'autoload' => array (
+        'psr-4' => array (
+            'W3Development\\Theme\\' => 'Classes/',
+        ),
+    ),
 );

@@ -288,14 +288,14 @@ AddDefaultCharset utf-8
 	# Remove last / from the url
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^(.*)/$ /$1 [L,R]
-	
+
 	# Store the current location in an environment variable CWD to use
 	# mod_rewrite in .htaccess files without knowing the RewriteBase
 	RewriteCond $0#%{REQUEST_URI} ([^#]*)#(.*)\1$
 	RewriteRule ^.*$ - [E=CWD:%2]
 
 	# Rules to set ApplicationContext based on hostname
-	RewriteCond %{HTTP_HOST} ^local\.w3development\.net$
+	RewriteCond %{HTTP_HOST} ^w3development\.local$
 	RewriteRule .? - [E=TYPO3_CONTEXT:Development]
 
 	# Rules to set ApplicationContext based on hostname
@@ -307,7 +307,7 @@ AddDefaultCharset utf-8
 
 	RewriteCond %{HTTP_HOST} ^w3development\.net$
 	RewriteRule .? - [E=TYPO3_CONTEXT:Production]
-    
+
 
 	#	AuthType Basic
 	#	AuthName "Restricted Content"

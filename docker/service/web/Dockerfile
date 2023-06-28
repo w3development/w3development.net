@@ -35,8 +35,8 @@ RUN docker-php-ext-install \
     ctype \
     tokenizer
 
- RUN pecl install apcu \
-  && docker-php-ext-enable apcu
+RUN pecl install apcu && docker-php-ext-enable apcu
+RUN pecl install xdebug-3.1.5 && docker-php-ext-enable xdebug
 
 RUN openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
     -keyout /etc/ssl/private/ssl-cert-docker.key \

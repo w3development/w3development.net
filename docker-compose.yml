@@ -21,6 +21,8 @@ services:
     ports:
       - "8081:80"
       - "4431:443"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     volumes:
       - ./:/var/www/html
       - ./docker/service/web/etc/php.ini:/usr/local/etc/php/php.ini

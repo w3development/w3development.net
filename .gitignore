@@ -2,7 +2,6 @@ fileadmin/_processed_/
 fileadmin/_temp_/
 
 .history/
-.vscode/
 
 # TYPO3 libraries & scripts
 typo3_src*
@@ -11,16 +10,8 @@ typo3conf/autoload/
 typo3conf/LocalConfiguration.php
 typo3conf/AdditionalConfiguration.php
 typo3conf/PackageStates.php
-
-
-
 .directory
 .ftpconfig
 package-lock.json
 w3development.code-workspace
-
-# Editor code
-.vscode/
-.vagrant/
-
 node_modules/

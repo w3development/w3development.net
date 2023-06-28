@@ -295,7 +295,7 @@ AddDefaultCharset utf-8
 	RewriteRule ^.*$ - [E=CWD:%2]
 
 	# Rules to set ApplicationContext based on hostname
-	RewriteCond %{HTTP_HOST} ^w3development\.local$
+	RewriteCond %{HTTP_HOST} ^w3development\.local\:4431$
 	RewriteRule .? - [E=TYPO3_CONTEXT:Development]
 
 	# Rules to set ApplicationContext based on hostname

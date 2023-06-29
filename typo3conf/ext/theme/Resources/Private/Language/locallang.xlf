@@ -254,12 +254,17 @@
              <source>Italian</source>
             </trans-unit>
 
+            <trans-unit id="backendLayout.default">
+             <source>Default Template</source>
+            </trans-unit>
 
+            <trans-unit id="backendLayout.default.columnName.teaser">
+             <source>Teaser</source>
+            </trans-unit>
 
-
-
-
-
+            <trans-unit id="backendLayout.default.columnName.content">
+             <source>Content</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

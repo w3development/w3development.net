@@ -1,23 +1,33 @@
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
-      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
-
-
-<f:layout name="Page/Blog" />
-
-<f:section name="Configuration">
-    <flux:form id="blog">
-        <flux:grid>
-            <flux:grid.row>
-                <flux:grid.column colPos="0" name="Content" label="Content" />
-            </flux:grid.row>
-        </flux:grid>
-    </flux:form>
-</f:section>
-
-<f:section name="Content">
-    <v:content.render column="0" />
-</f:section>
-
+<f:layout name="Default" />
+<f:render partial="GoogleTag" />
+<div class="body">
+	<header id="header">
+		<f:render partial="Header" />
+	</header>
+	<div role="main" class="main">
+		<section class="section section-center">
+			<div class="section-inner">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<h1 class="lead text-secondary">Blog</h1>
+							<p class="subheader text-secondary">{f:translate(key: 'blog')}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="blog-posts mt-5">
+						<f:render section="Content" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ <footer class="short" id="footer">
+    <f:render partial="Footer" />
+ </footer>
 </div>

@@ -1,92 +1,76 @@
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
-      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
-
-
-<f:layout name="Page/Services" />
-
-<f:section name="Configuration">
-
-    <flux:form id="services">
-
-        <!-- Input field for Fluid variable 'pageClass' -->
-        <!-- <flux:field.input name="settings.pageClass" default="some-css-class" /> -->
-
-        <!-- Backend layout grid (TYPO3 6.x and greater only) -->
-        <flux:grid>
-            <flux:grid.row>
-                <flux:grid.column colPos="0" name="Teaser" colspan="3"/>
-            </flux:grid.row>
-            <flux:grid.row>
-                <flux:grid.column colPos="1" name="Focus" colspan="3"/>
-            </flux:grid.row>
-            <flux:grid.row>
-                <flux:grid.column colPos="3" name="Help" colspan="3"/>
-             </flux:grid.row>
-            <flux:grid.row>
-                <flux:grid.column colPos="4" name="Strategy" colspan="3"/>
-            </flux:grid.row>
-            <flux:grid.row>
-                <flux:grid.column colPos="7" name="Wedo" colspan="3"/>
-             </flux:grid.row>
-            <flux:grid.row>
-                <flux:grid.column colPos="8" name="Brief"  />
-                <flux:grid.column colPos="9" name="Creation" />
-                <flux:grid.column colPos="10" name="Launch"  />
-            </flux:grid.row>
-            <flux:grid.row>
-              <flux:grid.column colPos="11" name="Startup" colspan="3" />
-            </flux:grid.row>
-        </flux:grid>
-    </flux:form>
-</f:section>
-<f:section name="Teaser">
-    <!-- Render colPos=0 in this section -->
-    <v:content.render column="0" />
-</f:section>
-<f:section name="Focus">
-    <!-- Render colPos=1 in this section -->
-    <v:content.render column="1" />
-</f:section>
-<f:section name="Help">
-    <!-- Render colPos=3 in this section -->
-    <v:content.render column="3" />
-</f:section>
-<f:section name="Strategy">
-    <!-- Render colPos=4 in this section -->
-    <v:content.render column="4" />
-</f:section>
-<f:section name="Development">
-    <!-- Render colPos=5 in this section -->
-    <v:content.render column="5" />
-</f:section>
-<f:section name="Marketing">
-    <!-- Render colPos=6 in this section -->
-    <v:content.render column="6" />
-</f:section>
-<f:section name="Wedo">
-    <!-- Render colPos=7 in this section -->
-    <v:content.render column="7" />
-</f:section>
-<f:section name="Brief">
-    <!-- Render colPos=8 in this section -->
-    <v:content.render column="8" />
-</f:section>
-<f:section name="Creation">
-    <!-- Render colPos=9 in this section -->
-    <v:content.render column="9" />
-</f:section>
-<f:section name="Launch">
-    <!-- Render colPos=10 in this section -->
-    <v:content.render column="10" />
-</f:section>
-<f:section name="Startup">
-    <!-- Render colPos=11 in this section -->
-    <v:content.render column="11" />
-</f:section>
-<f:section name="Sidebar">
-    <!-- Render colPos=1 in this section -->
-    <v:content.render column="1" />
-</f:section>
+<f:layout name="Services" />
+<f:render partial="GoogleTag" />
+<div class="body">
+	<header id="header">
+    <f:render partial="Header" />
+	</header>
+	<div role="main" class="main">
+		<section class="section  section-center mt-0">
+			<div class="section-inner">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<f:render section="Teaser" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-default mt-0 servicefocus">
+			<div class="container">
+				<div class="row align-items-center">
+				    <f:render section="Focus" />
+				</div>
+			</div>
+		</section>
+		<section class="m-5 pb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<f:render section="Help" />
+					</div>
+				</div>
+				<div class="row justify-content-center mt-5" >
+						<f:render section="Strategy" />
+				</div>
+			</div>
+		</section>
+		<section class="pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+						<f:render section="Wedo" />
+					</div>
+			   </div>
+			 </div>
+	 </section>
+		<div class="container-fluid">
+			<div class="row featured-boxes-full featured-boxes-full-scale clearfix">
+				<div class="col-lg-4 featured-box-full featured-box-full-primary">
+						<f:render section="Brief" />
+				</div>
+				<div class="col-lg-4 featured-box-full featured-box-full-primary">
+					<f:render section="Creation" />
+				</div>
+				<div class="col-lg-4 featured-box-full featured-box-full-primary">
+					<f:render section="Launch" />
+				</div>
+			</div>
+		</div>
+		<section class="section section-default section-footer section-color-custom mt-0 pt-2 pb-5">
+			<div class="container">
+				<div class="row mt-2 mb-4">
+					<div class="col-lg-4 text-center">
+					 <f:image src="fileadmin/user_upload/services/inovation.jpeg" width="200" height="200"  alt="layout styles" class="img-fluid"/>
+          </div>
+					<div class="col-lg-7 col-lg-offset-1">
+					 <f:render section="Startup" />
+				 </div>
+				</div>
+			</div>
+		</section>
+	</div>
+ <footer class="short" id="footer">
+    <f:render partial="Footer" />
+ </footer>
 </div>

@@ -5,7 +5,7 @@
         <div class="header-row">
           <div class="header-logo">
             <a href="/">
-              <f:image src="/typo3conf/ext/theme/Resources/Public/Images/Logo/logo.svg" 
+              <f:image src="/typo3conf/ext/theme/Resources/Public/Images/Logo/logo.svg"
               width="154px" height="30px" alt="W3Development SHPK - Web Development Company"/>
             </a>
           </div>
@@ -18,7 +18,9 @@
               <input type="checkbox" id="toggle" checked>
               <label for="toggle" class="button">MENU <i class="fas fa-bars"></i></label>
               <nav id="main-navigation" class="collapse">
-                <f:cObject typoscriptObjectPath="lib.mainNavigation" />
+                <f:comment>
+                    <f:cObject typoscriptObjectPath="lib.mainNavigation" />
+                </f:comment>
               </nav>
             </div>
           </div>

@@ -30,12 +30,14 @@
             <a href="#">info [at] w3development [dot] net</a></span>
         </div>
         <div class="languageswitcher">
-        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.language')} == nono">
-          <f:then></f:then>
-          <f:else>
-            <f:cObject typoscriptObjectPath="lib.mainlanguagesiwtcher" />
-          </f:else>
-        </f:if>
+            <f:comment>
+                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.language')} == nono">
+                    <f:then></f:then>
+                    <f:else>
+                        <f:cObject typoscriptObjectPath="lib.mainlanguagesiwtcher" />
+                    </f:else>
+                </f:if>
+            </f:comment>
         </div>
       </div>
     </div>

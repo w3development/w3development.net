@@ -1,0 +1,30 @@
+mod.web_layout.BackendLayouts {
+  default {
+    title = LLL:EXT:theme/Resources/Private/Language/locallang.xlf:backendLayout.default
+    icon = EXT:theme/Resources/Public/Images/Backend/Layouts/grid-column-1.svg
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = LLL:EXT:theme/Resources/Private/Language/locallang.xlf:backendLayout.default.columnName.teaser
+                colPos = 10
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = LLL:EXT:theme/Resources/Private/Language/locallang.xlf:backendLayout.default.columnName.content
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -32,32 +32,65 @@ page = PAGE
 page{
   typeNum = 0
 
+  // 5 = TEXT
+  // 5{
+  //   data = pagelayout
+  //   required = 1
+  //   case = ucfirst
+  //   split {
+  //     token = pagets__
+  //     cObjNum = 1
+  //     1.current = 1
+  //   }
+  //   ifEmpty = Default
+  // }
+
+
   10 = FLUIDTEMPLATE
   10 {
     templateName = TEXT
-    templateName.stdWrap.cObject = CASE
-    templateName.stdWrap.cObject {
-      key.data = pagelayout
+    templateName {
+      cObject = TEXT
+      cObject {
+        data = pagelayout
+        required = 1
+        case = ucfirst
+        split {
+          token = pagets__
+          cObjNum = 1
+          1.current = 1
+        }
+      }
 
-      pagets__site_theme = TEXT
-      pagets__site_theme.value = Default
+      ifEmpty = Default
 
-      default = TEXT
-      default.value = Default
+      stdWrap.cObject = CASE
+      stdWrap.cObject {
+        key.data = pagelayout
+
+        default = TEXT
+        default.value = Default
+
+        pagets__home = TEXT
+        pagets__home.value = Home
+
+        pagets__post = TEXT
+        pagets__post.value = Post
+      }
     }
 
     templateRootPaths {
-      0 = EXT:theme/Resources/Private/Templates/Page/
+      0 = EXT:theme/Resources/Private/Templates/
       1 = {$page.fluidtemplate.templateRootPath}
     }
 
     partialRootPaths {
-        0 = EXT:theme/Resources/Private/Partials/Page/
+        0 = EXT:theme/Resources/Private/Partials/
         1 = {$page.fluidtemplate.partialRootPath}
     }
 
     layoutRootPaths {
-        0 = EXT:theme/Resources/Private/Layouts/Page/
+        0 = EXT:theme/Resources/Private/Layouts/
         1 = {$page.fluidtemplate.layoutRootPath}
     }
   }

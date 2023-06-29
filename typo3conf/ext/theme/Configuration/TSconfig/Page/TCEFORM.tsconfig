@@ -1,3 +1,6 @@
+@import 'EXT:theme/Configuration/TSconfig/BackendLayouts.tsconfig'
+
+
 ### Page TSconfig - TCEFORM ###
 TCEFORM{
   tt_content{

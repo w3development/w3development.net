@@ -49,3 +49,40 @@ run_if_root(){
       echo "Starting script execution: "
   fi
 }
+
+fix_typo3_permissions(){
+    run_if_root
+
+    set_terminal_colors
+
+    echo_inline "[1] Changing user group (www-data:www-data) ... "
+    chown www-data.www-data -R .
+    cmd_end
+
+    sleep 1
+    echo_inline "[2] Setting directory rights to 2770 ... "
+    find . -type d -exec chmod 2770 {} \;
+    cmd_end
+
+    sleep 1
+    echo_inline "[3] Setting file rights to 0660 ... "
+    find . -type f -exec chmod 0664 {} \;
+    cmd_end
+
+    sleep 1
+    echo_inline "[4] Making bin files executable ... "
+    find bin/ -type f -exec chmod 0770 {} \;
+    cmd_end
+
+    sleep 1
+    echo_inline "[5] Updating access rights for docker ... "
+    find docker/ -type f -exec chmod 0664 {} \;
+    find docker/ -type d -exec chmod 2775 {} \;
+    cmd_end
+
+    sleep 1
+    echo_inline "[6] Updating access rights for node_modules ... "
+    find node_modules/ -type d -exec chmod 2777 {} \;
+    find node_modules/ -type f -exec chmod 0777 {} \;
+    cmd_end
+}

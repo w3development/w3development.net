@@ -25,5 +25,8 @@
   "homepage": "w3development.net",
   "devDependencies": {
     "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "nvm": "^0.0.4"
   }
 }

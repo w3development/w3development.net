@@ -1,18 +1,13 @@
-// Including TypoScript Code.
-# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Extensions/seo.typoscript">
-
-// @import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
-// Including TypoScript Code.
-// @import 'EXT:theme/Configuration/TypoScript/Share/menu.typoscript'
-// @import 'EXT:theme/Configuration/TypoScript/Share/content.typoscript'
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:theme/Configuration/TypoScript/Share/menu.typoscript'
+@import 'EXT:theme/Configuration/TypoScript/Share/content.typoscript'
 // @import 'EXT:theme/Configuration/TypoScript/Share/header1.typoscript'
-// @import 'EXT:theme/Configuration/TypoScript/Share/config.typoscript'
-// @import 'EXT:theme/Configuration/TypoScript/Share/extensions.typoscript'
+@import 'EXT:theme/Configuration/TypoScript/Share/config.typoscript'
+@import 'EXT:theme/Configuration/TypoScript/Share/extensions.typoscript'
 
 
 // @import 'EXT:theme/Configuration/TypoScript/page.typoscript';
-@import 'EXT:theme/Configuration/TypoScript/Share/development.typoscript'
-// <INCLUDE_TYPOSCRIPT: source='FILE:EXT:theme/Configuration/TypoScript/Share/development.typoscript'>
+// @import 'EXT:theme/Configuration/TypoScript/Share/development.typoscript'
 
 // [PIDinRootline = 66]
 // page = PAGE
@@ -31,20 +26,6 @@ config.no_cache = 1
 page = PAGE
 page{
   typeNum = 0
-
-  // 5 = TEXT
-  // 5{
-  //   data = pagelayout
-  //   required = 1
-  //   case = ucfirst
-  //   split {
-  //     token = pagets__
-  //     cObjNum = 1
-  //     1.current = 1
-  //   }
-  //   ifEmpty = Default
-  // }
-
 
   10 = FLUIDTEMPLATE
   10 {

@@ -111,15 +111,15 @@ lib.language {
 
   1 = TMENU
   1 {
-      NO = 1
-      NO.allWrap = |
-      NO.doNotShowLink = 1
+    NO = 1
+    NO.allWrap = |
+    NO.doNotShowLink = 1
 
-      USERDEF1 = 1
-      USERDEF1.allWrap = |
-      USERDEF1.stdWrap.override.cObject = TEXT
-      USERDEF1.stdWrap.override.cObject.value = no
-      USERDEF1.doNotLinkIt = 1
+    USERDEF1 = 1
+    USERDEF1.allWrap = |
+    USERDEF1.stdWrap.override.cObject = TEXT
+    USERDEF1.stdWrap.override.cObject.value = no
+    USERDEF1.doNotLinkIt = 1
   }
 }
 

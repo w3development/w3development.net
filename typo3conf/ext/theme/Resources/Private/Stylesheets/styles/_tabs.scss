@@ -2,10 +2,6 @@
 	background-image: url("/fileadmin/user_upload/contact_cover.png");
 }
 
-#footer .phone {
-	font-size: 11px;
-}
-
 .fa,
 .fas {
 	color: #e85215;
@@ -47,11 +43,11 @@ div.box {
 	width: 280px;
 }
 @media only screen and (max-width: 320px) {
-	
+
 
 	div.text-left {
 		margin-top: -25px;
-		
+
 		h1{
 		  font-size: 1.7em;
 		}
@@ -262,7 +258,7 @@ amp-selector.tabs-with-flex {
 	position: absolute;
 	top: 11%;
 	min-height: 30%;
-	
+
 }
 
 amp-carousel.carousel2 {
@@ -307,14 +303,14 @@ amp-carousel.carousel2 {
 	.carousel2 .caption {
 		top: 25%;
 	}
-	
-	 
+
+
 }
 @media screen and (min-width:1000px) {
 	.carousel2 .caption {
 		top: 25%;
 	}
-	 
+
 }
 
 form.amp-form-submit-success [submit-success] {
@@ -326,13 +322,13 @@ form.amp-form-submit-error [submit-error] {
 
 amp-user-notification {
   background: rgba(0,0,0,.65);
-  color: #fff;  
-  padding: 20px; 
-  display: block; 
-  width:100%; 
+  color: #fff;
+  padding: 20px;
+  display: block;
+  width:100%;
 }
 amp-user-notification button.cookie {
-  float:right; 
+  float:right;
   font-size:14px;
   background-color:#e85215;
   color:white;
@@ -369,7 +365,7 @@ amp-selector{
   amp-carousel.carousel2 {
     height: 306px;
   }
-  
+
   .slider-container-span.headline {
     font-size: 2rem;
   }
@@ -404,7 +400,7 @@ amp-selector{
     height: 547px;
   }
 }
-@media screen and (min-width:1700px) { 
+@media screen and (min-width:1700px) {
   amp-carousel.carousel2 {
     height: 720px;
   }
@@ -417,7 +413,7 @@ amp-selector{
     padding-left: 15px;
 
   }
-  
+
 
 }
 @media screen and (min-width: 576px) {
@@ -443,5 +439,5 @@ amp-selector{
 }
 .carousel2 .caption {
   width: 100%;
- 
+
 }

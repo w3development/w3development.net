@@ -231,11 +231,11 @@
             </trans-unit>
 
             <trans-unit id="phone">
-             <source>+355 (0) 69 38 58 950</source>
+             <source>+355 69 38 58 950</source>
             </trans-unit>
 
             <trans-unit id="footercopyright">
-             <source>© Copyright W3Development Sh.p.k 2021. All Rights Reserved.</source>
+             <source>© Copyright W3DEVELOPMENT shpk 2023. All rights reserved.</source>
             </trans-unit>
 
             <trans-unit id="blog">

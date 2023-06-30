@@ -77,6 +77,7 @@ page{
   }
 
   includeCSS{
-    style = typo3conf/ext/theme/Resources/Public/Css/style.min.css
+    style  = typo3conf/ext/theme/Resources/Public/Css/style.min.css
+    custom = typo3conf/ext/theme/Resources/Public/Css/custom.css
   }
 }

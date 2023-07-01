@@ -687,11 +687,7 @@ html {
 }
 
 .body {
-	min-height: 100%;
-}
-
-.main {
-	padding-bottom: 250px;
+	flex: 1 0 auto;
 }
 
 .blog-posts {

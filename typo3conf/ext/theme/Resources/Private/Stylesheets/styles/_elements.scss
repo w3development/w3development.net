@@ -614,19 +614,13 @@ html {
 
 	li {
 		display: inline-block;
-		margin: -1px 1px 0 0;
 		padding: 0;
-		border-radius: 100%;
 		box-shadow: none;
 	}
 
 	li a {
 		transition: all 0.2s ease;
-		border-radius: 100%;
 		display: block;
-		height: 30px;
-		line-height: 30px;
-		width: 30px;
 		text-align: center;
 	}
 
@@ -680,10 +674,6 @@ html {
 	&.counters-text-dark .counter strong {
 		color: #141414;
 	}
-}
-
-.social-icons li a {
-	background: 0 0;
 }
 
 .body {
@@ -768,13 +758,6 @@ html {
 	.slider-inner-cover .slider-inner .text-learn-more {
 		padding: 0;
 	}
-}
-
-.social-icons li a,
-.text-secondary,
-a.text-secondary:focus,
-a.text-secondary:hover {
-	color: #517485;
 }
 
 article.post-large {
@@ -1088,10 +1071,6 @@ aside {
 	clear: both;
 }
 
-.text-2 {
-	font-size: 0.9em;
-}
-
 .text-uppercase {
 	text-transform: uppercase;
 }
@@ -1154,13 +1133,6 @@ aside {
 		  color: #517485;
 		}
 	}
-}
-
-.social-icons li a,
-.text-secondary,
-a.text-secondary:focus,
-a.text-secondary:hover {
-	color: #517485;
 }
 
 .frame-default {

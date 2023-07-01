@@ -8,12 +8,12 @@
         </div>
         <div class="col-sm-3 col-lg-2 text-sm-right ml-sm-auto mb-0"></div>
         <div class="col-sm-4 col-lg-4 text-sm-right">
-            <h5 class="mb-2">
+            <h5 class="mb-2 location">
                 <f:translate key="international" extensionName="theme" />
             </h5>
             <span class="phone text-2">
-                <i class="fa fa-phone text-color-primary"></i>
                 <a href="tel:{f:translate(key: 'phone', extensionName: 'theme')}">
+                    <i class="fa fa-phone text-color-primary"></i>
                     <f:translate key="phone" extensionName="theme" />
                 </a>
             </span>
@@ -30,27 +30,27 @@
                 </div>
                 <div class="col-lg-6 text-right">
                     <ul class="social-icons float-right">
+                        <li class="social-icons-email">
+                            <a href="mailto:info@w3development.net">
+                                <i class="fa-solid fa-envelope fa-xl"></i>
+                            </a>
+                        </li>
                         <li class="social-icons-facebook">
                             <a href="https://www.facebook.com/w3developmentshpk/" target="_blank">
-                                <i class="fab fa-facebook"></i>
+                                <i class="fa-brands fa-square-facebook fa-xl"></i>
                             </a>
                         </li>
                         <li class="social-icons-twitter">
                             <a href="https://twitter.com/w3devel" target="_blank">
-                                <i class="fab fa-twitter"></i>
+                                <i class="fa-brands fa-square-twitter fa-xl"></i>
                             </a>
                         </li>
                         <li class="social-icons-linkedin">
-                            <a href="https://www.linkedin.com/company/w3-development/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/company/w3development/" target="_blank">
+                                <i class="fa-brands fa-linkedin fa-xl"></i>
                             </a>
                         </li>
                     </ul>
-                    <span class="footer-email-custom float-right">
-                        <i class="fa fa-envelope text-color-primary"></i>
-                        <f:comment>javascript:linkTo_UnCryptMailto('nbjmup;jogpAx4efwfmpqnfou/ofu');</f:comment>
-                        <a href="#">info [at] w3development [dot] net</a>
-                    </span>
                 </div>
                 <div class="languageswitcher">
                     <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.language')} == nono">

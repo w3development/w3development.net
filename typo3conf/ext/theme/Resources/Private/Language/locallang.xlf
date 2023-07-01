@@ -227,7 +227,7 @@
             </trans-unit>
 
             <trans-unit id="international">
-             <source>Shkoder, ALBANIA</source>
+             <source>Shkodër, Albania</source>
             </trans-unit>
 
             <trans-unit id="phone">
@@ -235,7 +235,7 @@
             </trans-unit>
 
             <trans-unit id="footercopyright">
-             <source>© Copyright W3DEVELOPMENT shpk 2023. All rights reserved.</source>
+             <source>Copyright ©, 2015-2023 W3development shpk. All Rights Reserved.</source>
             </trans-unit>
 
             <trans-unit id="blog">

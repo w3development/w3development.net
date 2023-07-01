@@ -52,26 +52,23 @@ page{
         default = TEXT
         default.value = Default
 
-        pagets__home = TEXT
-        pagets__home.value = Home
-
-        pagets__post = TEXT
-        pagets__post.value = Post
+        pagets__blogdetail2column = TEXT
+        pagets__blogdetail2column.value = BlogDetail2Column
       }
     }
 
     templateRootPaths {
-      0 = EXT:theme/Resources/Private/Templates/
+      0 = EXT:theme/Resources/Private/Templates/Page/
       1 = {$page.fluidtemplate.templateRootPath}
     }
 
     partialRootPaths {
-        0 = EXT:theme/Resources/Private/Partials/
+        0 = EXT:theme/Resources/Private/Partials/Page/
         1 = {$page.fluidtemplate.partialRootPath}
     }
 
     layoutRootPaths {
-        0 = EXT:theme/Resources/Private/Layouts/
+        0 = EXT:theme/Resources/Private/Layouts/Page/
         1 = {$page.fluidtemplate.layoutRootPath}
     }
   }

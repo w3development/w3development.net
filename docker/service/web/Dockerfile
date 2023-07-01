@@ -1,13 +1,6 @@
 FROM php:7.4-apache
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    git \
-    zip \
-    unzip \
-    wget \
-    python \
-    graphicsmagick \
     libmemcached-dev \
     libz-dev \
     libpq-dev \
@@ -16,11 +9,23 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libssl-dev \
     libmcrypt-dev \
     libonig-dev \
+    libpng-dev \
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    curl \
+    git \
+    zip \
+    unzip \
+    wget \
+    python \
+    imagemagick \
+    graphicsmagick \
+    ghostscript \
     locales
 
-RUN apt-get update && apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev && \
-    docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ && \
-    docker-php-ext-install gd
+RUN docker-php-ext-install -j$(nproc) iconv \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) gd
 
 RUN docker-php-ext-install \
     mysqli \
@@ -41,7 +46,7 @@ RUN pecl install xdebug-3.1.5 && docker-php-ext-enable xdebug
 RUN openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
     -keyout /etc/ssl/private/ssl-cert-docker.key \
     -out /etc/ssl/certs/ssl-cert-docker.pem \
-    -subj "/C=us/ST=state/L=city/O=company/OU=ltd/CN=Docker"
+    -subj "/C=UC/ST=State/L=City/O=Company/OU=Ltd/CN=Docker"
 
 RUN a2enmod ssl rewrite
 

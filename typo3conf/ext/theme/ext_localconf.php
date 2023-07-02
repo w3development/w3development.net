@@ -18,6 +18,13 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\CMS\Fluid\ViewHelpers\FormV
 );
 
 /**
+ * Adding the default backend layout TSconfig
+ */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+    "@import 'EXT:theme/Configuration/TSConfig/BackendLayouts.tsconfig'"
+);
+
+/**
  * Adding the default page TSconfig
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(

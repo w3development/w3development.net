@@ -11,5 +11,20 @@
 		"**/.history/**",
 		"**/vendor/**/vendor/**",
 		"**/typo3_src-9.5.31/**"
+	],
+	"sqltools.connections": [
+		{
+			"mysqlOptions": {
+				"authProtocol": "default",
+				"enableSsl": "Disabled"
+			},
+			"previewLimit": 50,
+			"server": "w3development.local",
+			"port": 33061,
+			"driver": "MySQL",
+			"name": "w3development_docker",
+			"database": "typo3",
+			"username": "w3dev"
+		}
 	]
 }

@@ -10,7 +10,8 @@
 		"**/vendor/**/{Tests,tests}/**",
 		"**/.history/**",
 		"**/vendor/**/vendor/**",
-		"**/typo3_src-9.5.31/**"
+		"**/typo3_src-10.4.37/**",
+		"**/typo3_src/**",
 	],
 	"sqltools.connections": [
 		{

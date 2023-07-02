@@ -17,9 +17,18 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\CMS\Fluid\ViewHelpers\FormV
    'className' => 'W3Development\\Theme\\Xclass\\FormViewHelper'
 );
 
-// PageTSconfig all configurations
+/**
+ * Adding the default page TSconfig
+ */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    "@import 'EXT:theme/Configuration/TSconfig/Page/TCEFORM.tsconfig'"
+    "@import 'EXT:theme/Configuration/TSConfig/Page.tsconfig'"
+);
+
+/**
+ * Adding the default user TSconfig
+ */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
+    '@import "EXT:theme/Configuration/TSConfig/User.tsconfig"'
 );
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['w3d'] = [

@@ -16,6 +16,5 @@ package-lock.json
 w3development.code-workspace
 node_modules/
 
-docker/service/db/var/
-html
+docker/db/mysql/
 typo3conf/ext/theme/Resources/Public/Css

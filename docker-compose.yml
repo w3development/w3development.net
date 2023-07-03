@@ -6,19 +6,19 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: joh316
-      MYSQL_DATABASE: typo3
-      MYSQL_USER: w3dev
-      MYSQL_PASSWORD: w3pass
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: db
+      MYSQL_USER: typo3
+      MYSQL_PASSWORD: typo3pass
     ports:
     - "33061:3306"
     volumes:
-       - ./docker/service/db/init/database.sql:/docker-entrypoint-initdb.d/database.sql
-       - ./docker/service/db/var/lib/mysql:/var/lib/mysql
+       - ./docker/db/init/database.sql:/docker-entrypoint-initdb.d/database.sql
+       - ./docker/db/mysql:/var/lib/mysql
   web:
     image: w3development:php7.4
     container_name: w3development-web
-    build: ./docker/service/web
+    build: ./docker/web
     ports:
       - "8081:80"
       - "44301:443"
@@ -26,8 +26,8 @@ services:
       - "host.docker.internal:host-gateway"
     volumes:
       - ./:/var/www/html
-      - ./docker/service/web/etc/php.ini:/usr/local/etc/php/php.ini
-      - ./docker/service/web/etc/vhosts:/etc/apache2/sites-enabled
+      - ./docker/web/etc/php.ini:/usr/local/etc/php/php.ini
+      - ./docker/web/etc/vhosts:/etc/apache2/sites-enabled
     links:
       - db
 

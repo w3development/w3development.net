@@ -13,9 +13,12 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\CMS\Fluid\ViewHelpers\Image
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\CMS\Fluid\ViewHelpers\MediaViewHelper'] = array(
    'className' => 'W3Development\\Theme\\Xclass\\MediaViewHelper'
 );
+/*
+@TODO: Fix for the update to TYPO3 v10.
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\CMS\Fluid\ViewHelpers\FormViewHelper'] = array(
    'className' => 'W3Development\\Theme\\Xclass\\FormViewHelper'
 );
+*/
 
 /**
  * Adding the default backend layout TSconfig

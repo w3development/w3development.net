@@ -10,4 +10,4 @@ if [ -f "$LIBRARY" ]; then
 fi
 
 # Main function where the program starts
-fix_typo3_permissions
+fix_typo3_permissions html

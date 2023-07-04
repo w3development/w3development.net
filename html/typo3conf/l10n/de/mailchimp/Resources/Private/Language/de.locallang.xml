@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="plugin.title">MailChimp</label>
+      <label index="plugin.description">Formular zur Registrierung bei einer MailChimp Liste</label>
+      <label index="flexform.title">Titel</label>
+      <label index="flexform.apiKey"/>
+      <label index="flexform.list">Liste</label>
+      <label index="flexform.interests">Interessen</label>
+      <label index="flexform.useAjax">Benutze Ajax (EXT:typoscript_rendering wird benötigt)</label>
+      <label index="flexform.identifier"/>
+      <label index="extMgm.apiKey"/>
+      <label index="extMgm.proxy"/>
+      <label index="extMgm.proxyPort"/>
+      <label index="extMgm.forceIp4"/>
+      <label index="field.email">E-Mail</label>
+      <label index="field.firstName">Vorname</label>
+      <label index="field.lastName">Nachname</label>
+      <label index="field.interests">Interessen</label>
+      <label index="error.memberExists">Sie sind mit dieser E-mail-Adresse bereits registriert!</label>
+      <label index="error.general">Ein allgemeiner Fehler ist aufgetreten!</label>
+      <label index="error.form.email.1221560718">Bitte geben Sie eine E-mail-Adresse an</label>
+      <label index="error.form.email.1221559976">Die E-Mail-Adresse ist ungültig</label>
+      <label index="success.title">Sie haben sich erfolgreich registriert!</label>
+      <label index="success.description">Bitte prüfen Sie ihre E-mails um die Registrierung abzuschließen!</label>
+      <label index="form.submit">Absenden</label>
+      <label index="memberCount">Anzahl der Mitglieder</label>
+      <label index="ajaxEnabledWithoutExtension">Ajax ist aktiviert aber die Extension "typoscript_rendering" ist nicht installiert!</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

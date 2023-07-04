@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2020-02-07T02:33:24Z" product-name="mailchimp" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="plugin.title" xml:space="preserve" approved="yes">
+        <source>MailChimp</source>
+      <target state="translated">MailChimp</target></trans-unit>
+      <trans-unit id="plugin.description" xml:space="preserve" approved="yes">
+        <source>Create a form to let users register to a specific MailChimp list.</source>
+      <target state="translated">Formular zur Registrierung bei einer MailChimp Liste</target></trans-unit>
+      <trans-unit id="flexform.title" xml:space="preserve" approved="yes">
+        <source>Title</source>
+      <target state="translated">Titel</target></trans-unit>
+      <trans-unit id="flexform.apiKey" xml:space="preserve">
+        <source>Used API</source>
+      <target></target></trans-unit>
+      <trans-unit id="flexform.list" xml:space="preserve" approved="yes">
+        <source>List</source>
+      <target state="translated">Liste</target></trans-unit>
+      <trans-unit id="flexform.interests" xml:space="preserve" approved="yes">
+        <source>Interests</source>
+      <target state="translated">Interessen</target></trans-unit>
+      <trans-unit id="flexform.useAjax" xml:space="preserve" approved="yes">
+        <source>Use Ajax (EXT:typoscript_rendering required)</source>
+      <target state="translated">Benutze Ajax (EXT:typoscript_rendering wird benötigt)</target></trans-unit>
+      <trans-unit id="flexform.identifier" xml:space="preserve">
+        <source>Optional identifier for further processing</source>
+      <target></target></trans-unit>
+      <trans-unit id="extMgm.apiKey" xml:space="preserve">
+        <source>API keys:You get the API key at mailchimp.com &gt; Account &gt; Extras &gt; API keys. For multiple accounts use key1:label1,key2:label2,key3:label3</source>
+      <target></target></trans-unit>
+      <trans-unit id="extMgm.proxy" xml:space="preserve">
+        <source>If you have to use a proxy for curl enter it here</source>
+      <target></target></trans-unit>
+      <trans-unit id="extMgm.proxyPort" xml:space="preserve">
+        <source>Enter the proxy port for here</source>
+      <target></target></trans-unit>
+      <trans-unit id="extMgm.forceIp4" xml:space="preserve">
+        <source>Force IP4 usage in API</source>
+      <target></target></trans-unit>
+      <trans-unit id="field.email" xml:space="preserve" approved="yes">
+        <source>Email</source>
+      <target state="translated">E-Mail</target></trans-unit>
+      <trans-unit id="field.firstName" xml:space="preserve" approved="yes">
+        <source>First name</source>
+      <target state="translated">Vorname</target></trans-unit>
+      <trans-unit id="field.lastName" xml:space="preserve" approved="yes">
+        <source>Last name</source>
+      <target state="translated">Nachname</target></trans-unit>
+      <trans-unit id="field.interests" xml:space="preserve" approved="yes">
+        <source>Interests</source>
+      <target state="translated">Interessen</target></trans-unit>
+      <trans-unit id="error.memberExists" xml:space="preserve" approved="yes">
+        <source>You are already registered with this email address!</source>
+      <target state="translated">Sie sind mit dieser E-mail-Adresse bereits registriert!</target></trans-unit>
+      <trans-unit id="error.general" xml:space="preserve" approved="yes">
+        <source>A general error occurred, sorry!</source>
+      <target state="translated">Ein allgemeiner Fehler ist aufgetreten!</target></trans-unit>
+      <trans-unit id="error.form.email.1221560718" xml:space="preserve" approved="yes">
+        <source>Please provide an email address!</source>
+      <target state="translated">Bitte geben Sie eine E-mail-Adresse an</target></trans-unit>
+      <trans-unit id="error.form.email.1221559976" xml:space="preserve" approved="yes">
+        <source>The provided email address is invalid!</source>
+      <target state="translated">Die E-Mail-Adresse ist ungültig</target></trans-unit>
+      <trans-unit id="success.title" xml:space="preserve" approved="yes">
+        <source>You have successfully registered!</source>
+      <target state="translated">Sie haben sich erfolgreich registriert!</target></trans-unit>
+      <trans-unit id="success.description" xml:space="preserve" approved="yes">
+        <source>Please check your emails to activate the registration!</source>
+      <target state="translated">Bitte prüfen Sie ihre E-mails um die Registrierung abzuschließen!</target></trans-unit>
+      <trans-unit id="form.submit" xml:space="preserve" approved="yes">
+        <source>Submit</source>
+      <target state="translated">Absenden</target></trans-unit>
+      <trans-unit id="memberCount" xml:space="preserve" approved="yes">
+        <source>Count of members</source>
+      <target state="translated">Anzahl der Mitglieder</target></trans-unit>
+      <trans-unit id="ajaxEnabledWithoutExtension" xml:space="preserve" approved="yes">
+        <source>Ajax is enabled but the extension "typoscript_rendering" is not installed!</source>
+      <target state="translated">Ajax ist aktiviert aber die Extension "typoscript_rendering" ist nicht installiert!</target></trans-unit>
+    </body>
+  </file>
+</xliff>

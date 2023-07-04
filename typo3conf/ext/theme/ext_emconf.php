@@ -9,7 +9,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array (
-    'title' => 'W3Development Theme',
+    'title' => 'Theme',
     'description' => 'TYPO3 Themes configured and ready to use.',
     'category' => 'template',
     'version' => '0.0.2',
@@ -21,7 +21,7 @@ $EM_CONF[$_EXTKEY] = array (
 
     'constraints' => array (
         'depends' => array (
-            'typo3' => '9-9.99.99',
+            'typo3' => '9-10.99.99',
             'fluid_styled_content' => '9.5.24',
         ),
     ),

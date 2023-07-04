@@ -5,7 +5,7 @@
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch typo3conf/ext/theme/Resources/Private/Stylesheets/main.scss typo3conf/ext/theme/Resources/Public/Css/style.min.css --source-map true"
+    "scss": "node-sass --watch html/typo3conf/ext/theme/Resources/Private/Stylesheets/main.scss html/typo3conf/ext/theme/Resources/Public/Css/style.min.css --source-map true"
   },
   "repository": {
     "type": "git",

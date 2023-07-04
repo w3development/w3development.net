@@ -1,0 +1,14 @@
+<f:for each="{all.images}" as="image">
+	<figure>
+		<f:if condition="{image.link}">
+			<f:then>
+				<f:link.typolink parameter="{image.link}">
+					<f:render partial="Image/Version" arguments="{image: image}" />	
+				</f:link.typolink>
+			</f:then>
+			<f:else>
+				<f:render partial="Image/Version" arguments="{image: image}" />	
+			</f:else>
+		</f:if>
+	</figure>
+</f:for>

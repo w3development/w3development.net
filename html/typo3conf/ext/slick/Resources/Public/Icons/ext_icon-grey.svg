@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16pt" version="1.1" xmlns="http://www.w3.org/2000/svg" height="16pt" viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="Grad0" y1="0" x1="0" y2="16" gradientUnits="userSpaceOnUse" x2="16">
+   <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+   <stop offset="50%" stop-color="#b2b2b2" stop-opacity="1"/>
+  </linearGradient>
+ </defs>
+ <g id="Hintergrund">
+  <g transform="translate(0, 1.13687e-13)">
+   <path style="fill:url(#Grad0); fill-rule:evenodd;" d="M0 0 L16 0 L16 16 L0 16 L0 0 Z"/>
+   <path style="fill:none; stroke:none;" d="M0 0 L16 0 L16 16 L0 16 L0 0 Z"/>
+  </g>
+  <path style="fill:none;stroke:#ffffff; stroke-width:1.44737; stroke-linecap:butt; stroke-linejoin:miter; stroke-dasharray:none;" d="M0 0 L7.23683 0 L7.23683 7.23683 L0 7.23683 L0 0 Z" transform="translate(4.38157, 3.22368)"/>
+  <path style="fill:none;stroke:#ffffff; stroke-width:1.44737; stroke-linecap:butt; stroke-linejoin:miter; stroke-dasharray:none;" d="M0 0 L7.23683 0 L7.23683 7.23683 L0 7.23683 L0 0 Z" transform="translate(13.7895, 3.22368)"/>
+  <path style="fill:none;stroke:#ffffff; stroke-width:1.44737; stroke-linecap:butt; stroke-linejoin:miter; stroke-dasharray:none;" d="M0 0 L7.23683 0 L7.23683 7.23683 L0 7.23683 L0 0 Z" transform="translate(-5.02632, 3.22368)"/>
+  <path style="fill:#ffffff; fill-rule:evenodd;stroke:none;" d="M1.44737 0.723685 C1.44737 1.12338 1.12338 1.44737 0.723685 1.44737 C0.324005 1.44737 0 1.12338 0 0.723685 C0 0.324005 0.324005 0 0.723685 0 C1.12338 0 1.44737 0.324005 1.44737 0.723685 Z" transform="translate(7.27631, 12.0526)"/>
+  <path style="fill:#ffffff; fill-rule:evenodd;stroke:none;" d="M1.44737 0.723685 C1.44737 1.12338 1.12338 1.44737 0.723685 1.44737 C0.324005 1.44737 0 1.12338 0 0.723685 C0 0.324005 0.324005 0 0.723685 0 C1.12338 0 1.44737 0.324005 1.44737 0.723685 Z" transform="translate(9.73683, 12.0526)"/>
+  <path style="fill:#ffffff; fill-rule:evenodd;stroke:none;" d="M1.44737 0.723685 C1.44737 1.12338 1.12338 1.44737 0.723685 1.44737 C0.324005 1.44737 0 1.12338 0 0.723685 C0 0.324005 0.324005 0 0.723685 0 C1.12338 0 1.44737 0.324005 1.44737 0.723685 Z" transform="translate(4.81578, 12.0526)"/>
+ </g>
+</svg>

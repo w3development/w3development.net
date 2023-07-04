@@ -1,0 +1,11 @@
+plugin.slick {
+  fluid {
+    templates {
+			20 {
+				templateRootPath = 
+				partialRootPath = EXT:slick/Resources/Private/Fluid/FluidStyledContent/ImageWoFigure/Partials/
+				layoutRootPath = 
+			}
+    }
+  }
+}

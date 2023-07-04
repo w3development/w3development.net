@@ -1,0 +1,21 @@
+<f:layout name="Default" />
+<f:section name="Main">
+	<f:format.raw>
+		<f:if condition="{0:data.section_frame} == {0:'62474'}">
+			<f:then>
+				<div class="outerwrap">
+					<f:render partial="Image" arguments="{_all}" />
+				</div>
+			</f:then>
+			<f:else>
+				<div class="slickcontentelement outerwrap layout-{data.layout}">
+					<f:render partial="Image" arguments="{_all}" />
+					<div class="slickcontentelement outerwrap layout-{data.layout}">
+						<f:render partial="Image" arguments="{all: _all}" />
+						<f:render partial="Content" arguments="{data: data, settings: settings}" />
+					</div>
+				</div>
+			</f:else>
+		</f:if>
+	</f:format.raw>
+</f:section>

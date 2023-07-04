@@ -1,0 +1,19 @@
+{
+	"name": "netzmacher/slick",
+	"type": "typo3-cms-extension",
+	"description": "Slick Slider",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"typo3/cms-core": "^10.4 || ^11.5"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "slick"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"Netzmacher\\Slick\\": "Classes/" 
+		}
+	}
+}

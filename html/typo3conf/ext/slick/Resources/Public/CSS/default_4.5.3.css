@@ -1,0 +1,38 @@
+/* dots */
+.slick-dots {
+	margin-left:0;
+	margin-right:0;
+}
+
+/* image */
+.slick-slide figure {
+	margin:0;
+}
+.slick-slide img {
+	height: auto;
+}
+
+.slick-slider .border {
+	overflow: hidden;
+}
+/* header, text */
+.slick-header,
+.slick-text {
+	display: inline;
+	position: absolute;
+	z-index: 1;
+}
+.slick-header .span,
+.slick-text .span {
+}
+.slick-header .span {
+	display: inline;
+}
+.slick-text .span {
+	display: inline;
+}
+
+/* #t4060 */
+.slick-sync figcaption {
+	display: none;
+}

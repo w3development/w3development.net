@@ -1,0 +1,11 @@
+plugin.slick {
+  fluid {
+    templates {
+			99 {
+				templateRootPath = 
+				partialRootPath = EXT:slick/Resources/Private/Fluid/Dev/Partials/
+				layoutRootPath = 
+			}
+    }
+  }
+}

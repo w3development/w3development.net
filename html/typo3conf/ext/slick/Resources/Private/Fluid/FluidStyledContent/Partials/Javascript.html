@@ -1,0 +1,211 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+   xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+   xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+   xmlns:bo="http://typo3.org/ns/Bo/Slickcarousel/ViewHelpers"
+   data-namespace-typo3-fluid="true">
+
+  <f:section name="JS-Responsive">
+		
+    <f:variable name="randomized"><f:format.raw>{data.pi_flexform.randomized}</f:format.raw></f:variable>
+    <f:if condition="{randomized} == ''">
+      <f:variable name="randomized">false</f:variable>
+    </f:if>
+
+    <f:comment>#t4060</f:comment>
+    <f:variable name="adaptiveHeight"><f:format.raw>{data.pi_flexform.adaptiveHeight}</f:format.raw></f:variable>
+    <f:if condition="{adaptiveHeight} == ''">
+      <f:variable name="adaptiveHeight">false</f:variable>
+    </f:if>
+    <f:variable name="sync-enabled"><f:format.raw>{data.pi_flexform.sync-enabled}</f:format.raw></f:variable>
+    <f:if condition="{sync-enabled} == ''">
+      <f:variable name="sync-enabled">false</f:variable>
+    </f:if>
+    <f:if condition="{sync-enabled}">
+      <f:variable name="sliderAsNavFor">, asNavFor: '#slicksync-{data.uid}'</f:variable>
+      <f:variable name="syncAsNavFor">, asNavFor: '#slicksync-{data.uid}'</f:variable>
+    </f:if>
+    <f:variable name="centerMode-sync"><f:format.raw>{data.pi_flexform.centerMode-sync}</f:format.raw></f:variable>
+    <f:if condition="{centerMode-sync} == ''">
+      <f:variable name="centerMode-sync">false</f:variable>
+    </f:if>
+    <f:variable name="dots-sync"><f:format.raw>{data.pi_flexform.dots-sync}</f:format.raw></f:variable>
+    <f:if condition="{dots-sync} == ''">
+      <f:variable name="dots-sync">false</f:variable>
+    </f:if>
+    <f:variable name="arrows-sync"><f:format.raw>{data.pi_flexform.arrows-sync}</f:format.raw></f:variable>
+    <f:if condition="{arrows-sync} == ''">
+      <f:variable name="arrows-sync">false</f:variable>
+    </f:if>
+    <f:variable name="focusOnSelect-sync"><f:format.raw>{data.pi_flexform.focusOnSelect-sync}</f:format.raw></f:variable>
+    <f:if condition="{focusOnSelect-sync} == ''">
+      <f:variable name="focusOnSelect-sync">false</f:variable>
+    </f:if>
+    <f:variable name="pauseOnFocus"><f:format.raw>{data.pi_flexform.pauseOnFocus}</f:format.raw></f:variable>
+    <f:if condition="{pauseOnFocus} == ''">
+      <f:variable name="pauseOnFocus">false</f:variable>
+    </f:if>
+    <f:variable name="slidesToScroll-sync"><f:format.raw>{data.pi_flexform.slidesToScroll-sync}</f:format.raw></f:variable>
+    <f:if condition="{slidesToScroll-sync} == ''">
+      <f:variable name="slidesToScroll-sync">1</f:variable>
+    </f:if>
+    <f:variable name="slidesToShow-sync"><f:format.raw>{data.pi_flexform.slidesToShow-sync}</f:format.raw></f:variable>
+    <f:if condition="{slidesToShow-sync} == ''">
+      <f:variable name="slidesToShow-sync">5</f:variable>
+    </f:if>
+    
+
+    <script>
+
+    var boolSlickRandomize{data.uid} = {randomized};
+    
+      /* #i0059, 190912, dwildt, 6+ */
+    if(!Array.isArray(slickUids)){
+      var slickUids = new Array();
+    }
+    slickUids.push({data.uid});
+
+    function _initSlick{data.uid}() {
+      var dataUid = {data.uid};
+      $('#slickid-{data.uid}').not('.slick-initialized').slick({
+            accessibility: <f:format.raw>{data.pi_flexform.accessibility}</f:format.raw>
+          , adaptiveHeight: <f:format.raw>{adaptiveHeight}</f:format.raw>
+          , arrows: <f:format.raw>{data.pi_flexform.arrows-widescreen}</f:format.raw>
+          <f:format.raw>{sliderAsNavFor}</f:format.raw>
+          , autoplay: <f:format.raw>{data.pi_flexform.autoplay}</f:format.raw>
+          , autoplaySpeed: <f:format.raw>{data.pi_flexform.autoplaySpeed}</f:format.raw>
+          , centerMode: <f:format.raw>{data.pi_flexform.centerMode}</f:format.raw>
+          , centerPadding: '<f:format.raw>{data.pi_flexform.centerPadding}</f:format.raw>'
+          , cssEase: '<f:format.raw>{data.pi_flexform.cssEase}</f:format.raw>'
+          , dots: <f:format.raw>{data.pi_flexform.dots-widescreen}</f:format.raw>
+          , dotsClass: '<f:format.raw>{data.pi_flexform.dotsClass}</f:format.raw>'
+          , draggable: <f:format.raw>{data.pi_flexform.draggable}</f:format.raw>
+          , edgeFriction: <f:format.raw>{data.pi_flexform.edgeFriction}</f:format.raw>
+          , fade: <f:format.raw>{data.pi_flexform.fade}</f:format.raw>
+          , infinite: <f:format.raw>{data.pi_flexform.infinite}</f:format.raw>
+          , initialSlide: <f:format.raw>{data.pi_flexform.initialSlide}</f:format.raw>
+          , lazyLoad: '<f:format.raw>{data.pi_flexform.lazyLoad}</f:format.raw>'
+          , mobileFirst: <f:format.raw>{data.pi_flexform.mobileFirst}</f:format.raw>
+          , pauseOnHover: <f:format.raw>{data.pi_flexform.pauseOnHover}</f:format.raw>
+          , pauseOnFocus: {pauseOnFocus}
+          , pauseOnDotsHover: <f:format.raw>{data.pi_flexform.pauseOnDotsHover}</f:format.raw>
+          , respondTo: '<f:format.raw>{data.pi_flexform.respondTo}</f:format.raw>'
+          , rows: <f:format.raw>{data.pi_flexform.rows-widescreen}</f:format.raw>
+          , rtl: <f:format.raw>{data.pi_flexform.rtl}</f:format.raw>
+          , slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-widescreen}</f:format.raw>
+          , slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-widescreen}</f:format.raw>
+          , slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-widescreen}</f:format.raw>
+          , speed: <f:format.raw>{data.pi_flexform.speed}</f:format.raw>
+          , swipe: <f:format.raw>{data.pi_flexform.swipe}</f:format.raw>
+          , swipeToSlide: <f:format.raw>{data.pi_flexform.swipeToSlide}</f:format.raw>
+          , touchMove: <f:format.raw>{data.pi_flexform.touchMove}</f:format.raw>
+          , touchThreshold: 25
+          , useCSS: <f:format.raw>{data.pi_flexform.useCSS}</f:format.raw>
+          , useTransform: true
+          , variableWidth: <f:format.raw>{data.pi_flexform.variableWidth}</f:format.raw>
+          , vertical: <f:format.raw>{data.pi_flexform.vertical}</f:format.raw>
+          , verticalSwiping: <f:format.raw>{data.pi_flexform.verticalSwiping}</f:format.raw>
+          , waitForAnimate: <f:format.raw>{data.pi_flexform.waitForAnimate}</f:format.raw>
+          , zIndex: <f:format.raw>{data.pi_flexform.zIndex}</f:format.raw>
+          , responsive: [
+            {
+                breakpoint: <f:format.raw>{data.pi_flexform.breakpoint-desktop}</f:format.raw>
+              , settings: {
+                  arrows: <f:format.raw>{data.pi_flexform.arrows-desktop}</f:format.raw>
+                , dots: <f:format.raw>{data.pi_flexform.dots-desktop}</f:format.raw>
+                , rows: <f:format.raw>{data.pi_flexform.rows-desktop}</f:format.raw>
+                , slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-desktop}</f:format.raw>
+                , slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-desktop}</f:format.raw>
+                , slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-desktop}</f:format.raw>
+              }
+            }
+          , {
+                breakpoint: <f:format.raw>{data.pi_flexform.breakpoint-tablet}</f:format.raw>
+              , settings: {
+                  arrows: <f:format.raw>{data.pi_flexform.arrows-tablet}</f:format.raw>
+                , dots: <f:format.raw>{data.pi_flexform.dots-tablet}</f:format.raw>
+                , rows: <f:format.raw>{data.pi_flexform.rows-tablet}</f:format.raw>
+                , slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-tablet}</f:format.raw>
+                , slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-tablet}</f:format.raw>
+                , slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-tablet}</f:format.raw>
+              }
+            }
+          ,  {
+                breakpoint: <f:format.raw>{data.pi_flexform.breakpoint-smartphone}</f:format.raw>
+              , settings: {
+                  arrows: <f:format.raw>{data.pi_flexform.arrows-smartphone}</f:format.raw>
+                , dots: <f:format.raw>{data.pi_flexform.dots-smartphone}</f:format.raw>
+                , rows: <f:format.raw>{data.pi_flexform.rows-smartphone}</f:format.raw>
+                , slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-smartphone}</f:format.raw>
+                , slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-smartphone}</f:format.raw>
+                , slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-smartphone}</f:format.raw>
+              }
+            }
+          ]
+        });
+        /* #t4060 */
+        if(<f:format.raw>{sync-enabled}</f:format.raw>) {
+          $('#slicksync-{data.uid}').slick({
+            arrows: <f:format.raw>{arrows-sync}</f:format.raw>
+            , asNavFor: '#slickid-<f:format.raw>{data.uid}</f:format.raw>'
+            , centerMode: <f:format.raw>{centerMode-sync}</f:format.raw>
+            , dots: <f:format.raw>{dots-sync}</f:format.raw>
+            , focusOnSelect: <f:format.raw>{focusOnSelect-sync}</f:format.raw>
+            , slidesToScroll: <f:format.raw>{slidesToScroll-sync}</f:format.raw>
+            , slidesToShow: <f:format.raw>{slidesToShow-sync}</f:format.raw>
+          });        
+        }
+      }
+      function initSlick{data.uid}() {
+        _initSlick{data.uid}();
+				/* #t4977, 200424, dwildt, 1+ */
+				$('#slickid-{data.uid}').removeClass('hidden');
+        var r;
+        $(window).resize(function() {
+            clearTimeout(r);
+            r = setTimeout(_initSlick{data.uid}, 500);
+        });
+      }
+      /* #i0059, 190912, dwildt, 6+ */
+      if((typeof obj === "undefined"))
+      {
+        var obj = {};
+      }      
+			
+			/* #i0072, 191211, Андрей Н. Бурдин, 29+ */			
+      <f:format.raw>
+      if (!!window.MSInputMethodContext && !!document.documentMode) {
+        if (typeof Object.assign != 'function') {
+          Object.defineProperty(Object, "assign", {
+            value: function assign(target, varArgs) {
+              'use strict';
+              if (target == null) {
+                throw new TypeError('Cannot convert undefined or null to object');
+              }
+
+              var to = Object(target);
+
+              for (var index = 1; index < arguments.length; index++) {
+                var nextSource = arguments[index];
+
+                if (nextSource != null) {
+                  for (var nextKey in nextSource) {
+                    if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+                      to[nextKey] = nextSource[nextKey];
+                    }
+                  }
+                }
+              }
+              return to;
+            },
+            writable: true,
+            configurable: true
+          });
+        }
+      }
+      </f:format.raw>			
+			
+      Object.assign(obj, {initSlickDocumentReady{data.uid}: function () { initSlick{data.uid}(); } })
+      //alert(typeof obj.initSlickDocumentReady{data.uid});
+    </script>
+  </f:section>
+</div>

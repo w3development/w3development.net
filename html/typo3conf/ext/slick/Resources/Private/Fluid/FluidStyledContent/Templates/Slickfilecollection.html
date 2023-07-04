@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Slickcontent" />
+	<f:section name="Main">
+
+		<f:if condition="{data.imageheight}">
+			<f:then>
+				<f:variable name="height">{data.imageheight}c</f:variable> 
+			</f:then>
+			<f:else>
+				<f:variable name="height">{dimensions.height}</f:variable> 
+			</f:else>
+		</f:if>
+		<f:if condition="{data.imagewidth}">
+			<f:then>
+				<f:variable name="width">{data.imagewidth}c</f:variable> 
+			</f:then>
+			<f:else>
+				<f:variable name="width">{dimensions.width}</f:variable> 
+			</f:else>
+		</f:if>
+
+		<f:if condition="{files}">
+			<f:for each="{files}" as="file" iteration="fileIterator">
+				<div>
+					<f:render partial="Media/Version" arguments="{file: file, height: height, width: width}" />	
+				</div>
+			</f:for>
+		</f:if>
+
+	</f:section>
+
+	<f:debug title="data">{data}</f:debug>
+	<f:debug>{_all}</f:debug>
+	<f:debug>{test9}</f:debug>
+	<f:debug>{test10}</f:debug>
+</html>

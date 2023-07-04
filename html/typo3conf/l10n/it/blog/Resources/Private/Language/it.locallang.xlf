@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2016-07-04T17:14:25Z" product-name="blog" target-language="it">
+    <header/>
+    <body>
+      <trans-unit id="headline.commentform" xml:space="preserve" approved="yes">
+				<source>Write comment</source>
+			<target state="final">Scrivi un commento</target></trans-unit>
+      <trans-unit id="headline.comments" xml:space="preserve" approved="yes">
+				<source>Comments</source>
+			<target state="final">Commenti</target></trans-unit>
+      <trans-unit id="headline.category" xml:space="preserve" approved="yes">
+				<source>Posts of category: %s</source>
+			<target state="final">Categoria: %s</target></trans-unit>
+      <trans-unit id="headline.categories" xml:space="preserve" approved="yes">
+				<source>Categories</source>
+			<target state="final">Categorie</target></trans-unit>
+      <trans-unit id="headline.archive" xml:space="preserve" approved="yes">
+				<source>Archive</source>
+			<target state="final">Archivio</target></trans-unit>
+      <trans-unit id="headline.recentcomments" xml:space="preserve" approved="yes">
+				<source>Recent comments</source>
+			<target state="final">Commenti recenti</target></trans-unit>
+      <trans-unit id="headline.recentposts" xml:space="preserve" approved="yes">
+				<source>Recent posts</source>
+			<target state="final">Post recenti</target></trans-unit>
+      <trans-unit id="headline.author" xml:space="preserve" approved="yes">
+				<source>Posts by %s</source>
+			<target state="final">Post da %s</target></trans-unit>
+      <trans-unit id="headline.authors" xml:space="preserve" approved="yes">
+				<source>Authors</source>
+			<target state="final">Autori</target></trans-unit>
+      <trans-unit id="headline.tag" xml:space="preserve" approved="yes">
+				<source>Posts tagged with %s</source>
+			<target state="final">Tag: %s</target></trans-unit>
+      <trans-unit id="headline.tags" xml:space="preserve" approved="yes">
+				<source>Tags</source>
+			<target state="final">Etichette</target></trans-unit>
+      <trans-unit id="headline.sidebar" xml:space="preserve" approved="yes">
+				<source>Sidebar</source>
+			<target state="final">Barra laterale</target></trans-unit>
+      <trans-unit id="headline.rssfeed" xml:space="preserve" approved="yes">
+				<source>RSS-Feeds</source>
+			<target state="final">Feed RSS</target></trans-unit>
+      <trans-unit id="form.comment.hp" xml:space="preserve" approved="yes">
+				<source>Please let this field empty</source>
+			<target state="final">Lasciare vuote questo campo p.f.</target></trans-unit>
+      <trans-unit id="form.comment.name" xml:space="preserve" approved="yes">
+				<source>Name</source>
+			<target state="final">Nome</target></trans-unit>
+      <trans-unit id="form.comment.email" xml:space="preserve" approved="yes">
+				<source>E-Mail</source>
+			<target state="final">Email</target></trans-unit>
+      <trans-unit id="form.comment.url" xml:space="preserve" approved="yes">
+				<source>URL</source>
+			<target state="final">URL</target></trans-unit>
+      <trans-unit id="form.comment.comment" xml:space="preserve" approved="yes">
+				<source>Comment</source>
+			<target state="final">Commento</target></trans-unit>
+      <trans-unit id="form.comment.submit" xml:space="preserve" approved="yes">
+				<source>Submit</source>
+			<target state="final">Invia</target></trans-unit>
+      <trans-unit id="message.no_comments" xml:space="preserve" approved="yes">
+				<source>No comments</source>
+			<target state="final">Nessun commento</target></trans-unit>
+      <trans-unit id="message.comment" xml:space="preserve" approved="yes">
+				<source>%s comment</source>
+			<target state="final">%s commento</target></trans-unit>
+      <trans-unit id="message.comments" xml:space="preserve" approved="yes">
+				<source>%s comments</source>
+			<target state="final">%s commenti</target></trans-unit>
+      <trans-unit id="message.comments_closed" xml:space="preserve" approved="yes">
+				<source>Comments closed</source>
+			<target state="final">Commenti disabilitati</target></trans-unit>
+      <trans-unit id="message.addComment.error.title" xml:space="preserve" approved="yes">
+				<source>Comments not active</source>
+			<target state="final">Commenti non attivi</target></trans-unit>
+      <trans-unit id="message.addComment.error.text" xml:space="preserve" approved="yes">
+				<source>The comment function is disabled.</source>
+			<target state="final">La funzionalità dei commenti è disabilitata</target></trans-unit>
+      <trans-unit id="message.addComment.success.title" xml:space="preserve" approved="yes">
+				<source>Comment added</source>
+			<target state="final">Commento aggiunto</target></trans-unit>
+      <trans-unit id="message.addComment.success.text" xml:space="preserve" approved="yes">
+				<source>Your comment was added successfully.</source>
+			<target state="final">Il commento è stato aggiunto correttamente.</target></trans-unit>
+      <trans-unit id="message.addComment.moderation.title" xml:space="preserve" approved="yes">
+				<source>Comment added</source>
+			<target state="final">Commento aggiunto</target></trans-unit>
+      <trans-unit id="message.addComment.moderation.text" xml:space="preserve" approved="yes">
+				<source>Your comment was added successfully and is now waiting for approval.</source>
+			<target state="final">Il tuo commento è stato aggiunto correttamente ed è in attesa di approvazione.</target></trans-unit>
+      <trans-unit id="meta.title.listPostsByDate" xml:space="preserve" approved="yes">
+				<source>All blog posts in ###MONTH_NAME### ###YEAR###</source>
+			<target state="final">Tutti i post di ###MONTH_NAME### ###YEAR###</target></trans-unit>
+      <trans-unit id="meta.description.listPostsByDate" xml:space="preserve" approved="yes">
+				<source>All blog posts ordered by date</source>
+			<target state="final">Tutti i post ordinati per data</target></trans-unit>
+      <trans-unit id="author.aboutTheAuthor" xml:space="preserve" approved="yes">
+				<source>About the Author</source>
+			<target state="final">Riguardo l'Autore</target></trans-unit>
+      <trans-unit id="list.no_posts.title" xml:space="preserve" approved="yes">
+				<source>No blog posts</source>
+			<target state="final">Nessun post</target></trans-unit>
+      <trans-unit id="list.no_posts.message" xml:space="preserve" approved="yes">
+				<source>This list contains no blog posts.</source>
+			<target state="final">Questa lista non contiene post.</target></trans-unit>
+      <trans-unit id="backend.headline.setup_wizard" xml:space="preserve" approved="yes">
+				<source>SetupWizard</source>
+			<target state="final">Installazione guidata</target></trans-unit>
+      <trans-unit id="backend.headline.posts" xml:space="preserve" approved="yes">
+				<source>Posts</source>
+			<target state="final">Post</target></trans-unit>
+      <trans-unit id="backend.headline.comments" xml:space="preserve" approved="yes">
+				<source>Comments</source>
+			<target state="final">Commenti</target></trans-unit>
+      <trans-unit id="backend.lead.blogs" xml:space="preserve" approved="yes">
+				<source>It looks like you have the following blog setups</source>
+			<target state="final">Sembra che tu abbia le seguenti configurazioni blog</target></trans-unit>
+      <trans-unit id="backend.message.noblogs" xml:space="preserve" approved="yes">
+				<source>It looks like no blog setup exists in this instance.</source>
+			<target state="final">Sembra che in questo caso non esista alcuna configurazione blog.</target></trans-unit>
+      <trans-unit id="backend.lead.posts" xml:space="preserve" approved="yes">
+				<source>The following table shows all the blog posts available in this installation. Use the filters and search to refine the results.</source>
+			<target state="final">La tabella seguente mostra tutti i post disponibili in questa installazione. Usa i filtri e cerca per affinare i risultati.</target></trans-unit>
+      <trans-unit id="backend.message.noposts" xml:space="preserve" approved="yes">
+				<source>Oops, apparently there are no blog posts in this installation.</source>
+			<target state="final">Ops, apparentemente non ci sono post in questa installazione.</target></trans-unit>
+      <trans-unit id="backend.message.nopost" xml:space="preserve" approved="yes">
+				<source>Post not available</source>
+			<target state="final">Post non disponibile</target></trans-unit>
+      <trans-unit id="backend.lead.comments" xml:space="preserve" approved="yes">
+				<source>The following table shows blog comments available in this installation. Use the filters and search to refine the results.</source>
+			<target state="final">La tabella seguente mostra i commenti sul blog disponibili in questa installazione. Usa i filtri e cerca per affinare i risultati.</target></trans-unit>
+      <trans-unit id="backend.table.blog" xml:space="preserve" approved="yes">
+				<source>Blog</source>
+			<target state="final">Blog</target></trans-unit>
+      <trans-unit id="backend.table.articles" xml:space="preserve" approved="yes">
+				<source>Articles</source>
+			<target state="final">Articoli</target></trans-unit>
+      <trans-unit id="backend.comments.filter.all" xml:space="preserve" approved="yes">
+				<source>All</source>
+			<target state="final">Tutti</target></trans-unit>
+      <trans-unit id="backend.comments.filter.pending" xml:space="preserve" approved="yes">
+				<source>Pending</source>
+			<target state="final">In attesa</target></trans-unit>
+      <trans-unit id="backend.comments.filter.approved" xml:space="preserve" approved="yes">
+				<source>Approved</source>
+			<target state="final">Approvato</target></trans-unit>
+      <trans-unit id="backend.comments.filter.declined" xml:space="preserve" approved="yes">
+				<source>Declined</source>
+			<target state="final">Rifiutato</target></trans-unit>
+      <trans-unit id="backend.comments.filter.deleted" xml:space="preserve" approved="yes">
+				<source>Deleted</source>
+			<target state="final">Eliminato</target></trans-unit>
+      <trans-unit id="wizard.button.trigger" xml:space="preserve" approved="yes">
+				<source>Setup a new blog</source>
+			<target state="final">Configura un nuovo blog</target></trans-unit>
+      <trans-unit id="wizard.button.cancel" xml:space="preserve" approved="yes">
+				<source>Cancel</source>
+			<target state="final">Annulla</target></trans-unit>
+      <trans-unit id="wizard.button.setup" xml:space="preserve" approved="yes">
+				<source>Setup</source>
+			<target state="final">Configurazione</target></trans-unit>
+      <trans-unit id="wizard.lead" xml:space="preserve" approved="yes">
+				<source>This Wizard will create a blog setup in your tree.</source>
+			<target state="final">Questa procedura guidata creerà un'impostazione blog nel tuo albero.</target></trans-unit>
+      <trans-unit id="wizard.description" xml:space="preserve" approved="yes">
+				<source>After click on the button below the tree will be created. If you see the success message, go to your page tree and maybe reload the tree to see the result.</source>
+			<target state="final">Dopo aver fatto clic sul pulsante verrà creato l'albero. Se vedi il messaggio di successo, vai al tuo albero di pagine e forse ricarica l'albero per vedere il risultato.</target></trans-unit>
+      <trans-unit id="wizard.headline.settings" xml:space="preserve" approved="yes">
+				<source>Settings</source>
+			<target state="final">Impostazioni</target></trans-unit>
+      <trans-unit id="wizard.label.title" xml:space="preserve" approved="yes">
+				<source>Title of the blog</source>
+			<target state="final">Titolo del blog</target></trans-unit>
+      <trans-unit id="wizard.placeholder.title" xml:space="preserve" approved="yes">
+				<source>The title of your blog</source>
+			<target state="final">Il titolo del tuo blog</target></trans-unit>
+      <trans-unit id="constantEditor.blog" xml:space="preserve" approved="yes">
+				<source>TYPO3 Blog</source>
+			<target state="final">TYPO3 Blog</target></trans-unit>
+      <trans-unit id="constantEditor.blog_100_uids" xml:space="preserve" approved="yes">
+				<source>Page ID settings</source>
+			<target state="final">Impostazioni ID di pagina</target></trans-unit>
+      <trans-unit id="constantEditor.blog_110_templates" xml:space="preserve" approved="yes">
+				<source>Templates</source>
+			<target state="final">Template</target></trans-unit>
+      <trans-unit id="constantEditor.blog_140_comments" xml:space="preserve" approved="yes">
+				<source>Comments</source>
+			<target state="final">Commenti</target></trans-unit>
+      <trans-unit id="constantEditor.blog_150_authors" xml:space="preserve" approved="yes">
+				<source>Authors</source>
+			<target state="final">Autori</target></trans-unit>
+      <trans-unit id="constantEditor.view.templateRootPath" xml:space="preserve" approved="yes">
+				<source>Template Root Path: Path to templates folder</source>
+			<target state="final">Percorso Principale Template: Percorso alla cartella dei template</target></trans-unit>
+      <trans-unit id="constantEditor.view.partialRootPaths" xml:space="preserve" approved="yes">
+				<source>Partial Root Path: Path to partial folder</source>
+			<target state="final">Percorso Principale Partial: Percorso alla cartella dei partial</target></trans-unit>
+      <trans-unit id="constantEditor.view.layoutRootPaths" xml:space="preserve" approved="yes">
+				<source>Layout Root Path: Path to layout folder</source>
+			<target state="final">Percorso Principale Layout: Percorso alla cartella dei layout</target></trans-unit>
+      <trans-unit id="constantEditor.view.emails.templateRootPath" xml:space="preserve" approved="yes">
+				<source>Email-Template Root Path: Path to templates folder</source>
+			<target state="final">Percorso Principale Template Email: Percorso alla cartella dei template</target></trans-unit>
+      <trans-unit id="constantEditor.view.emails.partialRootPaths" xml:space="preserve" approved="yes">
+				<source>Email-Partial Root Path: Path to partial folder</source>
+			<target state="final">Percorso Principale Partial Email: Percorso alla cartella dei partial</target></trans-unit>
+      <trans-unit id="constantEditor.view.emails.layoutRootPaths" xml:space="preserve" approved="yes">
+				<source>Email-Layout Root Path: Path to layout folder</source>
+			<target state="final">Percorso Principale Layout Email: Percorso alla cartella dei layout</target></trans-unit>
+      <!-- E-Mails -->
+      <trans-unit id="email.label.comment" xml:space="preserve" approved="yes">
+				<source>Comment</source>
+			<target state="final">Commento</target></trans-unit>
+    </body>
+  </file>
+</xliff>

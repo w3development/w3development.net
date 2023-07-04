@@ -28,6 +28,12 @@ if($currentApplicationContext->isDevelopment()){
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = 'file';
 }
 
-
 $GLOBALS['TYPO3_CONF_VARS']['FE']['cacheHash']['excludedParameters'][] = 'amp';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' [' . (string)$currentApplicationContext . ']';
+
+$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['backendFavicon'] = 'EXT:theme/Resources/Public/Images/Favicon/favicon.ico';
+$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['backendLogo'] = 'EXT:theme/Resources/Public/Images/Logo/logo-backend.png';
+$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginBackgroundImage'] = 'EXT:theme/Resources/Public/Images/Backend/typo3-login-background.jpg';
+$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginFootnote'] = '@w3development';
+$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginHighlightColor'] = '#3a5a6b';
+$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginLogo'] = 'EXT:theme/Resources/Public/Images/Logo/w3development.png';

@@ -25,7 +25,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:
-      - ./:/var/www/html
+      - ./:/var/www
       - ./docker/web/etc/php.ini:/usr/local/etc/php/php.ini
       - ./docker/web/etc/vhosts:/etc/apache2/sites-enabled
     links:

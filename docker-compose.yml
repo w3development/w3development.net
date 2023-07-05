@@ -24,6 +24,7 @@ services:
       - "44301:443"
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    working_dir: "/var/www"
     volumes:
       - ./:/var/www
       - ./docker/web/etc/php.ini:/usr/local/etc/php/php.ini

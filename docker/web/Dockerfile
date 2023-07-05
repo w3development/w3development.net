@@ -21,7 +21,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     imagemagick \
     graphicsmagick \
     ghostscript \
-    locales
+    locales \
+    default-mysql-client
 
 RUN docker-php-ext-install -j$(nproc) iconv \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \

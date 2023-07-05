@@ -26,6 +26,12 @@ if($currentApplicationContext->isDevelopment()){
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = $developer_ip;
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['exceptionalErrors'] = '28674';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = 'file';
+
+    // Automatic NullBackend for all caches (it's a caching backend which forgets everything immediately)
+    foreach ($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'] as $cacheName => $cacheConfiguration) {
+        // $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$cacheName]['frontend'] = \TYPO3\CMS\Core\Cache\Backend\NullBackend::class;
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$cacheName]['backend'] = \TYPO3\CMS\Core\Cache\Backend\NullBackend::class;
+    }
 }
 
 $GLOBALS['TYPO3_CONF_VARS']['FE']['cacheHash']['excludedParameters'][] = 'amp';

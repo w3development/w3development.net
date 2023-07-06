@@ -3,7 +3,7 @@
 // Getting Website Application Context;
 $currentApplicationContext = \TYPO3\CMS\Core\Core\Environment::getContext();
 
-require_once (string)$currentApplicationContext .".php";
+require_once "SystemConfiguration.php";
 
 // Database settings
 $GLOBALS['TYPO3_CONF_VARS']["DB"]["Connections"]["Default"]["host"]     = $db_host;

@@ -16,7 +16,7 @@ public/typo3conf/ENABLE_INSTALL_TOOL
 
 # Ignore settings files
 public/typo3conf/LocalConfiguration.php
-public/typo3conf/Development.php
+public/typo3conf/SystemConfiguration.php
 
 # TYPO3 libraries & scripts
 public/typo3conf/ext/theme/Resources/Public/Css

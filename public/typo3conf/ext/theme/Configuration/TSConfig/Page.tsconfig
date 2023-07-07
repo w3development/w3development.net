@@ -1,7 +1,7 @@
 ### Page TSconfig - TCEFORM ###
 TCEFORM{
   tt_content{
-    CType.removeItems = bullets, table, uploads, menu, list, div, mailform, login
+    CType.removeItems = bullets, table, uploads, menu, div, mailform, login
 
     ### Content - Header Layouts ###
     header_layout {

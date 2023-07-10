@@ -24,8 +24,8 @@
 			"port": 33061,
 			"driver": "MySQL",
 			"name": "w3development_docker",
-			"database": "typo3",
-			"username": "w3dev"
+			"database": "db",
+			"username": "typo3"
 		}
 	]
 }

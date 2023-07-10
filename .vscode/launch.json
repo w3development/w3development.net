@@ -11,7 +11,7 @@
             "port": 9003,
             "cwd": "${workspaceRoot}",
             "pathMappings": {
-                "/var/www/html": "${workspaceRoot}/html"
+                "/var/www/public": "${workspaceRoot}/public"
             },
             "log": true
         }

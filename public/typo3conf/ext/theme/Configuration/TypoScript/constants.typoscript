@@ -69,3 +69,55 @@ plugin.tx_seo {
     }
   }
 }
+
+
+## ADDED FROM DB: ###
+plugin.tx_powermail.settings.styles.framework.fieldAndLabelWrappingClasses=form-row
+plugin.tx_powermail.settings.styles.framework.fieldWrappingClasses=powermail_field form-group col
+plugin.tx_powermail.settings.styles.framework.fieldClasses=form-control
+plugin.tx_powermail.settings.styles.framework.submitClasses=powermail_submit btn btn-primary mb-5
+plugin.tx_powermail.settings.styles.framework.rowClasses=form-row
+plugin.tx_powermail.settings.styles.numberOfColumns = 2
+
+plugin.tx_powermail.settings.setup.spamshield._enable = 1
+plugin.tx_powermailrecaptcha.sitekey = 6LeHvoQUAAAAAJxAW01YZv6TnQCjEhPVqT25Y5cX
+plugin.tx_powermailrecaptcha.secretkey = 6LeHvoQUAAAAAP49GCvs3B6spksXvu9gHuH71URO
+plugin.tx_powermail.settings.main.pid = 0
+plugin.tx_powermail.settings.main.confirmation = 0
+plugin.tx_powermail.settings.main.optin = 0
+plugin.tx_powermail.settings.main.moresteps = 0
+plugin.tx_powermail.settings.javascript.addAdditionalJavaScript = 0
+
+styles.content.textmedia.maxW = 1200
+styles.content.textmedia.maxWInText = 600
+plugin.slick.css.files.theme =
+plugin.slick.css.files.library =
+plugin.slick.css.files.default =
+plugin.slick.carousel.javascript.file =
+plugin.slick.gallery.3.javascript.file =
+plugin.slick.carousel.3.javascript.file =
+plugin.slick.carousel.css.file.library =
+plugin.slick.carousel.css.file.theme =
+plugin.slick.css.files.theme.if = 0
+slick_js =
+sourceopt.formatHtml = 1
+
+plugin.tx_blog.settings.blogUid     = 141
+plugin.tx_blog.settings.categoryUid = 143
+plugin.tx_blog.settings.authorUid   = 142
+plugin.tx_blog.settings.tagUid      = 144
+plugin.tx_blog.settings.archiveUid  = 145
+plugin.tx_blog.settings.storagePid  = 146
+
+
+
+### PID = 7 ###
+plugin.tx_powermail.settings.styles.framework.fieldAndLabelWrappingClasses = form-row
+plugin.tx_powermail.settings.styles.framework.fieldWrappingClasses = powermail_field form-group col
+plugin.tx_powermail.settings.styles.framework.fieldClasses = form-control form-control-lg
+plugin.tx_powermail.settings.styles.framework.submitClasses = powermail_submit btn btn-primary btn-xl mb-1
+plugin.tx_powermail.settings.main.pid = 0
+plugin.tx_powermail.settings.main.confirmation = 0
+plugin.tx_powermail.settings.main.optin = 0
+plugin.tx_powermail.settings.main.moresteps = 0
+plugin.tx_powermail.settings.javascript.powermailJQuery =

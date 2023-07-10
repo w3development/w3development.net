@@ -78,3 +78,19 @@ page{
     custom = typo3conf/ext/theme/Resources/Public/Css/custom.css
   }
 }
+
+## ADDED FROM DB ##
+plugin.tx_seo {
+  config {
+    xmlSitemap {
+      sitemaps {
+        pages {
+          config {
+            excludedDoktypes = 137, 138
+            additionalWhere = AND (no_index = 0 OR no_follow = 0)
+          }
+        }
+      }
+    }
+  }
+}

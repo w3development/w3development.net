@@ -1,14 +1,12 @@
 <f:render partial="GoogleTag" />
-<div class="body">
+<div class="wrapper">
     <header id="header">
         <f:render partial="Header" />
     </header>
-    <div class="main">
-        <div class="container">
-            <f:render section="Main" />
-        </div>
-    </div>
+    <main class="main container">
+        <f:render section="Main" />
+    </main>
 </div>
-<div id="footer">
+<footer id="footer" class="sticky-footer container-fluid bg-dark pt-3 pb-3 text-bg-dark">
     <f:render partial="Footer" />
-</div>
+</footer>

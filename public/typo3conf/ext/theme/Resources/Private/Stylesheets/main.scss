@@ -1,19 +1,41 @@
-@font-face {
-    font-family: 'PTSans';
-    src: url("../../Public/Fonts/PT_Sans/PTSans-Regular.ttf") format('woff2');
-}
 
 // Include fontawesome library fonts for icons.
 @import "./fontawesome/scss/fontawesome.scss";
 @import "./fontawesome/scss/solid.scss";
 @import "./fontawesome/scss/brands.scss";
 
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url("../../Public/Fonts/pt-sans/PTSans-Regular.ttf") format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url("../../Public/Fonts/pt-sans/PTSans-Bold.ttf") format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url("../../Public/Fonts/pt-sans/PTSans-Italic.ttf") format('woff2');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url("../../Public/Fonts/pt-sans/PTSans-BoldItalic.ttf") format('woff2');
+    font-style: italic;
+    font-weight: 700;
+}
+
 // Boostrap 5.3
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "./../../../../../../../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$font-family-sans-serif:  'PTSans', sans-serif !default;
+$font-family-sans-serif:  'PT Sans', sans-serif !default;
 $primary:   #e85215;
 $secondary: #517485;
 $dark:      #444444;
@@ -49,16 +71,24 @@ $btn-border-radius:               0 !default;
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "./../../../../../../../node_modules/bootstrap/scss/utilities/api";
 
-// 8. Add additional custom code here
-@import "./styles/base";
-@import "./styles/grid";
-@import "./styles/typography";
-@import "./styles/header";
-@import "./styles/navigation";
-@import "./styles/section";
-@import "./styles/elements";
-@import "./styles/forms";
-@import "./styles/blog";
-@import "./styles/footer";
-@import "./styles/tabs";
-@import "./styles/custom";
+// 8. Include bootstrap icons
+$bootstrap-icons-font-dir: "../../Public/Fonts/bootstrap-icons" !default;
+
+@import "./../../../../../../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+
+// 9. Add additional custom code here
+// @import "./styles/base";
+// @import "./styles/grid";
+// @import "./styles/typography";
+// @import "./styles/header";
+// @import "./styles/navigation";
+// @import "./styles/section";
+// @import "./styles/elements";
+// @import "./styles/forms";
+// @import "./styles/blog";
+// @import "./styles/footer";
+// @import "./styles/tabs";
+// @import "./styles/custom";
+
+@import "./layout/sticky-footer";

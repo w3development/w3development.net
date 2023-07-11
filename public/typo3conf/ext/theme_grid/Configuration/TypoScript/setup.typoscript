@@ -1,22 +1,66 @@
 // default/general configuration (will add 'children_<colPos>' variable to processedData for each colPos in container
 tt_content.container-1col < lib.contentElement
 tt_content.container-1col {
-    templateName = 1Column
-    templateRootPaths {
-      10 = EXT:theme_grid/Resources/Private/Templates
-    }
-    dataProcessing {
-      100 = B13\Container\DataProcessing\ContainerProcessor
-    }
+  templateName = 1Column
+  templateRootPaths {
+    10 = EXT:theme_grid/Resources/Private/Templates
+  }
+  dataProcessing {
+    100 = B13\Container\DataProcessing\ContainerProcessor
+  }
 }
 
 tt_content.container-2col-50-50 < lib.contentElement
 tt_content.container-2col-50-50 {
-    templateName = 2Column-50-50
-    templateRootPaths {
-      10 = EXT:theme_grid/Resources/Private/Templates
-    }
-    dataProcessing {
-      100 = B13\Container\DataProcessing\ContainerProcessor
-    }
+  templateName = 2Column-50-50
+  templateRootPaths {
+    10 = EXT:theme_grid/Resources/Private/Templates
+  }
+  dataProcessing {
+    100 = B13\Container\DataProcessing\ContainerProcessor
+  }
+}
+
+tt_content.container-2col-66-33 < lib.contentElement
+tt_content.container-2col-66-33 {
+  templateName = 2Column-66-33
+  templateRootPaths {
+    10 = EXT:theme_grid/Resources/Private/Templates
+  }
+  dataProcessing {
+    100 = B13\Container\DataProcessing\ContainerProcessor
+  }
+}
+
+tt_content.container-2col-33-66 < lib.contentElement
+tt_content.container-2col-33-66 {
+  templateName = 2Column-33-66
+  templateRootPaths {
+    10 = EXT:theme_grid/Resources/Private/Templates
+  }
+  dataProcessing {
+    100 = B13\Container\DataProcessing\ContainerProcessor
+  }
+}
+
+tt_content.container-2col-75-25 < lib.contentElement
+tt_content.container-2col-75-25 {
+  templateName = 2Column-75-25
+  templateRootPaths {
+    10 = EXT:theme_grid/Resources/Private/Templates
+  }
+  dataProcessing {
+    100 = B13\Container\DataProcessing\ContainerProcessor
+  }
+}
+
+tt_content.container-2col-25-75 < lib.contentElement
+tt_content.container-2col-25-75 {
+  templateName = 2Column-25-75
+  templateRootPaths {
+    10 = EXT:theme_grid/Resources/Private/Templates
+  }
+  dataProcessing {
+    100 = B13\Container\DataProcessing\ContainerProcessor
+  }
 }

@@ -1,0 +1,18 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 260px;
+    /* Margin bottom by footer height */
+}
+
+.sticky-footer {
+    position: absolute;
+    bottom: 0;
+    height: 260px;
+    /* Vertically center the text there */
+}

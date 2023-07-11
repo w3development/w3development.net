@@ -97,6 +97,7 @@
     ->setIcon('EXT:container/Resources/Public/Icons/container-2col-left.svg')
     ->setSaveAndCloseInNewContentElementWizard(false)
 );
+
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
     (
         new \B13\Container\Tca\ContainerConfiguration(
@@ -114,6 +115,50 @@
     // set an optional icon configuration
     // override default configurations
     ->setIcon('EXT:container/Resources/Public/Icons/container-2col-right.svg')
+    ->setSaveAndCloseInNewContentElementWizard(false)
+);
+
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+    (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'container-3col', // CType
+            'Container - 3 columns (33-33-33)', // label
+            'Container - 3 Columns (33-33-33)', // description
+            [
+                [
+                    [ 'name' => 'Leftside content' ,   'colPos' => 301 ],
+                    [ 'name' => 'Middleside content' , 'colPos' => 302 ],
+                    [ 'name' => 'Rightside content' ,  'colPos' => 303 ]
+                ]
+            ] // grid configuration
+        )
+    )
+    // set an optional icon configuration
+    // override default configurations
+    ->setIcon('EXT:container/Resources/Public/Icons/container-3col.svg')
+    ->setSaveAndCloseInNewContentElementWizard(false)
+);
+
+
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+    (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'container-4col', // CType
+            'Container - 4 columns (25-25-25-25)', // label
+            'Container - 4 Columns (25-25-25-25)', // description
+            [
+                [
+                    [ 'name' => 'Leftside content' ,   'colPos' => 401 ],
+                    [ 'name' => 'Middleside content' , 'colPos' => 402 ],
+                    [ 'name' => 'Middleside content' , 'colPos' => 403 ],
+                    [ 'name' => 'Rightside content' ,  'colPos' => 404 ]
+                ]
+            ] // grid configuration
+        )
+    )
+    // set an optional icon configuration
+    // override default configurations
+    ->setIcon('EXT:container/Resources/Public/Icons/container-4col.svg')
     ->setSaveAndCloseInNewContentElementWizard(false)
 );
 ?>

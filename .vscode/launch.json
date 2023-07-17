@@ -13,7 +13,7 @@
             "pathMappings": {
                 "/var/www/public": "${workspaceRoot}/public"
             },
-            "log": true
+            "log": false
         }
     ]
 }

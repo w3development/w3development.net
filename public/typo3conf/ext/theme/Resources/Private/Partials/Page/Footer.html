@@ -1,34 +1,36 @@
 <div class="container border border-primary-subtle">
-    <div class="row">
-        <div class="col">
-            <a href="/" class="logo">
-                <f:image src="/typo3conf/ext/theme/Resources/Public/Images/Logo/logo-white.svg" height="33em"
-                    alt="W3Development SHPK - Web Development Company" class="img-fluid" />
-            </a>
-        </div>
-        <div class="col">
-            <h5 class="mb-2 location">
-                <f:translate key="international" extensionName="theme" />
-            </h5>
-            <span class="phone text-2">
-                <a href="tel:{f:translate(key: 'phone', extensionName: 'theme')}">
-                    <i class="fa fa-phone text-color-primary"></i>
-                    <f:translate key="phone" extensionName="theme" />
+    <div class="d-flex flex-column flex-sm-row justify-content-between">
+        <div class="row">
+            <div class="col">
+                <a href="/" class="logo">
+                    <f:image src="/typo3conf/ext/theme/Resources/Public/Images/Logo/logo-white.svg" height="33em"
+                        alt="W3Development SHPK - Web Development Company" class="img-fluid" />
                 </a>
-            </span>
+            </div>
+            <div class="col">
+                <h5 class="mb-2 location">
+                    <f:translate key="international" extensionName="theme" />
+                </h5>
+                <span class="phone text-2">
+                    <a href="tel:{f:translate(key: 'phone', extensionName: 'theme')}">
+                        <i class="fa fa-phone text-color-primary"></i>
+                        <f:translate key="phone" extensionName="theme" />
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col languageswitcher">
+                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.language')} == nono">
+                    <f:then></f:then>
+                    <f:else>
+                        <f:cObject typoscriptObjectPath="lib.mainlanguagesiwtcher" />
+                    </f:else>
+                </f:if>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col languageswitcher">
-            <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.language')} == nono">
-                <f:then></f:then>
-                <f:else>
-                    <f:cObject typoscriptObjectPath="lib.mainlanguagesiwtcher" />
-                </f:else>
-            </f:if>
-        </div>
-    </div>
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+    <div class="d-flex flex-column flex-sm-row justify-content-between">
         <p><f:translate key="footercopyright" extensionName="theme" /></p>
         <ul class="list-unstyled d-flex">
             <li class="ms-1">
@@ -52,5 +54,16 @@
                 </a>
             </li>
         </ul>
+    </div>
+    <div class="position-relative">
+        <div class="position-absolute top-0 start-0"></div>
+        <div class="position-absolute top-0 start-50 translate-middle-x"></div>
+        <div class="position-absolute top-0 end-0"></div>
+        <div class="position-absolute top-50 start-0 translate-middle-y"></div>
+        <div class="position-absolute top-50 start-50 translate-middle"></div>
+        <div class="position-absolute top-50 end-0 translate-middle-y"></div>
+        <div class="position-absolute bottom-0 start-0"></div>
+        <div class="position-absolute bottom-0 start-50 translate-middle-x"></div>
+        <div class="position-absolute bottom-0 end-0"></div>
     </div>
 </div>

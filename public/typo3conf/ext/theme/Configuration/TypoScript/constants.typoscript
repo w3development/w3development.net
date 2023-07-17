@@ -1,12 +1,12 @@
 page{
-  // fluidtemplate {
-  //     # cat=user_bar: advanced/100/100; type=string; label=Layout Root Path: Path to layouts
-  //     layoutRootPath  = EXT:theme/Resources/Private/Layouts/
-  //     # cat=user_bar: advanced/100/110; type=string; label=Partial Root Path: Path to partials
-  //     partialRootPath = EXT:theme/Resources/Private/Partials/
-  //     # cat=user_bar: advanced/100/120; type=string; label=Template Root Path: Path to templates
-  //     templateRootPath = EXT:theme/Resources/Private/Templates/
-  // }
+  fluidtemplate {
+      # cat=user_bar: advanced/100/100; type=string; label=Layout Root Path: Path to layouts
+      layoutRootPath  = EXT:theme/Resources/Private/Page/Layouts/
+      # cat=user_bar: advanced/100/110; type=string; label=Partial Root Path: Path to partials
+      partialRootPath = EXT:theme/Resources/Private/Page/Partials/
+      # cat=user_bar: advanced/100/120; type=string; label=Template Root Path: Path to templates
+      templateRootPath = EXT:theme/Resources/Private/Page/Templates/
+  }
 
   meta{
     keywords = web, development, web development, design, typo3, magento, wordpress, ecommerce, commerce, company, agency, programming, design
@@ -18,11 +18,11 @@ page{
 styles{
   templates {
     # cat=content/templates/b1; type=string; label= Path of Fluid Templates for all defined content elements
-    templateRootPath = EXT:theme/Resources/Private/Templates/System/
+    templateRootPath = EXT:theme/Resources/Private/Content/Templates/
     # cat=content/templates/b2; type=string; label= Path of Fluid Partials for all defined content elements
-    partialRootPath = EXT:theme/Resources/Private/Partials/
+    partialRootPath = EXT:theme/Resources/Private/Content/Partials/
     # cat=content/templates/b3; type=string; label= Path of Fluid Layouts for all defined content elements
-    layoutRootPath =  EXT:theme/Resources/Private/Layouts/System/
+    layoutRootPath =  EXT:theme/Resources/Private/Content/Layouts/
   }
 }
 
@@ -51,11 +51,11 @@ plugin.tx_powermail.settings.styles.framework.submitClasses = powermail_submit b
 plugin.tx_seo {
   view {
     # cat=plugin.tx_theme/file; type=string; label=Path to template root (FE)
-    templateRootPath = EXT:theme/Resources/Private/Templates/Seo/XmlSitemap/
+    templateRootPath = EXT:theme/Resources/Private/Extensions/Seo/Templates/
     # cat=plugin.tx_theme/file; type=string; label=Path to template partials (FE)
-    partialRootPath = EXT:theme/Resources/Private/Partials/Seo/XmlSitemap/
+    partialRootPath = EXT:theme/Resources/Private/Extensions/Seo/Partials/
     # cat=plugin.tx_theme/file; type=string; label=Path to template layouts (FE)
-    layoutRootPath = EXT:theme/Resources/Private/Layouts/Seo/XmlSitemap/
+    layoutRootPath = EXT:theme/Resources/Private/Extensions/Seo/Layouts/
   }
 
   settings {
@@ -102,12 +102,30 @@ plugin.slick.css.files.theme.if = 0
 slick_js =
 sourceopt.formatHtml = 1
 
-plugin.tx_blog.settings.blogUid     = 141
-plugin.tx_blog.settings.categoryUid = 143
-plugin.tx_blog.settings.authorUid   = 142
-plugin.tx_blog.settings.tagUid      = 144
-plugin.tx_blog.settings.archiveUid  = 145
-plugin.tx_blog.settings.storagePid  = 146
+plugin {
+  tx_blog {
+    view {
+      templateRootPaths = EXT:theme/Resources/Private/Extensions/Blog/Templates/
+      partialRootPaths = EXT:theme/Resources/Private/Extensions/Blog/Partials/
+      layoutRootPaths = EXT:theme/Resources/Private/Extensions/Blog/Layouts/
+    }
+
+    settings{
+      blogUid     = 141
+      categoryUid = 143
+      authorUid   = 142
+      tagUid      = 144
+      archiveUid  = 145
+      storagePid  = 146
+
+      lists{
+        pagination{
+          itemsPerPage = 9
+        }
+      }
+    }
+  }
+}
 
 
 

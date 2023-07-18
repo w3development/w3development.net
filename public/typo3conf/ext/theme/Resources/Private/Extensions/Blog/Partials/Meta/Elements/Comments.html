@@ -18,6 +18,6 @@
         </f:if>
     </f:if>
     <f:render partial="Meta/Rendering/Item" arguments="{name: name, icon: icon, prefix: prefix}" contentAs="content">
-        <blogvh:link.post post="{post}" section="comments">{text}</blogvh:link.post>
+        <blogvh:link.post post="{post}" section="comments" class="text-decoration-none text-body-tertiary">{text}</blogvh:link.post>
     </f:render>
 </f:if>

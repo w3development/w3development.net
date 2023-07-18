@@ -41,7 +41,8 @@ $secondary: #517485;
 $dark:      #444444;
 $light:     #cccccc;
 
-$btn-border-radius:               0 !default;
+$border-radius: 0 !default;
+$btn-border-radius: 0 !default;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "./../../../../../../../node_modules/bootstrap/scss/variables";
@@ -79,6 +80,7 @@ $bootstrap-icons-font-dir: "../../Public/Fonts/bootstrap-icons" !default;
 
 
 // 9. Add additional custom code here
+@import "blog/frontend.scss";
 // @import "./styles/base";
 // @import "./styles/grid";
 // @import "./styles/typography";

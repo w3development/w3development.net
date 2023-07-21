@@ -1,10 +1,10 @@
 page{
   fluidtemplate {
-      # cat=user_bar: advanced/100/100; type=string; label=Layout Root Path: Path to layouts
+      # cat=theme/template/100; type=string; label=Layout Root Path: Path to layouts
       layoutRootPath  = EXT:theme/Resources/Private/Page/Layouts/
-      # cat=user_bar: advanced/100/110; type=string; label=Partial Root Path: Path to partials
+      # cat=theme/template/110; type=string; label=Partial Root Path: Path to partials
       partialRootPath = EXT:theme/Resources/Private/Page/Partials/
-      # cat=user_bar: advanced/100/120; type=string; label=Template Root Path: Path to templates
+      # cat=theme/template//120; type=string; label=Template Root Path: Path to templates
       templateRootPath = EXT:theme/Resources/Private/Page/Templates/
   }
 
@@ -17,11 +17,11 @@ page{
 
 styles{
   templates {
-    # cat=content/templates/b1; type=string; label= Path of Fluid Templates for all defined content elements
+    # cat=theme/templates/b1; type=string; label= Path of Fluid Templates for all defined content elements
     templateRootPath = EXT:theme/Resources/Private/Content/Templates/
-    # cat=content/templates/b2; type=string; label= Path of Fluid Partials for all defined content elements
+    # cat=theme/templates/b2; type=string; label= Path of Fluid Partials for all defined content elements
     partialRootPath = EXT:theme/Resources/Private/Content/Partials/
-    # cat=content/templates/b3; type=string; label= Path of Fluid Layouts for all defined content elements
+    # cat=theme/templates/b3; type=string; label= Path of Fluid Layouts for all defined content elements
     layoutRootPath =  EXT:theme/Resources/Private/Content/Layouts/
   }
 }
@@ -50,11 +50,11 @@ plugin.tx_powermail.settings.styles.framework.submitClasses = powermail_submit b
 
 plugin.tx_seo {
   view {
-    # cat=plugin.tx_theme/file; type=string; label=Path to template root (FE)
+    # cat=theme/file; type=string; label=Path to template root (FE)
     templateRootPath = EXT:theme/Resources/Private/Extensions/Seo/Templates/
-    # cat=plugin.tx_theme/file; type=string; label=Path to template partials (FE)
+    # cat=theme/file; type=string; label=Path to template partials (FE)
     partialRootPath = EXT:theme/Resources/Private/Extensions/Seo/Partials/
-    # cat=plugin.tx_theme/file; type=string; label=Path to template layouts (FE)
+    # cat=theme/file; type=string; label=Path to template layouts (FE)
     layoutRootPath = EXT:theme/Resources/Private/Extensions/Seo/Layouts/
   }
 

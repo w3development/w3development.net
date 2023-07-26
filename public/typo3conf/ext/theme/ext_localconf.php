@@ -23,8 +23,20 @@ if (!defined('TYPO3_MODE')) die('Access denied.');
     '@import "EXT:theme/Configuration/TSConfig/User.tsconfig"'
 );
 
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['w3d'] = [
-    'W3Development\Theme\ViewHelpers',
-];
+call_user_func(function () {
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup(
+        trim('
+            plugin.tx_form.settings.yamlConfigurations {
+                999 = EXT:theme/Configuration/Form/FormSetup.yaml
+            }
+
+            module.tx_form.settings.yamlConfigurations {
+                999 = EXT:theme/Configuration/Form/FormSetup.yaml
+            }
+        ')
+    );
+});
+
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['w3d'] = ['W3Development\Theme\ViewHelpers'];
 
 ?>

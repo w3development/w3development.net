@@ -1,0 +1,38 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: ContactForm
+label: 'Contact Formular'
+prototypeName: standard
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: Step
+    renderables:
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Textarea
+      -
+        defaultValue: ''
+        properties:
+          fluidAdditionalAttributes:
+            min: ''
+            max: ''
+            step: 1
+        type: Date
+        identifier: date-1
+        label: Date
+      -
+        properties:
+          options:
+            1: 'Variant 1'
+        type: RadioButton
+        identifier: radiobutton-1
+        label: 'Radio button'

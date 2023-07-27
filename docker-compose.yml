@@ -31,7 +31,12 @@ services:
       - ./docker/web/etc/vhosts:/etc/apache2/sites-enabled
     links:
       - db
-
+  mailserver:
+    image: mailhog/mailhog
+    container_name: 'mailhog'
+    ports:
+      - "1025:1025"
+      - "8025:8025"
 networks:
   default:
       name: w3development_network

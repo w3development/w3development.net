@@ -26,6 +26,7 @@ if($currentApplicationContext->isDevelopment()){
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = $developer_ip;
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['exceptionalErrors'] = '28674';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = 'file';
+    $GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport_smtp_server'] = $smtp_mail_server;
 
     // Automatic NullBackend for all caches (it's a caching backend which forgets everything immediately)
     foreach ($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'] as $cacheName => $cacheConfiguration) {

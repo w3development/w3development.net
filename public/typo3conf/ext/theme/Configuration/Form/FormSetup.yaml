@@ -4,5 +4,5 @@ TYPO3:
       persistenceManager:
         allowedExtensionPaths:
           10: EXT:theme/Resources/Private/Forms/
-        allowSaveToExtensionPaths: true
+        allowSaveToExtensionPaths: false
         allowDeleteFromExtensionPaths: false

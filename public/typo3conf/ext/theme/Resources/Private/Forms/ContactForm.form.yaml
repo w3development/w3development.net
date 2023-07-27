@@ -5,6 +5,21 @@ type: Form
 identifier: ContactForm
 label: 'Contact Formular'
 prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'A new request from the contact form'
+      recipients:
+        info@w3development.net: w3development
+      senderAddress: '{email-1}'
+      senderName: '{text-1}'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      useFluidEmail: false
+      title: ''
+    identifier: EmailToReceiver
 renderables:
   -
     renderingOptions:
@@ -12,27 +27,88 @@ renderables:
       nextButtonLabel: 'Next step'
     type: Page
     identifier: page-1
-    label: Step
+    label: 'Contact Form'
     renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Name
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'John Doe'
+            required: required
+            minlength: '1'
+            maxlength: '100'
+          elementDescription: 'Add your first and last name'
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            options:
+              minimum: '1'
+              maximum: '100'
+            identifier: StringLength
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: 'Email address'
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: john.doe@email.ltd
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Please add your email'
+            -
+              code: 1221560718
+              message: 'Please add your email'
+            -
+              code: 1347992400
+              message: 'Please add your email'
+            -
+              code: 1347992453
+              message: 'Please add your email'
+            -
+              code: 1221559976
+              message: 'Please add a valid email address'
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Telephone
+        identifier: telephone-1
+        label: 'Telephone number'
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: '+1 555 66 7777'
       -
         defaultValue: ''
         type: Textarea
         identifier: textarea-1
         label: Textarea
-      -
-        defaultValue: ''
         properties:
           fluidAdditionalAttributes:
-            min: ''
-            max: ''
-            step: 1
-        type: Date
-        identifier: date-1
-        label: Date
-      -
-        properties:
-          options:
-            1: 'Variant 1'
-        type: RadioButton
-        identifier: radiobutton-1
-        label: 'Radio button'
+            required: required
+            minlength: '10'
+            maxlength: '500'
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            options:
+              minimum: '10'
+              maximum: '500'
+            identifier: StringLength
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: SummaryPage
+    identifier: summarypage-1
+    label: 'Summary step'

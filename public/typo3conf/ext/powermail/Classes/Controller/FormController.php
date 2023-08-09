@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 namespace In2code\Powermail\Controller;
 
 use In2code\Powermail\DataProcessor\DataProcessorRunner;
@@ -14,15 +14,15 @@ use In2code\Powermail\Domain\Service\Mail\SendSenderMailPreflight;
 use In2code\Powermail\Exception\DeprecatedException;
 use In2code\Powermail\Finisher\FinisherRunner;
 use In2code\Powermail\Utility\ConfigurationUtility;
+use In2code\Powermail\Utility\HashUtility;
 use In2code\Powermail\Utility\LocalizationUtility;
 use In2code\Powermail\Utility\ObjectUtility;
-use In2code\Powermail\Utility\HashUtility;
 use In2code\Powermail\Utility\SessionUtility;
 use In2code\Powermail\Utility\TemplateUtility;
 use TYPO3\CMS\Core\Configuration\Exception\ExtensionConfigurationExtensionNotConfiguredException;
 use TYPO3\CMS\Core\Configuration\Exception\ExtensionConfigurationPathDoesNotExistException;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Messaging\AbstractMessage;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Annotation as ExtbaseAnnotation;
 use TYPO3\CMS\Extbase\Configuration\Exception\InvalidConfigurationTypeException;
 use TYPO3\CMS\Extbase\Mvc\Exception\InvalidArgumentNameException;
@@ -430,7 +430,7 @@ class FormController extends AbstractController
         $arguments = $this->request->getArguments();
         if (empty($arguments['mail'])) {
             $logger = ObjectUtility::getLogger(__CLASS__);
-            $logger->alert('Redirect (mail empty)', $arguments);
+            $logger->warning('Redirect (mail empty)', $arguments);
             $this->forward('form');
         }
     }
@@ -449,7 +449,7 @@ class FormController extends AbstractController
             $formsToContent = GeneralUtility::intExplode(',', $this->settings['main']['form']);
             if (!in_array($mail->getForm()->getUid(), $formsToContent)) {
                 $logger = ObjectUtility::getLogger(__CLASS__);
-                $logger->alert('Redirect (optin)', [$formsToContent, (array)$mail]);
+                $logger->warning('Redirect (optin)', [$formsToContent, (array)$mail]);
                 $this->forward('form');
             }
         }

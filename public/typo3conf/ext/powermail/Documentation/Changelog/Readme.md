@@ -4,6 +4,19 @@
 
 | Version     | Release Date | Description                                                                                                           |
 |------------ |--------------|-----------------------------------------------------------------------------------------------------------------------|
+| 8.4.2       | 2022-08-23   | Bugfix: Fix formlisting in plugins for editors with restricted page access                                            |
+| 8.4.1       | 2021-08-11   | Task: Also Sanitize CSV and XLS export in Pi2 (not only the export in the backend module)                             |
+| 8.4.0       | 2021-08-11   | Task: Sanitize CSV and XLS export against excel hacks (see https://typo3.org/security/advisory/typo3-psa-2021-002)    |
+|             |              | Task: Add automatic test via github actions                                                                           |
+| 8.3.3       | 2021-07-27   | Bugfix: Fix some more typehint problems                                                                               |
+|             |              | Bugfix: Fix a problem with start- and endtime in backend records                                                      |
+| 8.3.2       | 2021-04-30   | Bugfix: Fix typehint error with overwriteValueFromTypoScript()                                                        |
+| 8.3.1       | 2021-03-08   | Bugfix: Don't validate captcha fields of already persisted mails (in double optin)                                    |
+| 8.3.0       | 2021-02-16   | Feature: Add autodeployment functionality to TER                                                                      |
+|             |              | Bugfix: Foreign-Validator compatibility to core methods                                                               |
+|             |              | Bugfix: Reanimate sending emails to backend users                                                                     |
+|             |              | Bugfix: Harden template utility functions against type errors                                                         |
+|             |              | Bugfix: Resolve LazyLoadingProxy to fe_users relations                                                                |
 | 8.2.4       | 2020-12-02   | Bugfix: Fix possible exception when extending powermail with own validators and using a confirmation view             |
 | 8.2.3       | 2020-11-08   | Bugfix: Set tx_powermail_domain_model_mail.fe_user value for logged in users                                          |
 |             |              | Bugfix: Fix link from PluginPreview to powermail module                                                               |

@@ -1,2 +1,0 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slick/Configuration/TypoScript/Default/Base/_constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slick/Configuration/TypoScript/Default/Slickcontentelement/constants.ts">

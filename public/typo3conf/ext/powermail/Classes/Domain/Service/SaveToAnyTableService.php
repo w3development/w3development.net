@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 namespace In2code\Powermail\Domain\Service;
 
 use Doctrine\DBAL\DBALException;
@@ -61,7 +61,7 @@ class SaveToAnyTableService
      *
      * @var string
      */
-    protected $additionalWhere;
+    protected $additionalWhere = '';
 
     /**
      * Switch on devLog

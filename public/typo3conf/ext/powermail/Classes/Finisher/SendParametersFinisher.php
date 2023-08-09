@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 namespace In2code\Powermail\Finisher;
 
 use In2code\Powermail\Domain\Repository\MailRepository;
@@ -79,7 +79,7 @@ class SendParametersFinisher extends AbstractFinisher implements FinisherInterfa
     {
         if ($this->configuration['debug']) {
             $logger = ObjectUtility::getLogger(__CLASS__);
-            $logger->alert('SendPost Values', $this->getCurlSettings());
+            $logger->info('SendPost Values', $this->getCurlSettings());
         }
     }
 

@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 namespace In2code\Powermail\Domain\Model;
 
 use In2code\Powermail\Utility\ArrayUtility;
@@ -258,6 +258,9 @@ class Mail extends AbstractEntity
      */
     public function getFeuser()
     {
+        if ($this->feuser instanceof LazyLoadingProxy) {
+            $this->feuser->_loadRealInstance();
+        }
         return $this->feuser;
     }
 
@@ -344,7 +347,7 @@ class Mail extends AbstractEntity
     }
 
     /**
-     * @return null|Form|LazyLoadingProxy $form
+     * @return Form|LazyLoadingProxy|null $form
      */
     public function getForm()
     {
@@ -524,7 +527,7 @@ class Mail extends AbstractEntity
     public function getMarketingPageFunnel(): array
     {
         if (ArrayUtility::isJsonArray($this->marketingPageFunnel)) {
-            return json_decode($this->marketingPageFunnel);
+            return json_decode($this->marketingPageFunnel, true);
         }
         return (array)$this->marketingPageFunnel;
     }

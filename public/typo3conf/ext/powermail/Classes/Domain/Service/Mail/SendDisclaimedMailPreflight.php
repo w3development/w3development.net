@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 namespace In2code\Powermail\Domain\Service\Mail;
 
 use In2code\Powermail\Domain\Model\Mail;
@@ -91,7 +91,7 @@ class SendDisclaimedMailPreflight
                 'format' => $this->settings['sender']['mailformat'],
                 'variables' => ['mail' => $mail]
             ];
-            $this->sendMailService->sendMail($email, $mail, $this->settings, 'optin');
+            $this->sendMailService->sendMail($email, $mail, $this->settings, 'disclaimer');
         }
     }
 }

@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 namespace In2code\Powermail\Domain\Repository;
 
 use In2code\Powermail\Domain\Model\Form;
@@ -37,7 +37,7 @@ class PageRepository extends AbstractRepository
         $query = $this->createQuery();
         $sql = 'select * from pages where uid = ' . (int)$uid . ' limit 1';
         $result = $query->statement($sql)->execute(true);
-        return $result[0];
+        return $result[0] ?? [];
     }
 
     /**

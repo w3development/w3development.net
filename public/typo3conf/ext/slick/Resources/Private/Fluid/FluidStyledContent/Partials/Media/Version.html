@@ -1,8 +1,0 @@
-<f:if condition="{f:cObject(typoscriptObjectPath:'lib.slick.t3version.isSmallerThan104')}" >
-	<f:then>
-		<f:render partial="Media/Version/087" arguments="{file: file, height: height, width: width}" />
-	</f:then>
-	<f:else>
-		<f:render partial="Media/Version/104" arguments="{file: file, height: height, width: width}" />
-	</f:else>
-</f:if>

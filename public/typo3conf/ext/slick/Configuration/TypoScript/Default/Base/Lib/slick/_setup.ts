@@ -1,2 +1,0 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slick/Configuration/TypoScript/Default/Base/Lib/slick/t3version.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slick/Configuration/TypoScript/Default/Base/Lib/slick/tx_slick_pages.ts">

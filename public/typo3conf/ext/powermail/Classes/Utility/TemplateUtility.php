@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 namespace In2code\Powermail\Utility;
 
 use In2code\Powermail\Domain\Model\Mail;
@@ -36,6 +36,7 @@ class TemplateUtility
         );
         if (!empty($extbaseConfig['view'][$part . 'RootPaths'])) {
             $templatePaths = $extbaseConfig['view'][$part . 'RootPaths'];
+            ksort($templatePaths, SORT_NUMERIC);
             $templatePaths = array_values($templatePaths);
         }
         if (empty($templatePaths)) {
@@ -163,6 +164,6 @@ class TemplateUtility
         $standaloneView = ObjectUtility::getObjectManager()->get(StandaloneView::class);
         $standaloneView->setTemplateSource($string);
         $standaloneView->assignMultiple($variables);
-        return $standaloneView->render();
+        return $standaloneView->render() ?? '';
     }
 }

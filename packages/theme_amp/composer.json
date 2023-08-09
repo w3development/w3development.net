@@ -1,0 +1,19 @@
+{
+	"name": "w3development/theme-amp",
+	"type": "typo3-cms-extension",
+	"description": "Theme - Amp",
+	"license": "GPL-2.0-or-later",
+	"require": {
+	   "typo3/cms-core": "^10"
+	},
+	"autoload": {
+	   "psr-4": {
+		  "W3D\\ThemeAmp\\": "Classes/"
+	   }
+	},
+	"extra": {
+	   "typo3/cms": {
+		  "extension-key": "theme-amp"
+	   }
+	}
+ }

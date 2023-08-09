@@ -44,3 +44,4 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginBackgroundImage'] = '
 $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginFootnote'] = '@w3development';
 $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginHighlightColor'] = '#3a5a6b';
 $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginLogo'] = 'EXT:theme/Resources/Public/Images/Logo/w3development.png';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['trustedHostsPattern'] = "w3development.ddev.site";

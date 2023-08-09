@@ -1,7 +1,7 @@
 config {
   noPageTitle = 2
 
-  absRefPrefix = https://w3development.local:44301/
+  absRefPrefix = https://w3development.ddev.site/
 
   // Language settings
   linkVars = L

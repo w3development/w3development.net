@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8346f62f5b0d84d6d6606ad68333e5f1",
+    "content-hash": "dd59d3b4bf918616c40625f1b406092e",
     "packages": [
         {
             "name": "b13/container",
@@ -855,6 +855,80 @@
             "time": "2022-02-21T09:13:59+00:00"
         },
         {
+            "name": "friendsoftypo3/extension-builder",
+            "version": "v10.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/extension_builder.git",
+                "reference": "c113ebde089a934d1bad2b68c8d99f2cd5d08d38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/extension_builder/zipball/c113ebde089a934d1bad2b68c8d99f2cd5d08d38",
+                "reference": "c113ebde089a934d1bad2b68c8d99f2cd5d08d38",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "nikic/php-parser": "^4.10.4",
+                "php": "^7.2",
+                "typo3/cms-backend": "^10.4",
+                "typo3/cms-core": "^10.4"
+            },
+            "replace": {
+                "typo3-ter/extension-builder": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "nimut/testing-framework": "^5.0",
+                "roave/security-advisories": "dev-latest",
+                "sebastian/diff": "^3.0",
+                "typo3/cms-frontend": "^10.4",
+                "typo3/coding-standards": "^0.3.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "extension_builder",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/public"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "EBT\\ExtensionBuilder\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nico de Haen",
+                    "role": "Developer"
+                },
+                {
+                    "name": "extension_builder Development Team",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tool to kickstart and maintain TYPO3 extensions",
+            "homepage": "https://extensions.typo3.org/extension/extension_builder",
+            "keywords": [
+                "extension",
+                "extension_builder",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/friendsoftypo3/extension-builder/10.0/en-us/",
+                "issues": "https://github.com/FriendsOfTYPO3/extension_builder/issues",
+                "source": "https://github.com/FriendsOfTYPO3/extension_builder"
+            },
+            "time": "2022-11-13T10:21:01+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.5.8",
             "source": {
@@ -1314,6 +1388,87 @@
                 }
             ],
             "time": "2023-01-08T21:22:53+00:00"
+        },
+        {
+            "name": "helhum/typoscript-rendering",
+            "version": "v2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helhum/typoscript_rendering.git",
+                "reference": "67d77568dea31b24437e9fca099c845d0ba43b56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/helhum/typoscript_rendering/zipball/67d77568dea31b24437e9fca099c845d0ba43b56",
+                "reference": "67d77568dea31b24437e9fca099c845d0ba43b56",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "typo3/cms-core": "^9.5.31 || ^10.4.2 || ^11.5.5"
+            },
+            "replace": {
+                "typo3-ter/typoscript-rendering": "self.version"
+            },
+            "require-dev": {
+                "nimut/testing-framework": "^6.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "typoscript_rendering",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/public"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Helhum\\TyposcriptRendering\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Helmut Hummel",
+                    "email": "info@helhum.io",
+                    "homepage": "http://helhum.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Can render a TypoScript path by URL, especially useful for Ajax dispatching",
+            "homepage": "http://insight.helhum.io/post/104880845705/dont-use-eid-ajax-dispatchers-for-your-extbase",
+            "keywords": [
+                "Rendering",
+                "frontend",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/helhum/typoscript_rendering/issues",
+                "source": "https://github.com/helhum/typoscript_rendering/tree/v2.4.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/helhum/19.99",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/helhum",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-11-22T02:08:22+00:00"
         },
         {
             "name": "ichhabrecht/content-defender",
@@ -2534,6 +2689,71 @@
                 "source": "https://github.com/scssphp/scssphp/tree/v1.11.0"
             },
             "time": "2022-09-02T21:24:55+00:00"
+        },
+        {
+            "name": "sup7even/mailchimp",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/mailchimp",
+                "reference": "86f27a9ffa40f3e21641a777c722787e8a712d98"
+            },
+            "require": {
+                "helhum/typoscript-rendering": "^2",
+                "typo3/cms-core": "^9.5.0 || ^10.0"
+            },
+            "replace": {
+                "typo3-ter/mailchimp": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.3.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "mailchimp",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sup7even\\Mailchimp\\": "Classes"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Sup7even\\Mailchimp\\Tests\\": "Tests",
+                    "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "mkdir -p .Build/Web/typo3conf/ext/",
+                    "[ -L .Build/Web/typo3conf/ext/mailchimp ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/mailchimp"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "role": "Developer",
+                    "homepage": "https://ringer.it"
+                }
+            ],
+            "description": "Simple MailChimp integration to let users register to a specific list",
+            "homepage": "https://ringer.it",
+            "keywords": [
+                "TYPO3",
+                "extension",
+                "mailchimp",
+                "newsletter"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
@@ -6982,6 +7202,96 @@
             "time": "2023-03-23T12:04:09+00:00"
         },
         {
+            "name": "w3development/theme",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/theme",
+                "reference": "3f9439bbfeb62da9e375137690e8314a3a97f290"
+            },
+            "require": {
+                "typo3/cms-core": "^10"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "theme"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "W3D\\Theme\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "The Theme",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "w3development/theme-amp",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/theme_amp",
+                "reference": "a157a5031f05e54de90542ea93a78631892cf7e5"
+            },
+            "require": {
+                "typo3/cms-core": "^10"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "theme-amp"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "W3D\\ThemeAmp\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Theme - Amp",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "w3development/theme-grid",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/theme_grid",
+                "reference": "7fbbaa392c55d8e6691a57f73d969aa255d9f519"
+            },
+            "require": {
+                "typo3/cms-core": "^10"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "theme-grid"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "W3D\\ThemeGrid\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Theme Grid",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.11.0",
             "source": {
@@ -7043,7 +7353,12 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "sup7even/mailchimp": 20,
+        "w3development/theme": 20,
+        "w3development/theme-amp": 20,
+        "w3development/theme-grid": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

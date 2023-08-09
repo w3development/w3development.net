@@ -12,14 +12,22 @@
 		},
 		"sort-packages": true
 	},
+	"repositories": [
+        {
+            "type": "path",
+            "url": "./packages/*/"
+        }
+    ],
 	"require": {
 		"b13/container": "2.2.5",
 		"bk2k/bootstrap-package": "12.0.10",
+		"friendsoftypo3/extension-builder": "^10.0",
 		"helhum/typo3-console": "^6.0.0",
 		"ichhabrecht/content-defender": "3.2.3",
 		"in2code/powermail": "8.4.2",
 		"mask/mask": "7.2.16",
 		"netzmacher/slick": "11.0.2",
+		"sup7even/mailchimp": "@dev",
 		"t3g/blog": "11.0.2",
 		"typo3/cms-about": "^10.4.0",
 		"typo3/cms-backend": "^10.4.0",
@@ -45,7 +53,10 @@
 		"typo3/cms-sys-note": "^10.4.0",
 		"typo3/cms-t3editor": "^10.4.0",
 		"typo3/cms-tstemplate": "^10.4.0",
-		"typo3/cms-viewpage": "^10.4.0"
+		"typo3/cms-viewpage": "^10.4.0",
+		"w3development/theme": "@dev",
+		"w3development/theme-amp": "@dev",
+		"w3development/theme-grid": "@dev"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [

@@ -1,0 +1,110 @@
+mod.web_layout.BackendLayouts {
+	services {
+		title = Template -- Services
+		icon = EXT:theme/Resources/Public/Icons/BackendLayouts/Default.svg
+		config {
+			backend_layout {
+				colCount = 1
+				rowCount = 7
+				rows {
+					1 {
+						columns {
+							1 {
+								name = Teaser
+								colPos = 0
+							}
+						}
+					}
+					2 {
+						columns {
+							1 {
+								name = Focus
+								colPos = 1
+							}
+						}
+					}
+					3 {
+						columns {
+							1 {
+								name = Help
+								colPos = 3
+							}
+						}
+					}
+					4 {
+						columns {
+							1 {
+								name = Strategy
+								colPos = 4
+							}
+						}
+					}
+					5 {
+						columns {
+							1 {
+								name = Development
+								colPos = 5
+							}
+						}
+					}
+					6 {
+						columns {
+							1 {
+								name = Marketing
+								colPos = 6
+							}
+						}
+					}
+					7 {
+						columns {
+							1 {
+								name = Wedo
+								colPos = 7
+							}
+						}
+					}
+					8 {
+						columns {
+							1 {
+								name = Brief
+								colPos = 8
+							}
+						}
+					}
+					9 {
+						columns {
+							1 {
+								name = Creation
+								colPos = 9
+							}
+						}
+					}
+					10 {
+						columns {
+							1 {
+								name = Launch
+								colPos = 10
+							}
+						}
+					}
+					11 {
+						columns {
+							1 {
+								name = Startup
+								colPos = 11
+							}
+						}
+					}
+					12 {
+						columns {
+							1 {
+								name = Sidebar
+								colPos = 1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

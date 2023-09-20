@@ -2,25 +2,38 @@
 
 if (!defined('TYPO3_MODE')) die('Access denied.');
 
+$currentApplicationContext = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' (' . (string)$currentApplicationContext . ')';
+
+\FluidTYPO3\Flux\Core::registerProviderExtensionKey('W3Development.theme', 'Content');
+\FluidTYPO3\Flux\Core::registerProviderExtensionKey('W3Development.theme', 'Page');
 /**
  * Adding the default backend layout TSconfig
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    "@import 'EXT:theme/Configuration/TSConfig/BackendLayouts.tsconfig'"
-);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
+    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TSconfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
+');
 
 /**
  * Adding the default page TSconfig
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    "@import 'EXT:theme/Configuration/TSConfig/Page.tsconfig'"
-);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
+    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TSconfig/Page/TCEFORM.tsconfig">
+');
+
+
+/**
+ * Adding the SHARED.TSconfig
+ */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
+    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TSconfig/Page/Mod/SHARED.tsconfig">
+');
 
 /**
  * Adding the default user TSconfig
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
-    '@import "EXT:theme/Configuration/TSConfig/User.tsconfig"'
+    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TSconfig/User/options.tsconfig">'
 );
 
 call_user_func(function () {
@@ -36,7 +49,4 @@ call_user_func(function () {
         ')
     );
 });
-
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['w3d'] = ['W3Development\Theme\ViewHelpers'];
-
 ?>

@@ -1,0 +1,46 @@
+mod.web_layout.BackendLayouts {
+	contact {
+		title = Template -- Contact
+		icon = EXT:theme/Resources/Public/Icons/BackendLayouts/Default.svg
+		config {
+			backend_layout {
+				colCount = 1
+				rowCount = 4
+				rows {
+					1 {
+						columns {
+							1 {
+								name = Sayhello
+								colPos = 0
+							}
+						}
+					}
+					2 {
+						columns {
+							1 {
+								name = Address
+								colPos = 2
+							}
+						}
+					}
+					3 {
+						columns {
+							1 {
+								name = Message
+								colPos = 3
+							}
+						}
+					}
+					4 {
+						columns {
+							1 {
+								name = ContactForm
+								colPos = 4
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

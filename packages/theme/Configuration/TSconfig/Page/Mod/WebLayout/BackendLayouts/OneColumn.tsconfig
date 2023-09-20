@@ -1,0 +1,22 @@
+mod.web_layout.BackendLayouts {
+	one_column {
+		title = One Column
+		icon = EXT:theme/Resources/Public/Icons/BackendLayouts/Default.svg
+		config {
+			backend_layout {
+				colCount = 1
+				rowCount = 1
+				rows {
+					1 {
+						columns {
+							1 {
+								name = Content
+								colPos = 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

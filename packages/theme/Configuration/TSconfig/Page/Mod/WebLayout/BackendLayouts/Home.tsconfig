@@ -1,0 +1,70 @@
+mod.web_layout.BackendLayouts {
+	home {
+		title = Template -- Home
+		icon = EXT:theme/Resources/Public/Icons/BackendLayouts/Default.svg
+		config {
+			backend_layout {
+				colCount = 1
+				rowCount = 7
+				rows {
+					1 {
+						columns {
+							1 {
+								name = Slider
+								colPos = 10
+							}
+						}
+					}
+					2 {
+						columns {
+							1 {
+								name = Intro
+								colPos = 0
+							}
+						}
+					}
+					3 {
+						columns {
+							1 {
+								name = Services
+								colPos = 1
+							}
+						}
+					}
+					4 {
+						columns {
+							1 {
+								name = WhoWeAre
+								colPos = 2
+							}
+						}
+					}
+					5 {
+						columns {
+							1 {
+								name = RecentWork
+								colPos = 3
+							}
+						}
+					}
+					6 {
+						columns {
+							1 {
+								name = Counters
+								colPos = 4
+							}
+						}
+					}
+					7 {
+						columns {
+							1 {
+								name = ContactForm
+								colPos = 5
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

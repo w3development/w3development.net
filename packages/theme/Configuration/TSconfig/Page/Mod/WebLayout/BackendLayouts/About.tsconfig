@@ -1,0 +1,64 @@
+mod.web_layout.BackendLayouts {
+	about {
+		title = Template -- About Us
+		icon = EXT:theme/Resources/Public/Icons/BackendLayouts/Default.svg
+		config {
+			backend_layout {
+				colCount = 2
+				rowCount = 7
+				rows {
+					1 {
+						columns {
+							1 {
+								name = About
+								colPos = 0
+								colspan = 2
+							}
+						}
+					}
+					2 {
+						columns {
+							1 {
+								name = Company
+								colPos = 1
+							}
+						}
+						columns {
+							2 {
+								name = Mission
+								colPos = 2
+							}
+						}
+					}
+					3 {
+						columns {
+							1 {
+								name = Team
+								colPos = 3
+								colspan = 2
+							}
+						}
+					}
+					5 {
+						columns {
+							1 {
+								name = Team Items
+								colPos = 4
+								colspan = 2
+							}
+						}
+					}
+					6 {
+						columns {
+							1 {
+								name = Clients
+								colPos = 5
+								colspan = 2
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

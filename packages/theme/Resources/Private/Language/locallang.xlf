@@ -227,15 +227,15 @@
             </trans-unit>
 
             <trans-unit id="international">
-             <source>Shkodër, Albania</source>
+             <source>Shkoder, ALBANIA</source>
             </trans-unit>
 
             <trans-unit id="phone">
-             <source>+355 69 38 58 950</source>
+             <source>+355 (0) 69 38 58 950</source>
             </trans-unit>
 
             <trans-unit id="footercopyright">
-             <source>Copyright ©, 2015-2023 W3development shpk. All Rights Reserved.</source>
+             <source>© Copyright W3Development Sh.p.k 2021. All Rights Reserved.</source>
             </trans-unit>
 
             <trans-unit id="blog">
@@ -252,18 +252,6 @@
 
             <trans-unit id="languageMenu.title.2">
              <source>Italian</source>
-            </trans-unit>
-
-            <trans-unit id="backendLayout.default">
-             <source>Default Template</source>
-            </trans-unit>
-
-            <trans-unit id="backendLayout.default.columnName.teaser">
-             <source>Teaser</source>
-            </trans-unit>
-
-            <trans-unit id="backendLayout.default.columnName.content">
-             <source>Content</source>
             </trans-unit>
         </body>
     </file>

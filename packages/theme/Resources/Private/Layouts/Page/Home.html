@@ -1,0 +1,48 @@
+{namespace w3d=W3Development\Theme\ViewHelpers}
+<f:layout name="Home" />
+<f:cObject typoscriptObjectPath="lib.GoogleTagManager" />
+<div class="body">
+	<header id="header">
+		<f:render partial="Header/Main" />
+	</header>
+	<f:render section="Slider" />
+	<div role="main" class="main">
+		<div class="container">
+			<div class="row justify-content-center mt-5">
+				<div class="col-lg-10">
+					<f:render section="Services" />
+				</div>
+			</div>
+		</div>
+		<section class="section section-default section-default-scale-8">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<f:render section="WhoWeAre" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mt-5 mb-0 pb-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<f:render section="RecentWork" />
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container">
+			<div class="row mt-5 pt-3 counters counters-text-dark">
+				<f:render section="Counters" />
+			</div>
+		</div>
+	</div>
+	<footer class="short" id="footer">
+		<f:render partial="Footer/Main" />
+	</footer>
+</div>

@@ -1,0 +1,32 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+  <f:layout name="Content/Flux"/>
+
+  <f:section name="Configuration">
+      <flux:form id="textbox" label="Text Box">
+          <flux:field.input name="headline" label="Headline" />
+          <flux:field.input name="headline-class" label="Headline Classes" />
+          <flux:field.text name="contenttext" rows="5" cols="30" label="Content Text" />
+          <flux:field.input name="text-class" label="Text Classes" />
+      </flux:form>
+  </f:section>
+
+  <f:section name="Preview">
+      <table width="100%">
+          <tr>
+              <td width="100%">
+                  <h1>{headline}</h1>
+                  <f:format.crop maxCharacters="100">{contenttext}</f:format.crop>
+              </td>
+          </tr>
+      </table>
+  </f:section>
+  
+  <f:section name="Main">
+    <h1 class="lead text-secondary">{headline}</h1>
+    <p class="text-secondary">{contenttext}</p>
+  </f:section>
+</div>

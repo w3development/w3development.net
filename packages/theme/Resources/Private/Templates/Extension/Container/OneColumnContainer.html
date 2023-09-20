@@ -1,0 +1,9 @@
+<div class="{f:if(condition: '{data.frame_class} == \'default\'', then: 'container', else: 'container-fluid')} container-layout-{data.layout} {data.space_before_class}">
+  <f:for each="{children_100}" as="record">
+    <div class="row">
+      <f:format.raw>
+          {record.renderedContent}
+      </f:format.raw>
+    </div>
+  </f:for>
+</div>

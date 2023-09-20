@@ -1,0 +1,32 @@
+<div class="{f:if(condition: '{data.frame_class} == \'default\'', then: 'container', else: 'container-fluid')} container-sm layout-{data.layout} {data.space_before_class}">
+  <div class="row frame">
+      <div class="col col-xs-3 col-sm-3 col-md-3">
+        <f:for each="{children_401}" as="record">
+            <f:format.raw>
+                {record.renderedContent}
+            </f:format.raw>
+        </f:for>
+      </div>
+      <div class="col col-xs-3 col-sm-3 col-md-3">
+        <f:for each="{children_402}" as="record">
+            <f:format.raw>
+                {record.renderedContent}
+            </f:format.raw>
+        </f:for>
+      </div>
+      <div class="col col-xs-3 col-sm-3 col-md-3">
+        <f:for each="{children_403}" as="record">
+            <f:format.raw>
+                {record.renderedContent}
+            </f:format.raw>
+        </f:for>
+      </div>
+      <div class="col col-xs-3 col-sm-3 col-md-3">
+        <f:for each="{children_404}" as="record">
+            <f:format.raw>
+                {record.renderedContent}
+            </f:format.raw>
+        </f:for>
+      </div>
+  </div>
+</div>

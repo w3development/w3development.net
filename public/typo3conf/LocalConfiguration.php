@@ -27,6 +27,15 @@ return [
             ],
         ],
     ],
+    'EXT' => [
+        'extConf' => [
+            'backend' => 'a:6:{s:9:"loginLogo";s:56:"EXT:theme/Resources/Public/Images/Logo/w3development.png";s:19:"loginHighlightColor";s:7:"#3a5a6b";s:20:"loginBackgroundImage";s:68:"EXT:theme/Resources/Public/Images/Backend/typo3-login-background.jpg";s:13:"loginFootnote";s:14:"@w3development";s:11:"backendLogo";s:55:"EXT:theme/Resources/Public/Images/Logo/logo-backend.png";s:14:"backendFavicon";s:53:"EXT:theme/Resources/Public/Images/Favicon/favicon.ico";}',
+            'blog' => 'a:2:{s:23:"disablePageLayoutHeader";s:1:"0";s:19:"enableGravatarProxy";s:1:"0";}',
+            'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
+            'flux' => 'a:9:{s:9:"debugMode";s:1:"0";s:8:"doktypes";s:5:"0,1,4";s:12:"handleErrors";s:1:"0";s:8:"autoload";s:1:"1";s:11:"plugAndPlay";s:1:"0";s:20:"plugAndPlayDirectory";s:6:"design";s:15:"pageIntegration";s:1:"1";s:33:"pagesLanguageConfigurationOverlay";s:1:"0";s:14:"flexFormToIrre";s:1:"0";}',
+            'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
+        ],
+    ],
     'EXTCONF' => [
         'lang' => [
             'availableLanguages' => [
@@ -49,48 +58,24 @@ return [
             'disablePageLayoutHeader' => '0',
             'enableGravatarProxy' => '0',
         ],
-        'bootstrap_package' => [
-            'disableCssProcessing' => '0',
-            'disableGoogleFontCaching' => '0',
-            'disablePageTsBackendLayouts' => '0',
-            'disablePageTsContentElements' => '0',
-            'disablePageTsRTE' => '0',
-            'disablePageTsTCADefaults' => '0',
-            'disablePageTsTCEFORM' => '0',
-            'disablePageTsTCEMAIN' => '0',
-        ],
-        'extension_builder' => [
-            'backupDir' => 'var/tx_extensionbuilder/backups',
-            'backupExtension' => '1',
-            'enableRoundtrip' => '1',
-        ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
-        'mask' => [
-            'backend' => '',
-            'backend_layouts_folder' => '',
-            'backendlayout_pids' => '0',
-            'content' => '',
-            'content_elements_folder' => '',
-            'json' => '',
-            'layouts' => '',
-            'layouts_backend' => '',
-            'loader_identifier' => '',
-            'partials' => '',
-            'partials_backend' => '',
-            'preview' => '',
+        'flux' => [
+            'autoload' => '1',
+            'debugMode' => '0',
+            'doktypes' => '0,1,4',
+            'flexFormToIrre' => '0',
+            'handleErrors' => '0',
+            'pageIntegration' => '1',
+            'pagesLanguageConfigurationOverlay' => '0',
+            'plugAndPlay' => '0',
+            'plugAndPlayDirectory' => 'design',
         ],
-        'powermail' => [
-            'disableBackendModule' => '0',
-            'disableIpLog' => '1',
-            'disableMarketingInformation' => '0',
-            'disablePluginInformation' => '0',
-            'disablePluginInformationMailPreview' => '0',
-            'enableCaching' => '0',
-            'l10n_mode_merge' => '0',
-            'replaceIrreWithElementBrowser' => '0',
+        'scheduler' => [
+            'maxLifetime' => '1440',
+            'showSampleTasks' => '1',
         ],
     ],
     'FE' => [

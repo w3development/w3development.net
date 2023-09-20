@@ -2,6 +2,14 @@
 @import 'EXT:theme/Configuration/TypoScript/Extensions/Seo/constants.typoscript'
 
 page{
+  fluidtemplate {
+      # cat=user_bar: advanced/100/100; type=string; label=Layout Root Path: Path to layouts
+      layoutRootPath  = EXT:theme/Resources/Private/Layouts/Page/
+      # cat=user_bar: advanced/100/110; type=string; label=Partial Root Path: Path to partials
+      partialRootPath = EXT:theme/Resources/Private/Partials/Page/
+      # cat=user_bar: advanced/100/120; type=string; label=Template Root Path: Path to templates
+      templateRootPath = EXT:theme/Resources/Private/Templates/Page/
+  }
 
   meta{
     keywords = web, development, web development, design, typo3, magento, wordpress, ecommerce, commerce, company, agency, programming, design

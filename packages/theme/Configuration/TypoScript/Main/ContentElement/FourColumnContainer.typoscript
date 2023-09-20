@@ -1,0 +1,11 @@
+// default/general configuration (will add 'children_<colPos>' variable to processedData for each colPos in container
+tt_content.container-4col < lib.contentElement
+tt_content.container-4col {
+    templateName = FourColumnContainer
+    templateRootPaths {
+        10 = EXT:theme/Resources/Private/Templates/Extension/Container/
+    }
+    dataProcessing {
+        100 = B13\Container\DataProcessing\ContainerProcessor
+    }
+}

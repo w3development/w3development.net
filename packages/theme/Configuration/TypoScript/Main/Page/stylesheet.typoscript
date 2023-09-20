@@ -1,0 +1,19 @@
+page{
+
+  cssInline {
+    10 = FILE
+    10.file = typo3conf/ext/theme/Resources/Public/Stylesheets/theme.css
+
+    40 = FILE
+    40.file = typo3conf/ext/theme/Resources/Public/custom.min.css
+  }
+
+  includeCSS{
+    fontawesome = EXT:theme/Resources/Public/Stylesheets/all.css
+  }
+}
+[globalVar = GP:amp > 0]
+page.cssInline.40 >
+page.cssInline.20 >
+page.cssInline.30 >
+[global]

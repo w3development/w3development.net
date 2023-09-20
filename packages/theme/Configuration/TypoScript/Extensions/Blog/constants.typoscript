@@ -1,0 +1,15 @@
+plugin.tx_blog {
+  settings {
+    blogUid = 6
+    authorUid = 142
+    categoryUid = 143
+    tagUid = 145
+    archiveUid = 144
+    storagePid = 137
+  }
+  view {
+    templateRootPaths = EXT:theme/Resources/Private/Templates/Extension/Blog/
+    partialRootPaths  = EXT:theme/Resources/Private/Partials/Extension/Blog/
+    layoutRootPaths   = EXT:theme/Resources/Private/Layouts/Extension/Blog/
+  }
+}

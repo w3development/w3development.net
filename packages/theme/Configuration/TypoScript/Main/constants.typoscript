@@ -1,0 +1,31 @@
+@import 'EXT:theme/Configuration/TypoScript/Extensions/Blog/constants.typoscript'
+@import 'EXT:theme/Configuration/TypoScript/Extensions/Seo/constants.typoscript'
+
+page{
+
+  meta{
+    keywords = web, development, web development, design, typo3, magento, wordpress, ecommerce, commerce, company, agency, programming, design
+    description = Looking for a Professional Web Development Company that offers cost affordable services? From now on we will be the only Web Development Company you will need to contact ever again.
+  }
+
+}
+
+styles{
+  templates {
+    # cat=theme/templates/b1; type=string; label= Path of Fluid Templates for all defined content elements
+    templateRootPath = EXT:theme/Resources/Private/Content/Templates/
+    # cat=theme/templates/b2; type=string; label= Path of Fluid Partials for all defined content elements
+    partialRootPath = EXT:theme/Resources/Private/Content/Partials/
+    # cat=theme/templates/b3; type=string; label= Path of Fluid Layouts for all defined content elements
+    layoutRootPath =  EXT:theme/Resources/Private/Content/Layouts/
+  }
+}
+
+global {
+    languageLabels {
+    current = English
+    availableSysLanguageUids = 0,1,2
+    additionalParams = &L=0 || &L=1 || &L=2
+    availableLabels = English || Albanian || Italiano
+  }
+}

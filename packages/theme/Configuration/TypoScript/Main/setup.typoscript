@@ -1,0 +1,53 @@
+// Including TypoScript Code.
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Configurations/settings.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Page/header.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Page/meta.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Page/schema.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Page/stylesheet.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Page/javascript.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/topnavigation.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/languageswitcher.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/alternatelanguage.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/getcontent.typoscript">
+
+// Custom Content elements
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/Configurations/development.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/OneColumnContainer.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/TwoColumnContainer.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/ThreeColumnContainer.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/FourColumnContainer.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Helper/DynamicContent.typoscript">
+
+page.5 >
+page = PAGE
+page {
+    10 >
+	10 = FLUIDTEMPLATE
+	10 {
+		templateName = TEXT
+		templateName {
+			cObject = TEXT
+			cObject {
+				data = pagelayout
+				required = 1
+				case = uppercamelcase
+				split {
+					token = pagets__
+					cObjNum = 1
+					1.current = 1
+				}
+			}
+			ifEmpty = Default
+		}
+
+		templateRootPaths {
+			0 = EXT:theme/Resources/Private/Templates/Page/
+		}
+		partialRootPaths {
+			0 = EXT:theme/Resources/Private/Partials/Page/
+		}
+		layoutRootPaths {
+			0 = EXT:theme/Resources/Private/Layouts/Page/
+		}
+	}
+}

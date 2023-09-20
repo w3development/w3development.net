@@ -1,0 +1,9 @@
+{
+  "name": "w3development",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  },
+  "scripts": {
+    "sass": "sass --watch ./Resources/Private/Scss/theme.scss ./Resources/Public/theme.css"
+  }
+}

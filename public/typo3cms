@@ -1,4 +1,0 @@
-#!/usr/bin/env php
-<?php
-// In non Composer mode we're copied into TYPO3 web root
-require __DIR__ . '/typo3conf/ext/typo3_console/Libraries/helhum/typo3-console/Scripts/typo3-console.php';

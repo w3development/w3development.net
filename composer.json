@@ -23,7 +23,6 @@
 		}
 	],
 	"require": {
-		"helhum/typo3-console": "^5.5.5",
 		"typo3/minimal": "^9.5",
 		"typo3/cms-about": "^9.5",
 		"typo3/cms-adminpanel": "^9.5",

@@ -1,6 +1,6 @@
 {
 	"name": "typo3/cms-base-distribution",
-	"description": "TYPO3 CMS Base Distribution",
+	"description" : "TYPO3 CMS Base Distribution",
 	"license": "GPL-2.0-or-later",
 	"config": {
 		"allow-plugins": {
@@ -23,6 +23,7 @@
 		}
 	],
 	"require": {
+		"helhum/typo3-console": "^5.5.5",
 		"typo3/minimal": "^9.5",
 		"typo3/cms-about": "^9.5",
 		"typo3/cms-adminpanel": "^9.5",
@@ -44,10 +45,9 @@
 		"typo3/cms-viewpage": "^9.5",
 		"w3development/theme": "@dev",
 		"fluidtypo3/flux": "^9.5",
-		"b13/container": "^1.6",
-		"t3g/blog": "^10.0"
+		"b13/container": "1.2"
 	},
-	"scripts": {
+	"scripts":{
 		"typo3-cms-scripts": [
 			"typo3cms install:generatepackagestates",
 			"typo3cms install:fixfolderstructure"

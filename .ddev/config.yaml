@@ -4,7 +4,7 @@ docroot: public
 php_version: "7.4"
 webserver_type: nginx-fpm
 router_http_port: "8086"
-xdebug_enabled: true
+xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
 database:

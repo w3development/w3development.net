@@ -1,5 +1,5 @@
 <f:layout name="Contact" />
-<f:cObject typoscriptObjectPath="lib.GoogleTagManager" />
+<f:render partial="BodyTag/GtmNoScript" />
 <div class="body">
 	<header id="header">
 		<f:render partial="Header/Main" />
@@ -39,12 +39,15 @@
 		<div class="container">
 			<div class="row justify-content-center mt-5">
 				<div class="col-lg-10">
-				  <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.condition')} == Amp">
-                      <f:then></f:then>
-                    <f:else>
-                       <f:render section="ContactForm" />
-                    </f:else>
-                   </f:if>
+                    <f:comment>
+
+                        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.condition')} == Amp">
+                            <f:then></f:then>
+                          <f:else>
+                             <f:render section="ContactForm" />
+                          </f:else>
+                         </f:if>
+                    </f:comment>
 
 				</div>
 			</div>

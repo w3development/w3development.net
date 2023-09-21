@@ -3,27 +3,19 @@
 ########################################
 page {
 
-  # Favicon Configurations
-  shortcutIcon = /typo3conf/ext/theme/Resources/Public/Images/Favicon/favicon-16x16.png
-
-  config.htmlTag_setParams = none
-  config.htmlTag_stdWrap {
-     setContentToCurrent = 1
-     cObject = COA
-     cObject {
-        10 = TEXT
-        10.value = <html lang="en">
-     }
-  }
+  // config.htmlTag_setParams = none
+  // config.htmlTag_stdWrap {
+  //    setContentToCurrent = 1
+  //    cObject = COA
+  //    cObject {
+  //       10 = TEXT
+  //       10.value = <html lang="en">
+  //    }
+  // }
 
   headerData{
 
     # Title Tag Configurations
-    10 = TEXT
-    10{
-      value = <title>{ page : title } - W3Development</title>
-      value.insertData = 1
-    }
 
     30 = TEXT
     30 {
@@ -34,92 +26,68 @@ page {
       }
       wrap = <link rel="amphtml" href="|" />
     }
-
-    # Favicon configurations
-    86199 = TEXT
-    86199 {
-      value(
-        <link rel="apple-touch-icon" sizes="76x76" href="/typo3conf/ext/theme/Resources/Public/Images/Favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/typo3conf/ext/theme/Resources/Public/Images/Favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/typo3conf/ext/theme/Resources/Public/Images/Favicon/favicon-16x16.png">
-        <link rel="manifest" href="/typo3conf/ext/theme/Resources/Public/Images/Favicon/site.webmanifest">
-        <link rel="mask-icon" href="/typo3conf/ext/theme/Resources/Public/Images/Favicon/safari-pinned-tab.svg" color="#5bbad5">
-      )
-    }
-
-    # Google Tag Configurations
-    86999 = TEXT
-    86999{
-      value(
-        <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PNNHMC5');</script>
-<!-- End Google Tag Manager -->
-      )
-    }
   }
 }
 
-lib.GoogleTagManager = TEXT
-lib.GoogleTagManager.value(
-
-  <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNNHMC5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-)
+lib.GoogleTagManager = FLUIDTEMPLATE
+lib.GoogleTagManager.file = EXT:theme/Resources/Private/Partials/BodyTag/GtmNoScript.html
 
 
+// [globalVar = GP:amp > 0]
+//   page{
+//     config.htmlTag_stdWrap.cObject.10.value = <html ⚡ lang="en">
+//     headerData{
+//       30 >
+//       998 >
+//       86200 >
+//       86999 >
+//       87000 = TEXT
+//       87000{
+//         value (
+//         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+//         <script async src="https://cdn.ampproject.org/v0.js"></script>
+//         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+//         <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+//         <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+//         <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+//         <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+//         <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+//         <!-- AMP Analytics -->
+//         <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+//         )
+//       }
+//       86999 >
+//     }
+//     javascriptLibs.jQuery >
+//   }
+
+//   lib.GoogleTagManager.value(
+//     <!-- Google Tag Manager -->
+//     <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-PXX2558&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+//   )
+// [global]
 
 
 
+// JAVASCRIPTS
+// [PIDinRootline = 6]
+// //   page.includeJSFooter{
+// //     ShareThis = https://platform-api.sharethis.com/js/sharethis.js#property=5c0cd5987b0b4500110a1a50&product=sticky-share-buttons
+// //     ShareThis.external = 1
+// //     ShareThis.async = 1
+// //   }
+// [global]
 
-page.headerData.87010 = TEXT
+// [globalVar = GP:amp > 0]
+//  page.includeJS >
+//  page.includeJSFooter >
+//  page.includeJSFooterlibs >
+//  page.includeCSS >
+// [global]
 
-[PIDinRootline = 6] && [treeLevel = 2]
- // page.headerData.87010.value= <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0cd71d9fe92869"></script>
-[global]
-
-[globalVar = GP:amp > 0]
-  page{
-    config.htmlTag_stdWrap.cObject.10.value = <html ⚡ lang="en">
-    headerData{
-      30 >
-      998 >
-      86200 >
-      86999 >
-      87000 = TEXT
-      87000{
-        value (
-        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-        <script async src="https://cdn.ampproject.org/v0.js"></script>
-        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-        <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
-        <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
-        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-        <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
-        <!-- AMP Analytics -->
-        <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-        )
-      }
-      86999 >
-    }
-    javascriptLibs.jQuery >
-  }
-
-  lib.GoogleTagManager.value(
-    <!-- Google Tag Manager -->
-    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-PXX2558&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
-  )
-[global]
-
-
-page {
-  bodyTagCObject.stdWrap.append = TEXT
-  bodyTagCObject.stdWrap.append.value (
-    <div id="fb-root"></div>
-  )
-}
+// [PIDinRootline = 6]  && [treeLevel = 2] && [globalVar = GP:amp > 0]
+//  page.includeJS >
+//  page.includeJS >
+//  page.includeJSFooter >
+//  page.includeJSFooterlibs >
+// [global]

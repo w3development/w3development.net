@@ -2,11 +2,12 @@
 
 if (!defined('TYPO3_MODE')) die('Access denied.');
 
-$currentApplicationContext = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' (' . (string)$currentApplicationContext . ')';
+// $currentApplicationContext = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
+// $GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' (' . (string)$currentApplicationContext . ')';
 
 \FluidTYPO3\Flux\Core::registerProviderExtensionKey('W3Development.theme', 'Content');
 \FluidTYPO3\Flux\Core::registerProviderExtensionKey('W3Development.theme', 'Page');
+
 /**
  * Adding the default backend layout TSconfig
  */
@@ -36,17 +37,17 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' (' . (string)$currentApplica
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TSconfig/User/options.tsconfig">'
 );
 
-call_user_func(function () {
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup(
-        trim('
-            plugin.tx_form.settings.yamlConfigurations {
-                999 = EXT:theme/Configuration/Form/FormSetup.yaml
-            }
+// call_user_func(function () {
+//     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup(
+//         trim('
+//             plugin.tx_form.settings.yamlConfigurations {
+//                 999 = EXT:theme/Configuration/Form/FormSetup.yaml
+//             }
 
-            module.tx_form.settings.yamlConfigurations {
-                999 = EXT:theme/Configuration/Form/FormSetup.yaml
-            }
-        ')
-    );
-});
+//             module.tx_form.settings.yamlConfigurations {
+//                 999 = EXT:theme/Configuration/Form/FormSetup.yaml
+//             }
+//         ')
+//     );
+// });
 ?>

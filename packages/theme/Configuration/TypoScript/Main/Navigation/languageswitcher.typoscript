@@ -43,7 +43,7 @@ lib.mainlanguagesiwtcher {
 }
 
 
-[globalVar = GP:amp > 0]
- lib.mainlanguagesiwtcher >
- lib.mainlanguagesiwtcher = TEXT
-[global]
+// [globalVar = GP:amp > 0]
+//  lib.mainlanguagesiwtcher >
+//  lib.mainlanguagesiwtcher = TEXT
+// [global]

@@ -1,47 +1,44 @@
 <?php
 
-// Getting Website Application Context;
-$currentApplicationContext = \TYPO3\CMS\Core\Core\Environment::getContext();
+/**
+ * #ddev-generated: Automatically generated TYPO3 AdditionalConfiguration.php file.
+ * ddev manages this file and may delete or overwrite the file unless this comment is removed.
+ * It is recommended that you leave this file alone.
+ */
 
-require_once "SystemConfiguration.php";
-
-// Database settings
-$GLOBALS['TYPO3_CONF_VARS']["DB"]["Connections"]["Default"]["host"]     = $db_host;
-$GLOBALS['TYPO3_CONF_VARS']["DB"]["Connections"]["Default"]["dbname"]   = $db_name;
-$GLOBALS['TYPO3_CONF_VARS']["DB"]["Connections"]["Default"]["user"]     = $db_user;
-$GLOBALS['TYPO3_CONF_VARS']["DB"]["Connections"]["Default"]["password"] = $db_pass;
-$GLOBALS['TYPO3_CONF_VARS']["DB"]["Connections"]["Default"]["port"]     = $db_port;
-
-$GLOBALS['TYPO3_CONF_VARS']["DB"]["installToolPassword"] = $install_pass;
-
-// Debugging settings for development context
-if($currentApplicationContext->isDevelopment()){
-    $GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] = true;
-    $GLOBALS['TYPO3_CONF_VARS']['BE']['debug'] = true;
-
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug']       = true;
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors']  = true;
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLogLevel'] = true;
-
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = $developer_ip;
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['exceptionalErrors'] = '28674';
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = 'file';
-    $GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport_smtp_server'] = $smtp_mail_server;
-
-    // Automatic NullBackend for all caches (it's a caching backend which forgets everything immediately)
-    foreach ($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'] as $cacheName => $cacheConfiguration) {
-        // $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$cacheName]['frontend'] = \TYPO3\CMS\Core\Cache\Backend\NullBackend::class;
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$cacheName]['backend'] = \TYPO3\CMS\Core\Cache\Backend\NullBackend::class;
-    }
+if (getenv('IS_DDEV_PROJECT') == 'true') {
+    $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
+        $GLOBALS['TYPO3_CONF_VARS'],
+        [
+            'DB' => [
+                'Connections' => [
+                    'Default' => [
+                        'dbname' => 'db',
+                        'driver' => 'mysqli',
+                        'host' => 'db',
+                        'password' => 'db',
+                        'port' => '3306',
+                        'user' => 'db',
+                    ],
+                ],
+            ],
+            // This GFX configuration allows processing by installed ImageMagick 6
+            'GFX' => [
+                'processor' => 'ImageMagick',
+                'processor_path' => '/usr/bin/',
+                'processor_path_lzw' => '/usr/bin/',
+            ],
+            // This mail configuration sends all emails to mailhog
+            'MAIL' => [
+                'transport' => 'smtp',
+                'transport_smtp_encrypt' => false,
+                'transport_smtp_server' => 'localhost:1025',
+            ],
+            'SYS' => [
+                'trustedHostsPattern' => '.*.*',
+                'devIPmask' => '*',
+                'displayErrors' => 1,
+            ],
+        ]
+    );
 }
-
-$GLOBALS['TYPO3_CONF_VARS']['FE']['cacheHash']['excludedParameters'][] = 'amp';
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' [' . (string)$currentApplicationContext . ']';
-
-$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['backendFavicon'] = 'EXT:theme/Resources/Public/Images/Favicon/favicon.ico';
-$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['backendLogo'] = 'EXT:theme/Resources/Public/Images/Logo/logo-backend.png';
-$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginBackgroundImage'] = 'EXT:theme/Resources/Public/Images/Backend/typo3-login-background.jpg';
-$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginFootnote'] = '@w3development';
-$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginHighlightColor'] = '#3a5a6b';
-$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginLogo'] = 'EXT:theme/Resources/Public/Images/Logo/w3development.png';
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['trustedHostsPattern'] = "w3development.ddev.site";

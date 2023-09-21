@@ -1,46 +1,46 @@
-[globalString = IENV:HTTP_HOST = local.w3development.net]
- page.config {
-      no_cache = 1
-      absRefPrefix = https://local.w3development.net/
+// [globalString = IENV:HTTP_HOST = local.w3development.net]
+//  page.config {
+//       no_cache = 1
+//       absRefPrefix = https://local.w3development.net/
 
-      concatenateJs = 0
-      concatenateCss = 0
+//       concatenateJs = 0
+//       concatenateCss = 0
 
-      compressJs = 0
-      compressCss = 0
-   }
-[end]
+//       compressJs = 0
+//       compressCss = 0
+//    }
+// [end]
 
-[globalString = IENV:HTTP_HOST = staging.w3development.net]
+// [globalString = IENV:HTTP_HOST = staging.w3development.net]
 
- page.config.absRefPrefix = https://staging.w3development.net/
+//  page.config.absRefPrefix = https://staging.w3development.net/
 
-[end]
+// [end]
 
-[globalString = IENV:HTTP_HOST = dev.w3development.net]
- page.config {
-      no_cache = 1
-      absRefPrefix = https://dev.w3development.net/
+// [globalString = IENV:HTTP_HOST = dev.w3development.net]
+//  page.config {
+//       no_cache = 1
+//       absRefPrefix = https://dev.w3development.net/
 
-      concatenateJs = 0
-      concatenateCss = 0
+//       concatenateJs = 0
+//       concatenateCss = 0
 
-      compressJs = 0
-      compressCss = 0
-   }
-[end]
+//       compressJs = 0
+//       compressCss = 0
+//    }
+// [end]
 
-lib.condition=TEXT
-lib.condition.value=NonAmp
+// lib.condition=TEXT
+// lib.condition.value=NonAmp
 
-[PIDinRootline = 7] && [globalVar= GP:amp > 0]
- lib.condition >
- lib.condition=TEXT
- lib.condition.value=Amp
-[global]
+// [PIDinRootline = 7] && [globalVar= GP:amp > 0]
+//  lib.condition >
+//  lib.condition=TEXT
+//  lib.condition.value=Amp
+// [global]
 
-[globalVar= GP:amp > 0]
- lib.condition >
- lib.condition=TEXT
- lib.condition.value=Amp
-[global]
+// [globalVar= GP:amp > 0]
+//  lib.condition >
+//  lib.condition=TEXT
+//  lib.condition.value=Amp
+// [global]

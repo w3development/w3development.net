@@ -27,46 +27,47 @@
   </f:section>
 
   <f:section name="Main">
-
-    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.condition')} == Amp">
-      <f:then>
-        <amp-selector class="tabs-with-flex" role="tablist">
-          <f:for each="{settings.tabs}" as="obj" iteration="itemIteration">
-            <div id="tab-{obj.newtab.id}" role="tab" aria-controls="{obj.newtab.id}" option selected>
-              <i class="{obj.newtab.icon}"></i>{obj.newtab.title}</div>
-            <div id="{obj.newtab.id}" role="tabpanel" aria-labelledby="{obj.newtab.id}">
-              <f:format.html>{obj.newtab.text}</f:format.html>
-              <div>
-              <f:if condition="{obj.newtab.pagelink}">
-                <f:link.typolink parameter="{obj.newtab.pagelink}" target="_blank" class="tablink">Checkout {obj.newtab.title}</f:link.typolink>
-              </f:if>
-            </div>
-            </div>
-          </f:for>
-        </amp-selector>
-      </f:then>
-      <f:else>
-        <div class="tabs">
-          <f:for each="{settings.tabs}" as="obj" iteration="itemIteration">
-            <div class="tab  {f:if(condition: itemIteration.isFirst, then: 'active')}" style=" width: calc(100%/{itemIteration.total});text-align: center;">
-              <a href="{obj.newtab.accordation}">
-                <i class="{obj.newtab.icon}"></i>
-                <p>{obj.newtab.title}</p>
-              </a>
-              <div class="content" id="{obj.newtab.id}">
+  <f:comment>
+      <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.condition')} == Amp">
+        <f:then>
+          <amp-selector class="tabs-with-flex" role="tablist">
+            <f:for each="{settings.tabs}" as="obj" iteration="itemIteration">
+              <div id="tab-{obj.newtab.id}" role="tab" aria-controls="{obj.newtab.id}" option selected>
+                <i class="{obj.newtab.icon}"></i>{obj.newtab.title}</div>
+              <div id="{obj.newtab.id}" role="tabpanel" aria-labelledby="{obj.newtab.id}">
                 <f:format.html>{obj.newtab.text}</f:format.html>
                 <div>
                 <f:if condition="{obj.newtab.pagelink}">
                   <f:link.typolink parameter="{obj.newtab.pagelink}" target="_blank" class="tablink">Checkout {obj.newtab.title}</f:link.typolink>
                 </f:if>
-                </div>
               </div>
+              </div>
+            </f:for>
+          </amp-selector>
+        </f:then>
+        <f:else>
+          <div class="tabs">
+            <f:for each="{settings.tabs}" as="obj" iteration="itemIteration">
+              <div class="tab  {f:if(condition: itemIteration.isFirst, then: 'active')}" style=" width: calc(100%/{itemIteration.total});text-align: center;">
+                <a href="{obj.newtab.accordation}">
+                  <i class="{obj.newtab.icon}"></i>
+                  <p>{obj.newtab.title}</p>
+                </a>
+                <div class="content" id="{obj.newtab.id}">
+                  <f:format.html>{obj.newtab.text}</f:format.html>
+                  <div>
+                  <f:if condition="{obj.newtab.pagelink}">
+                    <f:link.typolink parameter="{obj.newtab.pagelink}" target="_blank" class="tablink">Checkout {obj.newtab.title}</f:link.typolink>
+                  </f:if>
+                  </div>
+                </div>
 
-            </div>
-          </f:for>
+              </div>
+            </f:for>
 
-        </div>
-      </f:else>
-    </f:if>
+          </div>
+        </f:else>
+      </f:if>
+  </f:comment>
   </f:section>
 </div>

@@ -17,17 +17,16 @@ $EM_CONF[$_EXTKEY] = array (
     'clearcacheonload' => 1,
     'author' => 'Elvis Tavasja',
     'author_email' => 'elvis@w3development.net',
-    'author_company' => 'W3Development SHPK',
+    'author_company' => 'w3development shpk',
 
     'constraints' => array (
         'depends' => array (
-            'typo3' => '9-10.99.99',
-            'fluid_styled_content' => '9.5.24',
+            'typo3' => '9-10'
         ),
     ),
     'autoload' => array (
         'psr-4' => array (
-            'W3Development\\Theme\\' => 'Classes/',
+            'W3D\\Theme\\' => 'Classes/',
         ),
     ),
 );

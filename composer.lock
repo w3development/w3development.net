@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b64c26b57ee0c19cf65b83d4cc9cd26",
+    "content-hash": "ab5576264aeebd2cda68e69a81b2ec69",
     "packages": [
         {
             "name": "b13/container",
@@ -742,61 +742,6 @@
                 "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.14.1"
             },
             "time": "2021-08-09T23:46:54+00:00"
-        },
-        {
-            "name": "fluidtypo3/flux",
-            "version": "9.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FluidTYPO3/flux.git",
-                "reference": "83e21a05db31c89cc86d4b08a051aee50b690b2d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FluidTYPO3/flux/zipball/83e21a05db31c89cc86d4b08a051aee50b690b2d",
-                "reference": "83e21a05db31c89cc86d4b08a051aee50b690b2d",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^7.1.0",
-                "typo3/cms-backend": "^8.7 || ^9 || ^10 || ^11 || dev-master",
-                "typo3/cms-core": "^8.7 || ^9 || ^10 || ^11 || dev-master",
-                "typo3/cms-fluid": "^8.7 || ^9 || ^10 || ^11 || dev-master",
-                "typo3/cms-frontend": "^8.7 || ^9 || ^10 || ^11 || dev-master",
-                "typo3/cms-recordlist": "^8.7 || ^9 || ^10 || ^11 || dev-master"
-            },
-            "replace": {
-                "typo3-ter/flux": "self.version"
-            },
-            "require-dev": {
-                "fluidtypo3/development": "^4"
-            },
-            "suggest": {
-                "fluidtypo3/vhs": "ViewHelper library for Fluid templates."
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "flux"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "FluidTYPO3\\Flux\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "The flux package from FluidTYPO3",
-            "homepage": "http://fluidtypo3.org",
-            "support": {
-                "issues": "https://github.com/FluidTYPO3/flux/issues",
-                "source": "https://github.com/FluidTYPO3/flux/tree/9.5.0"
-            },
-            "time": "2021-05-24T21:02:40+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

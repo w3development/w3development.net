@@ -2,9 +2,7 @@
 return [
     'BE' => [
         'debug' => true,
-        'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$U2VOM1FlUnBsOEMuTXJqeQ$mVzGR1g+lc0ACMKXc0PdouiE7MVPlWl9DnjAUWASvI4',
-        'loginSecurityLevel' => 'normal',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$Yjd4STNmREdCbUYxZHdTTQ$q99egPaKptdq4myGoYnNehNgpHzUBu7Bp2pMF2Nl3O8',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -27,13 +25,7 @@ return [
             ],
         ],
     ],
-    'EXT' => [
-        'extConf' => [
-            'backend' => 'a:6:{s:9:"loginLogo";s:56:"EXT:theme/Resources/Public/Images/Logo/w3development.png";s:19:"loginHighlightColor";s:7:"#3a5a6b";s:20:"loginBackgroundImage";s:68:"EXT:theme/Resources/Public/Images/Backend/typo3-login-background.jpg";s:13:"loginFootnote";s:14:"@w3development";s:11:"backendLogo";s:55:"EXT:theme/Resources/Public/Images/Logo/logo-backend.png";s:14:"backendFavicon";s:53:"EXT:theme/Resources/Public/Images/Favicon/favicon.ico";}',
-            'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
-            'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
-        ],
-    ],
+    'EXT' => [],
     'EXTCONF' => [
         'lang' => [
             'availableLanguages' => [
@@ -51,14 +43,11 @@ return [
             'loginFootnote' => '@w3development',
             'loginHighlightColor' => '#3a5a6b',
             'loginLogo' => 'EXT:theme/Resources/Public/Images/Logo/w3development.png',
+            'loginLogoAlt' => '',
         ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
-        ],
-        'scheduler' => [
-            'maxLifetime' => '1440',
-            'showSampleTasks' => '1',
         ],
     ],
     'FE' => [
@@ -79,7 +68,6 @@ return [
         'processor_effects' => false,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
-        'processor_path_lzw' => '/usr/bin/',
     ],
     'LOG' => [
         'TYPO3' => [
@@ -102,8 +90,8 @@ return [
         ],
     ],
     'MAIL' => [
-        'transport' => 'smtp',
-        'transport_sendmail_command' => '',
+        'transport' => 'sendmail',
+        'transport_sendmail_command' => '/usr/local/bin/mailhog sendmail -t test@example.org --smtp-addr 127.0.0.1:1025',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
         'transport_smtp_server' => '',
@@ -122,12 +110,6 @@ return [
                     ],
                 ],
                 'pages' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
-                    'options' => [
-                        'compression' => true,
-                    ],
-                ],
-                'pagesection' => [
                     'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
                         'compression' => true,
@@ -153,7 +135,6 @@ return [
             'yamlImportsFollowDeclarationOrder' => true,
         ],
         'sitename' => 'New TYPO3 site',
-        'systemLogLevel' => 0,
         'systemMaintainers' => [
             1,
             18,

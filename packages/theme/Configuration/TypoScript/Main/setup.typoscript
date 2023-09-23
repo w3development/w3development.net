@@ -59,6 +59,29 @@ tt_content.theme_serviceitem {
     }
 }
 
+tt_content.theme_textbox < lib.contentElement
+tt_content.theme_textbox {
+    templateName = TextBox
+    templateRootPaths {
+        10 = EXT:theme/Resources/Private/Templates/Content/
+    }
+    dataProcessing {
+        100 = W3D\Theme\DataProcessing\FlexFormProcessor
+    }
+}
+
+
+tt_content.theme_service < lib.contentElement
+tt_content.theme_service {
+    templateName = Service
+    templateRootPaths {
+        10 = EXT:theme/Resources/Private/Templates/Content/
+    }
+    dataProcessing {
+        100 = W3D\Theme\DataProcessing\FlexFormProcessor
+    }
+}
+
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Helper/DynamicContent.typoscript">
 
 page = PAGE

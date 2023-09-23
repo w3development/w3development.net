@@ -1,33 +1,6 @@
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
-      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
-
-<f:layout name="Content/Flux"/>
-
-<f:section name="Configuration">
-    <flux:form id="focus" label="Service Focus" description="Adds a content element for page Services">
-        <flux:field.text name="text" rows="20" cols="70" label="Text" />
-        <flux:field.file name="image" label="Image" useFalRelation="1" minItems="0" maxItems="1" allowed="jpg,png,svg" showThumbnails="1" />
-    </flux:form>
-</f:section>
-
-<f:section name="Preview">
-    <table width="100%">
-        <tr>
-            <td width="100%">
-                {text}
-            </td>
-        </tr>
-    </table>
-</f:section>
-
-<f:section name="Main">
-          <div class="col-lg-10">
-            <h2 class="mt-5 mb-5 pb-0" style="color:#fff">{text}</h2>
-          </div>
-          <div class="col-lg-2 text-center">
-                <f:image src="{image}" style="width:50px;height:50px;color:#fff" class="img-fluid"/>
-          </div>
-</f:section>
+<div class="col-lg-10">
+    <h2 class="mt-5 mb-5 pb-0" style="color:#fff">{flexform.text}</h2>
+</div>
+<div class="col-lg-2 text-center">
+    <f:image src="{flexform.image}" style="width:50px;height:50px;color:#fff" class="img-fluid"/>
 </div>

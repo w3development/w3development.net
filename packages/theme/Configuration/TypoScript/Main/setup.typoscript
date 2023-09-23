@@ -22,6 +22,43 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/TwoColumnContainer.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/ThreeColumnContainer.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/FourColumnContainer.typoscript">
+
+
+// default/general configuration (will add 'children_<colPos>' variable to processedData for each colPos in container
+tt_content.theme_team < lib.contentElement
+tt_content.theme_team {
+    templateName = Team
+    templateRootPaths {
+        10 = EXT:theme/Resources/Private/Templates/Content/
+    }
+    dataProcessing {
+        100 = W3D\Theme\DataProcessing\FlexFormProcessor
+    }
+}
+
+tt_content.theme_tabs < lib.contentElement
+tt_content.theme_tabs {
+    templateName = Tabs
+    templateRootPaths {
+        10 = EXT:theme/Resources/Private/Templates/Content/
+    }
+    dataProcessing {
+        100 = W3D\Theme\DataProcessing\FlexFormProcessor
+    }
+}
+
+
+tt_content.theme_serviceitem < lib.contentElement
+tt_content.theme_serviceitem {
+    templateName = ServiceItem
+    templateRootPaths {
+        10 = EXT:theme/Resources/Private/Templates/Content/
+    }
+    dataProcessing {
+        100 = W3D\Theme\DataProcessing\FlexFormProcessor
+    }
+}
+
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Helper/DynamicContent.typoscript">
 
 page = PAGE

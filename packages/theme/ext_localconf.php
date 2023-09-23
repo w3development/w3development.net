@@ -5,8 +5,8 @@ if (!defined('TYPO3_MODE')) die('Access denied.');
 // $currentApplicationContext = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
 // $GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' (' . (string)$currentApplicationContext . ')';
 
-\FluidTYPO3\Flux\Core::registerProviderExtensionKey('W3Development.theme', 'Content');
-\FluidTYPO3\Flux\Core::registerProviderExtensionKey('W3Development.theme', 'Page');
+// \FluidTYPO3\Flux\Core::registerProviderExtensionKey('W3Development.theme', 'Content');
+// \FluidTYPO3\Flux\Core::registerProviderExtensionKey('W3Development.theme', 'Page');
 
 /**
  * Adding the default backend layout TSconfig

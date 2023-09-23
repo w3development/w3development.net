@@ -1,44 +1,17 @@
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
-      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
-
-<f:layout name="Content/Flux"/>
-
-<f:section name="Configuration">
-    <flux:form id="service-item" label="Service Item">
-        <flux:field.input name="headline" label="Headline" />
-        <flux:field.text name="teasertext" rows="5" cols="30" label="Teaser Text" />
-        <flux:field.input name="icon" label="Icon Class" />
-    </flux:form>
-</f:section>
-
-<f:section name="Preview">
-    <table width="100%">
-        <tr>
-            <td width="50%">
-                <f:format.crop maxCharacters="50">{teasertext}</f:format.crop>
-            </td>
-        </tr>
-    </table>
-</f:section>
-
-<f:section name="Main">
+<f:comment>
     <div class="text-center">
-      <div class="feature-box feature-box-style-4 justify-content-center">
-        <span class="featured-boxes featured-boxes-style-6 p-0 m-0">
-          <span class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
-            <span class="box-content p-0 m-0">
-              <i class="icon-featured icons {icon}"></i>
+        <div class="feature-box feature-box-style-4 justify-content-center">
+            <span class="featured-boxes featured-boxes-style-6 p-0 m-0">
+                <span class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
+                <span class="box-content p-0 m-0">
+                    <i class="icon-featured icons {icon}"></i>
+                </span>
+                </span>
             </span>
-          </span>
-        </span>
-        <div class="feature-box-info">
-          <h4 class="mb-2 mt-2 text-secondary">{headline}</h4>
-          <p class="mb-4">{teasertext}</p>
+            <div class="feature-box-info">
+                <h4 class="mb-2 mt-2 text-secondary">{headline}</h4>
+                <p class="mb-4">{teasertext}</p>
+            </div>
         </div>
-      </div>
     </div>
-</f:section>
-
-</div>
+</f:comment>

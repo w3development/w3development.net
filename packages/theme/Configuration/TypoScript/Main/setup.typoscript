@@ -82,6 +82,17 @@ tt_content.theme_service {
     }
 }
 
+tt_content.theme_blogteaser < lib.contentElement
+tt_content.theme_blogteaser {
+    templateName = BlogTeaser
+    templateRootPaths {
+        10 = EXT:theme/Resources/Private/Templates/Content/
+    }
+    dataProcessing {
+        100 = W3D\Theme\DataProcessing\FlexFormProcessor
+    }
+}
+
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Helper/DynamicContent.typoscript">
 
 page = PAGE

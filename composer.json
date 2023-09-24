@@ -43,7 +43,8 @@
 		"typo3/cms-t3editor": "^12.4",
 		"typo3/cms-tstemplate": "^12.4",
 		"typo3/cms-viewpage": "^12.4",
-		"b13/container": "^2.2"
+		"b13/container": "^2.2",
+		"w3development/theme": "@dev"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba63d2deceaf9661e4efaa69336a75de",
+    "content-hash": "508094cbc32e8011bebbf74586aa46ed",
     "packages": [
         {
             "name": "b13/container",
@@ -7484,6 +7484,36 @@
             "time": "2023-06-19T16:51:11+00:00"
         },
         {
+            "name": "w3development/theme",
+            "version": "dev-system/update",
+            "dist": {
+                "type": "path",
+                "url": "./packages/theme",
+                "reference": "d857fd7f14ed3aa536c224090e241e5878b2070a"
+            },
+            "require": {
+                "typo3/cms-core": "^12"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "theme"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "W3D\\Theme\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "The Theme",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.11.0",
             "source": {
@@ -7545,7 +7575,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "w3development/theme": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

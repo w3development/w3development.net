@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('TYPO3_MODE')) die('Access denied.');
+if (!defined('TYPO3')) die('Access denied.');
 
 // $currentApplicationContext = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
 // $GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' (' . (string)$currentApplicationContext . ')';

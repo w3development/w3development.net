@@ -45,6 +45,10 @@ return [
             'loginLogo' => 'EXT:theme/Resources/Public/Images/Logo/w3development.png',
             'loginLogoAlt' => '',
         ],
+        'blog' => [
+            'disablePageLayoutHeader' => '0',
+            'enableGravatarProxy' => '0',
+        ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',

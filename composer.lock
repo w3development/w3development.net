@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a742dae9ab3ae45e2a9a76a5f7b0999",
+    "content-hash": "7a1bd0c08d58a567c7c6d17ba7d3919a",
     "packages": [
         {
             "name": "b13/container",
@@ -2375,16 +2375,16 @@
         },
         {
             "name": "psr/http-message",
-            "version": "2.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
-                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
                 "shasum": ""
             },
             "require": {
@@ -2393,7 +2393,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -2408,7 +2408,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
+                    "homepage": "http://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for HTTP messages",
@@ -2422,9 +2422,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/2.0"
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
             },
-            "time": "2023-04-04T09:54:51+00:00"
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psr/http-server-handler",
@@ -5670,22 +5670,70 @@
         },
         {
             "name": "t3g/blog",
-            "version": "1.0.0",
+            "version": "12.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3GmbH/blog.git",
-                "reference": "c1ad584f05ff4fd2664947e252cbf0835eaa1de8"
+                "reference": "ce2dc4836717942da211070e1dab9868428d59ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3GmbH/blog/zipball/c1ad584f05ff4fd2664947e252cbf0835eaa1de8",
-                "reference": "c1ad584f05ff4fd2664947e252cbf0835eaa1de8",
+                "url": "https://api.github.com/repos/TYPO3GmbH/blog/zipball/ce2dc4836717942da211070e1dab9868428d59ca",
+                "reference": "ce2dc4836717942da211070e1dab9868428d59ca",
                 "shasum": ""
             },
+            "require": {
+                "ext-json": "*",
+                "ext-pdo": "*",
+                "php": "^7.4 || ^8.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0",
+                "typo3/cms-backend": "^11.5 || ^12.4",
+                "typo3/cms-core": "^11.5 || ^12.4",
+                "typo3/cms-extbase": "^11.5 || ^12.4",
+                "typo3/cms-extensionmanager": "^11.5 || ^12.4",
+                "typo3/cms-fluid": "^11.5 || ^12.4",
+                "typo3/cms-form": "^11.5 || ^12.4",
+                "typo3/cms-frontend": "^11.5 || ^12.4",
+                "typo3/cms-install": "^11.5 || ^12.4",
+                "typo3fluid/fluid": "^2.6"
+            },
             "require-dev": {
-                "phpunit/phpunit": "5.4.6"
+                "bk2k/bootstrap-package": "^13.0",
+                "bk2k/extension-helper": "^2.0",
+                "friendsofphp/php-cs-fixer": "^3.14",
+                "friendsoftypo3/phpstan-typo3": "^0.9.0",
+                "overtrue/phplint": "^3.4 || ^9.0",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3",
+                "phpstan/phpstan-strict-rules": "^1.5",
+                "typo3/cms-belog": "^11.5 || ^12.4",
+                "typo3/cms-beuser": "^11.5 || ^12.4",
+                "typo3/cms-filelist": "^11.5 || ^12.4",
+                "typo3/cms-fluid-styled-content": "^11.5 || ^12.4",
+                "typo3/cms-lowlevel": "^11.5 || ^12.4",
+                "typo3/cms-rte-ckeditor": "^11.5 || ^12.4",
+                "typo3/cms-seo": "^11.5 || ^12.4",
+                "typo3/cms-setup": "^11.5 || ^12.4",
+                "typo3/cms-tstemplate": "^11.5 || ^12.4",
+                "typo3/testing-framework": "^7.0 || ^8.0"
+            },
+            "suggest": {
+                "bk2k/bootstrap-package": "Theme for TYPO3",
+                "typo3/cms-fluid-styled-content": "Content rendering definition based on fluid"
             },
             "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "12.0.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "blog",
+                    "web-dir": ".build/public"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "T3G\\AgencyPack\\Blog\\": "Classes/"
@@ -5693,21 +5741,24 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "TYPO3 GmbH",
-                    "homepage": "http://typo3.com/",
+                    "homepage": "https://typo3.com/",
                     "role": "Developer"
                 }
             ],
-            "description": "blog extension",
+            "description": "This blog extension uses TYPO3s core concepts and elements to provide a full-blown blog that users of TYPO3 can instantly understand and use.",
+            "homepage": "https://extensions.typo3.org/extension/blog/",
             "support": {
+                "docs": "https://docs.typo3.org/typo3cms/extensions/blog/",
                 "issues": "https://github.com/TYPO3GmbH/blog/issues",
-                "source": "https://github.com/TYPO3GmbH/blog/tree/1.0.0"
+                "slack": "https://typo3.slack.com/archives/t3g-ext-blog",
+                "source": "https://github.com/TYPO3GmbH/blog"
             },
-            "time": "2016-11-02T14:08:28+00:00"
+            "time": "2023-09-12T12:50:35+00:00"
         },
         {
             "name": "typo3/class-alias-loader",

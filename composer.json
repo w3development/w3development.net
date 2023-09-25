@@ -45,7 +45,7 @@
 		"typo3/cms-viewpage": "^12.4",
 		"b13/container": "^2.2",
 		"w3development/theme": "@dev",
-		"t3g/blog": "^1.0",
+		"t3g/blog": "12.0.2",
 		"ichhabrecht/content-defender": "^3.4",
 		"brotkrueml/codehighlight": "^3.1"
 	},

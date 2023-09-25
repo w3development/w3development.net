@@ -44,7 +44,10 @@
 		"typo3/cms-tstemplate": "^12.4",
 		"typo3/cms-viewpage": "^12.4",
 		"b13/container": "^2.2",
-		"w3development/theme": "@dev"
+		"w3development/theme": "@dev",
+		"t3g/blog": "^1.0",
+		"ichhabrecht/content-defender": "^3.4",
+		"brotkrueml/codehighlight": "^3.1"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [

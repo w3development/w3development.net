@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "508094cbc32e8011bebbf74586aa46ed",
+    "content-hash": "9a742dae9ab3ae45e2a9a76a5f7b0999",
     "packages": [
         {
             "name": "b13/container",
@@ -122,6 +122,80 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.8"
             },
             "time": "2022-12-07T17:46:57+00:00"
+        },
+        {
+            "name": "brotkrueml/codehighlight",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brotkrueml/codehighlight.git",
+                "reference": "ee7c71662de7bec04d4ef43fe0b0aa55d1d34d5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brotkrueml/codehighlight/zipball/ee7c71662de7bec04d4ef43fe0b0aa55d1d34d5c",
+                "reference": "ee7c71662de7bec04d4ef43fe0b0aa55d1d34d5c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.4",
+                "symfony/polyfill-php80": "^1.26",
+                "typo3/cms-backend": "^11.5 || ^12.3",
+                "typo3/cms-core": "^11.5 || ^12.3",
+                "typo3/cms-fluid": "^11.5 || ^12.3",
+                "typo3/cms-fluid-styled-content": "^11.5 || ^12.3",
+                "typo3/cms-frontend": "^11.5 || ^12.3"
+            },
+            "require-dev": {
+                "brotkrueml/coding-standards": "~3.0.0",
+                "ergebnis/composer-normalize": "~2.28.3",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpstan/phpstan": "1.10.9",
+                "phpunit/phpunit": "^9.6",
+                "rector/rector": "0.15.23",
+                "symfony/yaml": "^5.4 || ^6.2"
+            },
+            "suggest": {
+                "typo3/cms-t3editor": "Add syntax highlighting in backend form"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.1.x-dev"
+                },
+                "typo3/cms": {
+                    "app-dir": ".Build",
+                    "extension-key": "codehighlight",
+                    "web-dir": ".Build/web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Brotkrueml\\CodeHighlight\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Müller",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Code highlighter for various programming, markup and configuration languages based on PrismJS",
+            "keywords": [
+                "Code highlighting",
+                "TYPO3 CMS",
+                "TYPO3 Extension",
+                "syntax highlighting"
+            ],
+            "support": {
+                "issues": "https://github.com/brotkrueml/codehighlight/issues",
+                "source": "https://github.com/brotkrueml/codehighlight/tree/v3.1.1"
+            },
+            "time": "2023-04-01T10:31:50+00:00"
         },
         {
             "name": "christian-riesen/base32",
@@ -1518,6 +1592,76 @@
                 }
             ],
             "time": "2023-05-31T08:11:22+00:00"
+        },
+        {
+            "name": "ichhabrecht/content-defender",
+            "version": "3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/IchHabRecht/content_defender.git",
+                "reference": "e259e9ecda5d08dc5c4655456e5c96c01e8234dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/IchHabRecht/content_defender/zipball/e259e9ecda5d08dc5c4655456e5c96c01e8234dd",
+                "reference": "e259e9ecda5d08dc5c4655456e5c96c01e8234dd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0",
+                "typo3/cms-backend": "^10.4 || ^11.5 || ^12.4",
+                "typo3/cms-core": "^10.4 || ^11.5 || ^12.4"
+            },
+            "replace": {
+                "typo3-ter/content-defender": "self.version"
+            },
+            "require-dev": {
+                "phpspec/prophecy": "^1.12.1",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "typo3/cms-fluid-styled-content": "^10.4 || ^11.5 || ^12.4",
+                "typo3/cms-indexed-search": "^10.4 || ^11.5 || ^12.4",
+                "typo3/cms-workspaces": "^10.4 || ^11.5 || ^12.4",
+                "typo3/minimal": "^10.4 || ^11.5 || ^12.0",
+                "typo3/testing-framework": "^6.16 || ^7.0.2"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "content_defender",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/public"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "IchHabRecht\\ContentDefender\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nicole Cordes",
+                    "email": "typo3@cordes.co",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Define allowed or denied content element types in your backend layouts",
+            "homepage": "https://github.com/IchHabRecht/content_defender",
+            "keywords": [
+                "TYPO3 CMS",
+                "backend",
+                "content",
+                "restrict"
+            ],
+            "support": {
+                "issues": "https://github.com/IchHabRecht/content_defender/issues",
+                "source": "https://github.com/IchHabRecht/content_defender/tree/3.4.1"
+            },
+            "time": "2023-09-08T09:18:49+00:00"
         },
         {
             "name": "lolli42/finediff",
@@ -5523,6 +5667,47 @@
                 }
             ],
             "time": "2023-07-31T07:08:24+00:00"
+        },
+        {
+            "name": "t3g/blog",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3GmbH/blog.git",
+                "reference": "c1ad584f05ff4fd2664947e252cbf0835eaa1de8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3GmbH/blog/zipball/c1ad584f05ff4fd2664947e252cbf0835eaa1de8",
+                "reference": "c1ad584f05ff4fd2664947e252cbf0835eaa1de8",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.4.6"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "T3G\\AgencyPack\\Blog\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 GmbH",
+                    "homepage": "http://typo3.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "blog extension",
+            "support": {
+                "issues": "https://github.com/TYPO3GmbH/blog/issues",
+                "source": "https://github.com/TYPO3GmbH/blog/tree/1.0.0"
+            },
+            "time": "2016-11-02T14:08:28+00:00"
         },
         {
             "name": "typo3/class-alias-loader",

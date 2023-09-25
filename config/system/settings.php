@@ -101,24 +101,24 @@ return [
         'caching' => [
             'cacheConfigurations' => [
                 'hash' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend',
                 ],
                 'imagesizes' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\SimpleFileBackend',
                     'options' => [
-                        'compression' => true,
+                        'compression' => '__UNSET',
                     ],
                 ],
                 'pages' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend',
                     'options' => [
-                        'compression' => true,
+                        'compression' => '__UNSET',
                     ],
                 ],
                 'rootline' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend',
                     'options' => [
-                        'compression' => true,
+                        'compression' => '__UNSET',
                     ],
                 ],
             ],
@@ -131,6 +131,7 @@ return [
             'felogin.extbase' => true,
             'fluidBasedPageModule' => true,
             'rearrangedRedirectMiddlewares' => true,
+            'security.usePasswordPolicyForFrontendUsers' => true,
             'unifiedPageTranslationHandling' => true,
             'yamlImportsFollowDeclarationOrder' => true,
         ],

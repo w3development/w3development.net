@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:backend/Resources/Private/Language/Modules/content-security-policy.xlf" date="2023-01-11T00:00:00Z" product-name="typo3-cms-backend" target-language="it">
+    <header/>
+    <body>
+      <trans-unit id="module.label.user_agent" resname="module.label.user_agent" approved="yes">
+        <source>User Agent</source>
+        <target state="final">User Agent</target>
+      </trans-unit>
+      <trans-unit id="module.label.source_file" resname="module.label.source_file" approved="yes">
+        <source>Source File</source>
+        <target state="final">File Sorgente</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

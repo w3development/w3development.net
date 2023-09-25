@@ -139,6 +139,7 @@ return [
         'fileCreateMask' => '0660',
         'folderCreateMask' => '2770',
         'sitename' => 'New TYPO3 site',
+        'systemLocale' => 'C.UTF-8',
         'systemMaintainers' => [
             1,
             18,

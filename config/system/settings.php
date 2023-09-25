@@ -123,6 +123,7 @@ return [
                 ],
             ],
         ],
+        'defaultScheme' => 'https',
         'devIPmask' => '*',
         'displayErrors' => 1,
         'encryptionKey' => '1f27cf18b907c608ab13d9b8e2d3d817d311fe0af282c0aa93adac32ea13eea93b163ee798bd3670789ef0ba65ec679d',
@@ -135,6 +136,8 @@ return [
             'unifiedPageTranslationHandling' => true,
             'yamlImportsFollowDeclarationOrder' => true,
         ],
+        'fileCreateMask' => '0660',
+        'folderCreateMask' => '2770',
         'sitename' => 'New TYPO3 site',
         'systemMaintainers' => [
             1,

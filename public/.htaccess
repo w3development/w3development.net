@@ -437,6 +437,10 @@ require valid-user
 	# RewriteCond %{REQUEST_FILENAME} !-d
 	# RewriteRule ^(.*)/$ /$1 [L,R]
 
+	# Rules to set ApplicationContext based on hostname
+	RewriteCond %{HTTP_HOST} ^dev\.w3development\.net$
+	RewriteRule .? - [E=TYPO3_CONTEXT:Development]
+
 	# Sitemap
 	# RewriteRule ^sitemap.xml$ 	 /?sitemap=pages&type=1533906435 [L,R=301]
 	# RewriteRule ^sq/sitemap.xml$ /sq?sitemap=pages&type=1533906435 [L,R=301]

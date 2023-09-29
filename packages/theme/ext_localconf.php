@@ -1,21 +1,14 @@
 <?php
 
-if (!defined('TYPO3')) die('Access denied.');
+declare(strict_types=1);
 
-// $currentApplicationContext = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
-// $GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' (' . (string)$currentApplicationContext . ')';
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-// call_user_func(function () {
-//     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup(
-//         trim('
-//             plugin.tx_form.settings.yamlConfigurations {
-//                 999 = EXT:theme/Configuration/Form/FormSetup.yaml
-//             }
+defined('TYPO3') or die();
 
-//             module.tx_form.settings.yamlConfigurations {
-//                 999 = EXT:theme/Configuration/Form/FormSetup.yaml
-//             }
-//         ')
-//     );
-// });
-?>
+/**
+ * Adding the default user TSconfig
+ */
+ExtensionManagementUtility::addUserTSConfig(
+    '@import "EXT:theme/Configuration/TsConfig/User/options.tsconfig"'
+);

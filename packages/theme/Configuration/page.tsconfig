@@ -5,18 +5,18 @@
 */
 
 // Load backend layouts
-@import 'EXT:theme/Configuration/TSconfig/Page/Mod/WebLayout/BackendLayouts'
+@import 'EXT:theme/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts'
 
 // Load TCEFORM configuration
-@import 'EXT:theme/Configuration/TSconfig/Page/TCEFORM.tsconfig'
+@import 'EXT:theme/Configuration/TsConfig/Page/TCEFORM.tsconfig'
 
 // Load SHARED configuration
-@import 'EXT:theme/Configuration/TSconfig/Page/Mod/SHARED.TCEFORM.tsconfig'
+@import 'EXT:theme/Configuration/TsConfig/Page/Mod/SHARED.TCEFORM.tsconfig'
 
 // Load options configuration
-@import 'EXT:theme/Configuration/TSconfig/User/options.tsconfig'
+@import 'EXT:theme/Configuration/TsConfig/User/options.tsconfig'
 
 
 // Load TS config for new content elements
-@import 'EXT:theme/Configuration/TSconfig/Page/Mod/Wizards'
-@import 'EXT:theme/Configuration/TSconfig/Page/Mod/WebLayout/Preview'
+@import 'EXT:theme/Configuration/TsConfig/Page/Mod/Wizards'
+@import 'EXT:theme/Configuration/TsConfig/Page/Mod/WebLayout/Preview'

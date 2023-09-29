@@ -36,7 +36,12 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
             'displayErrors' => 1,
         ],
         'BE' => [
-            'lockSSL' => 1
+            'lockSSL' => 1,
+            'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$TTYueG5xUldIb3hsLlpnWg$EBI5d0Ego5gnPeqdQdquxGVWDbViMQjj4SDZESzIFFs',
+            'passwordHashing' => [
+                'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
+                'options' => [],
+            ],
         ]
     ]
 );

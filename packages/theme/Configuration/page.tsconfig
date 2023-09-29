@@ -1,0 +1,22 @@
+/* Page TS Config
+**
+** This file is loaded automatically by TYPO3 since version 12.
+**
+*/
+
+// Load backend layouts
+@import 'EXT:theme/Configuration/TSconfig/Page/Mod/WebLayout/BackendLayouts'
+
+// Load TCEFORM configuration
+@import 'EXT:theme/Configuration/TSconfig/Page/TCEFORM.tsconfig'
+
+// Load SHARED configuration
+@import 'EXT:theme/Configuration/TSconfig/Page/Mod/SHARED.TCEFORM.tsconfig'
+
+// Load options configuration
+@import 'EXT:theme/Configuration/TSconfig/User/options.tsconfig'
+
+
+// Load TS config for new content elements
+@import 'EXT:theme/Configuration/TSconfig/Page/Mod/Wizards'
+@import 'EXT:theme/Configuration/TSconfig/Page/Mod/WebLayout/Preview'

@@ -1,0 +1,13 @@
+mod.web_layout {
+  tt_content {
+    preview {
+      # Your CType
+      theme_tabs = EXT:theme/Resources/Private/Templates/Preview/CType.html
+      theme_team = EXT:theme/Resources/Private/Templates/Preview/CType.html
+      theme_textbox = EXT:theme/Resources/Private/Templates/Preview/CType.html
+      theme_blogteaser = EXT:theme/Resources/Private/Templates/Preview/CType.html
+      theme_service = EXT:theme/Resources/Private/Templates/Preview/CType.html
+      theme_serviceitem = EXT:theme/Resources/Private/Templates/Preview/CType.html
+    }
+  }
+}

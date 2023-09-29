@@ -15,3 +15,6 @@ nbproject
 stats/
 error/
 logs/
+
+# Mode Resources
+node_modules/

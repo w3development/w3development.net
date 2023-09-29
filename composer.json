@@ -48,7 +48,8 @@
 		"t3g/blog": "12.0.2",
 		"ichhabrecht/content-defender": "^3.4",
 		"brotkrueml/codehighlight": "^3.1",
-		"typo3/cms-recycler": "^12.4"
+		"typo3/cms-recycler": "^12.4",
+		"typo3/cms-lowlevel": "^12.4"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [

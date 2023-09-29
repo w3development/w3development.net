@@ -14,7 +14,6 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
                 ],
             ],
         ],
-        // This GFX configuration allows processing by installed ImageMagick 6
         'GFX' => [
             'processor' => 'ImageMagick',
             'processor_path' => '/usr/bin/',
@@ -22,7 +21,6 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
             'processor_colorspace' => 'sRGB',
             'processor_effects' => true,
         ],
-        // This mail configuration sends all emails to mailhog
         'MAIL' => [
             'transport' => 'smtp',
             'transport_smtp_encrypt' => false,
@@ -34,6 +32,8 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
             'trustedHostsPattern' => '.*.*',
             'devIPmask' => '*',
             'displayErrors' => 1,
+            'fileCreateMask' => '0660',
+            'folderCreateMask' => '2770',
         ],
         'BE' => [
             'lockSSL' => 1,
@@ -41,6 +41,17 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
             'passwordHashing' => [
                 'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
                 'options' => [],
+            ],
+        ],
+        'EXTENSION' => [
+            'backend' => [
+                'backendFavicon' => 'EXT:theme/Resources/Public/Images/Favicon/favicon.ico',
+                'backendLogo' => 'EXT:theme/Resources/Public/Images/Logo/logo-backend.png',
+                'loginBackgroundImage' => 'EXT:theme/Resources/Public/Images/Backend/typo3-login-background.jpg',
+                'loginFootnote' => '@w3development',
+                'loginHighlightColor' => '#3a5a6b',
+                'loginLogo' => 'EXT:theme/Resources/Public/Images/Logo/w3development.png',
+                'loginLogoAlt' => '',
             ],
         ]
     ]

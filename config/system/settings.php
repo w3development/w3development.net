@@ -2,7 +2,7 @@
 return [
     'BE' => [
         'debug' => true,
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$Yjd4STNmREdCbUYxZHdTTQ$q99egPaKptdq4myGoYnNehNgpHzUBu7Bp2pMF2Nl3O8',
+        'installToolPassword' => '',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -12,16 +12,16 @@ return [
         'Connections' => [
             'Default' => [
                 'charset' => 'utf8mb4',
-                'dbname' => 'db',
+                'dbname' => '',
                 'driver' => 'mysqli',
-                'host' => 'db',
-                'password' => 'typo3pass',
+                'host' => '',
+                'password' => '',
                 'port' => 3306,
                 'tableoptions' => [
                     'charset' => 'utf8mb4',
                     'collate' => 'utf8mb4_unicode_ci',
                 ],
-                'user' => 'typo3',
+                'user' => '',
             ],
         ],
     ],
@@ -37,12 +37,12 @@ return [
     ],
     'EXTENSIONS' => [
         'backend' => [
-            'backendFavicon' => 'EXT:theme/Resources/Public/Images/Favicon/favicon.ico',
-            'backendLogo' => 'EXT:theme/Resources/Public/Images/Logo/logo-backend.png',
-            'loginBackgroundImage' => 'EXT:theme/Resources/Public/Images/Backend/typo3-login-background.jpg',
-            'loginFootnote' => '@w3development',
-            'loginHighlightColor' => '#3a5a6b',
-            'loginLogo' => 'EXT:theme/Resources/Public/Images/Logo/w3development.png',
+            'backendFavicon' => '',
+            'backendLogo' => '',
+            'loginBackgroundImage' => '',
+            'loginFootnote' => '',
+            'loginHighlightColor' => '',
+            'loginLogo' => '',
             'loginLogoAlt' => '',
         ],
         'blog' => [

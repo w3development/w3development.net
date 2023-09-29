@@ -7,7 +7,7 @@ defined('TYPO3') || die();
     'CType',
     [
         'LLL:EXT:theme/Resources/Private/Language/tca.xlf:theme_ce_text_icon',
-        'theme_ce_text_icon',
+        'theme_serviceitem',
         'your-icon-identifier',
     ],
     'textmedia',
@@ -15,11 +15,11 @@ defined('TYPO3') || die();
 );
 
 // Configure the default backend fields for the content element
-$GLOBALS['TCA']['tt_content']['types']['theme_ce_text_icon'] = [
+$GLOBALS['TCA']['tt_content']['types']['theme_serviceitem'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;headers,image,
+            --palette--;;headers,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,

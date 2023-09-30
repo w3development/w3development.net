@@ -1,31 +1,19 @@
-@import 'FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
-@import 'FILE:EXT:fluid_styled_content/Configuration/TypoScript/Styling/setup.typoscript'
-// @import 'FILE:EXT:form/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/Styling/setup.typoscript'
+// @import 'EXT:form/Configuration/TypoScript/setup.typoscript'
 
-// @import 'FILE:EXT:theme/Configuration/TypoScript/Main/Extensions/seo.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/topnavigation.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/languageswitcher.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/alternatelanguage.typoscript'
-// @import 'FILE:EXT:theme/Configuration/TypoScript/Main/Navigation/getcontent.typoscript'
-// @import 'FILE:EXT:theme/Configuration/TypoScript/Main/Configurations/development.typoscript'
-
-// container elements
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/OneColumnContainer.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/TwoColumnContainer.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/ThreeColumnContainer.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/FourColumnContainer.typoscript'
+// @import 'EXT:theme/Configuration/TypoScript/Main/Extensions/seo.typoscript'
+@import 'EXT:theme/Configuration/TypoScript/Main/Navigation/topnavigation.typoscript'
+@import 'EXT:theme/Configuration/TypoScript/Main/Navigation/languageswitcher.typoscript'
+@import 'EXT:theme/Configuration/TypoScript/Main/Navigation/alternatelanguage.typoscript'
+// @import 'EXT:theme/Configuration/TypoScript/Main/Navigation/getcontent.typoscript'
+// @import 'EXT:theme/Configuration/TypoScript/Main/Configurations/development.typoscript'
 
 // default/general configuration (will add 'children_<colPos>' variable to processedData for each colPos in container
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/Team.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/Tabs.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/TextBox.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/BlogTeaser.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/Service.typoscript'
-@import 'FILE:EXT:theme/Configuration/TypoScript/Main/ContentElement/ServiceItem.typoscript'
-
+@import 'EXT:theme/Configuration/TypoScript/Main/ContentElement'
 
 // dynamic content element base on colPos.
-@import 'FILE:EXT:theme/Configuration/TypoScript/Helper/DynamicContent.typoscript'
+@import 'EXT:theme/Configuration/TypoScript/Helper/DynamicContent.typoscript'
 
 page = PAGE
 page {

@@ -6,21 +6,21 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
 
-define(THEME, 'theme');
+define('TYPO3_THEME', 'theme');
 
 /**
  * Adding the default user TSconfig
  */
 ExtensionManagementUtility::addUserTSConfig(
-    '@import "EXT:'. THEME . '/Configuration/TsConfig/User/options.tsconfig"'
+    '@import "EXT:'. TYPO3_THEME . '/Configuration/TsConfig/User/options.tsconfig"'
 );
 
 
 call_user_func(function()
 {
     ExtensionManagementUtility::addTypoScript(
-      THEME,
+      TYPO3_THEME,
       'setup',
-      "@import 'EXT:$extensionKey/Configuration/TypoScript/setup.typoscript'"
+      "@import 'EXT:" . TYPO3_THEME . "/Configuration/TypoScript/setup.typoscript'"
    );
 });

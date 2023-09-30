@@ -23,9 +23,11 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
         ],
         'MAIL' => [
             'transport' => 'smtp',
+            'transport_smtp_domain' => 'w3development.net',
             'transport_smtp_encrypt' => false,
-            'transport_smtp_server' => 'localhost:1025',
-            'transport_sendmail_command' => '/usr/sbin/sendmail -t -i -f webmaster@dev.w3development.net',
+            'transport_smtp_password' => 'vksUI65RcTrCYnQA',
+            'transport_smtp_server' => 'smtp-relay.brevo.com:587',
+            'transport_smtp_username' => 'info@w3development.net',
             'defaultMailFromAddress' => 'no-reply@w3development.net'
         ],
         'SYS' => [
@@ -43,7 +45,7 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
                 'options' => [],
             ],
         ],
-        'EXTENSION' => [
+        'EXTENSIONS' => [
             'backend' => [
                 'backendFavicon' => 'EXT:theme/Resources/Public/Images/Favicon/favicon.ico',
                 'backendLogo' => 'EXT:theme/Resources/Public/Images/Logo/logo-backend.png',

@@ -1,0 +1,10 @@
+tt_content.theme_blogteaser < lib.contentElement
+tt_content.theme_blogteaser {
+    templateName = BlogTeaser
+    templateRootPaths {
+        10 = EXT:theme/Resources/Private/Templates/Content/
+    }
+    dataProcessing {
+        100 = W3D\Theme\DataProcessing\FlexFormProcessor
+    }
+}

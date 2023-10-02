@@ -1,33 +1,36 @@
 <f:layout name="Blog" />
 <f:render partial="BodyTag/GtmNoScript" />
 <div class="body">
-	<header id="header">
-		<f:render partial="Header/Main" />
-	</header>
-	<div role="main" class="main">
-		<section class="section section-center">
-			<div class="section-inner">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<h1 class="lead text-secondary">Blog</h1>
-							<p class="subheader text-secondary"><f:comment>{f:translate(key: 'blog')}</f:comment></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="blog-posts mt-5">
-						<f:render section="Content" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
- <footer class="short" id="footer">
-    <f:render partial="Footer/Main" />
- </footer>
+    <header id="header">
+        <f:render partial="Header/Main" />
+    </header>
+    <main role="main" class="main">
+        <section class="section section-hero section-text-light bg-primary">
+            <div class="section-inner">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <f:render section="Hero" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-bloglist section-text-light">
+            <div class="section-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="blog-posts">
+                                <f:render section="Content" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="short" id="footer">
+        <f:render partial="Footer/Main" />
+    </footer>
 </div>

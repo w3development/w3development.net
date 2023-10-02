@@ -1,6 +1,6 @@
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/Styling/setup.typoscript'
-// @import 'EXT:form/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
 
 // @import 'EXT:theme/Configuration/TypoScript/Main/Extensions/seo.typoscript'
 @import 'EXT:theme/Configuration/TypoScript/Main/Navigation/topnavigation.typoscript'

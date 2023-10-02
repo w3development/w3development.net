@@ -1,19 +1,85 @@
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+//
+// Variables
+//
+// You can override the default values by setting the variables in your Sass
+// before importing the normalize-scss library.
 
-// @import 'typography';
-// @import 'style';
-// @import 'base';
-// @import 'responsive';
+// The font size set on the root html element.
+$base-font-size: 16px !default;
 
-// Fontawesome 5
-// $fa-font-path:"/typo3conf/ext/theme/Resources/Public/fonts/FontAwesome" !default;
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 24px !default;
 
-// @import './fontawesome/fontawesome';
-// @import "./fontawesome/solid";
-// @import "./fontawesome/brands";
+// The length unit in which to output vertical rhythm values.
+// Supported values: px, em, rem.
+$base-unit: 'rem' !default;
 
-// @import './page/header';
-// @import './page/footer';
+// The default font family.
+$base-font-family: 'PT Sans', sans-serif !default;
 
-// Custom stylesheets for dev/testing
-// @import 'custom';
+// The font sizes for h1-h6.
+$h1-font-size:  2    * $base-font-size !default;
+$h2-font-size:  1.5  * $base-font-size !default;
+$h3-font-size:  1.17 * $base-font-size !default;
+$h4-font-size:  1    * $base-font-size !default;
+$h5-font-size:  0.83 * $base-font-size !default;
+$h6-font-size:  0.67 * $base-font-size !default;
+
+// Header Typography
+$navigation-font-size: 1rem;
+$lead-font-size: 4.5rem;
+
+// The amount lists and blockquotes are indented.
+$indent-amount: 40px !default;
+
+// The following variable controls whether normalize-scss will output
+// font-sizes, line-heights and block-level top/bottom margins that form a basic
+// vertical rhythm on the page, which differs from the original Normalize.css.
+// However, changing any of the variables above will cause
+// $normalize-vertical-rhythm to be automatically set to true.
+$normalize-vertical-rhythm: false !default;
+
+// Colors Code
+$color-primary:   #e85215;
+$color-secondary: #517485;
+$color-tertiary:  #e0e0e0;
+$color-dark:      #444444;
+$color-light:     #cccccc;
+$color-black:     #000000;
+$color-white:     #ffffff;
+
+@font-face {
+    font-family: "PT Sans";
+    src: url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Regular.eot');
+    src: url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Regular.eot') format('embedded-opentype'),
+        url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Regular.woff2') format('woff2'),
+        url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Regular.woff') format('woff'),
+        url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.eot');
+    src: url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.woff2') format('woff2'),
+        url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.woff') format('woff'),
+        url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.ttf') format('truetype'),
+        url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.svg#PTSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import './elements/base';
+@import './elements/grid';
+@import './elements/elements';
+@import './elements/typography';
+@import './elements/custom';
+@import './elements/tabs';
+
+@import './page/header';
+@import './page/navigation';
+@import './page/section';
+@import './page/footer';
+
+@import './elements/footer';

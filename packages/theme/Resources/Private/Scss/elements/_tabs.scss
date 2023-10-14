@@ -85,10 +85,6 @@ div.box {
 	height: 375px;
 }
 
-article.post-large {
-	margin-top: -20rem;
-}
-
 .blog-posts {
 	.post-content-image {
 		margin-bottom: 25px;
@@ -207,12 +203,6 @@ aside {
 			transition: background 0.5s;
 		}
 	}
-}
-
-:root {
-	--color-primary: #517485;
-	--space-1: 0.5rem;
-	--space-4: 2rem;
 }
 
 amp-selector[role=tablist].tabs-with-flex {

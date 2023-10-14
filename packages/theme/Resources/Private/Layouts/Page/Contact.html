@@ -5,7 +5,14 @@
 		<f:render partial="Header/Main" />
 	</header>
 	<div role="main" class="main">
-		<section class="section  section-default section-default-scale-8 section-center mt-0">
+        <section class="section section-hero section-text-light bg-primary">
+            <div class="section-inner">
+                <div class="container">
+                    <f:render section="Hero" />
+                </div>
+            </div>
+        </section>
+		<!-- <section class="section  section-default section-default-scale-8 section-center mt-0">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-8 mt-5">
@@ -35,8 +42,8 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<div class="container">
+		</section> -->
+		<!-- <div class="container">
 			<div class="row justify-content-center mt-5">
 				<div class="col-lg-10">
                     <f:comment>
@@ -48,7 +55,7 @@
 					<f:render section="ContactForm" />
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<f:comment>
         <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.condition')} == Amp">
           <f:then>

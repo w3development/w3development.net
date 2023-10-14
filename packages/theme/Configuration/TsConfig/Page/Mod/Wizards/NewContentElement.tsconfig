@@ -1,0 +1,62 @@
+mod.wizards.newContentElement.wizardItems {
+  // add the content element to the tab "common"
+  common {
+    elements {
+      // Theme Team
+      theme_team {
+        iconIdentifier = content-text
+        title = Team
+        description = Description of the theme team
+        tt_content_defValues {
+          CType = theme_team
+        }
+      }
+      // Theme Textbox
+      theme_textbox {
+        iconIdentifier = content-text
+        title = Textbox
+        description = Description of the theme team
+        tt_content_defValues {
+          CType = theme_textbox
+        }
+      }
+      // Theme Tabs
+      theme_tabs {
+        iconIdentifier = content-text
+        title = Tabs
+        description = Description of the theme team
+        tt_content_defValues {
+          CType = theme_tabs
+        }
+      }
+      // Theme Service
+      theme_service {
+        iconIdentifier = content-text
+        title = Service
+        description = Description of the theme team
+        tt_content_defValues {
+          CType = theme_service
+        }
+      }
+      // Theme Service Item
+      theme_serviceitem {
+        iconIdentifier = content-text
+        title = Service Item
+        description = Description of the theme team
+        tt_content_defValues {
+          CType = theme_serviceitem
+        }
+      }
+      // Theme Service Item
+      theme_blogteaser {
+        iconIdentifier = content-text
+        title = Blog Teaser
+        description = Description of the theme team
+        tt_content_defValues {
+          CType = theme_blogteaser
+        }
+      }
+    }
+    show := addToList(theme_team,theme_textbox,theme_tabs,theme_service,theme_serviceitem, theme_blogteaser)
+  }
+}

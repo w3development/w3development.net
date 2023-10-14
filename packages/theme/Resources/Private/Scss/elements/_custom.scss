@@ -1,0 +1,39 @@
+#footer {
+    background-color: #1d2b32;
+}
+
+
+#header .header-nav.header-nav-stripe nav>ul>li>a {
+    letter-spacing: 0.05rem;
+    color: #efefef;
+    text-transform: uppercase;
+}
+
+#footer.short {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* margin-top: -441px; */
+    height: 300px;
+}
+
+#footer hr.solid {
+    background: #23343d;
+}
+
+#footer .logo img {
+    opacity: 1;
+}
+
+.phone a:hover {
+    text-transform: none;
+}
+
+
+.blog-posts .post-content-header {
+    margin-top: -300px !important;
+    height: 400px !important;
+}

@@ -1,0 +1,52 @@
+section{
+  &.section {
+  	padding: 7.5em 0;
+    font-size: 1.2rem;
+
+    &.section-center {
+      text-align: center
+    }
+
+    &.section-text-light {
+      color: #e6e6e6;
+      h1, p {
+        color: #FFF;
+      }
+    }
+
+    &.section-footer {
+      margin-bottom: -50px;
+    }
+
+    &.servicefocus{
+        background-color: #517485;
+    }
+
+    .frame-type-header h1{
+      margin-bottom: 0.5em;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #e85215;
+      letter-spacing: .1em;
+    }
+
+    .subheader{
+      font-size: 1.2rem;
+    }
+
+  }
+
+  &.section-color-custom {
+  	border-top: 0;
+  	background: #E8E8E8;
+  }
+
+  &.section-text-secondary-color{
+    h1, p {
+      color: #517485;
+    }
+  }
+
+}
+
+

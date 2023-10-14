@@ -1,0 +1,10 @@
+tt_content.theme_serviceitem < lib.contentElement
+tt_content.theme_serviceitem {
+    templateName = ServiceItem
+    templateRootPaths {
+        10 = EXT:theme/Resources/Private/Templates/Content/
+    }
+    dataProcessing {
+        100 = W3D\Theme\DataProcessing\FlexFormProcessor
+    }
+}

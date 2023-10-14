@@ -10,6 +10,16 @@
             "pathMappings": {
                 "/var/www/html": "${workspaceFolder}"
             }
-        }
+        },
+        {
+            "name": "Listen for Remote XDebug",
+            "type": "php",
+            "request": "launch",
+            "hostname": "134.209.184.146",
+            "port": 9000,
+            "pathMappings": {
+              "/var/www/clients/client0/web22/web/": "${workspaceFolder}/",
+            }
+          }
     ]
 }

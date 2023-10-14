@@ -2,11 +2,18 @@
 .idea
 .ddev
 nbproject
-/var/*
-!/var/labels
-/vendor
-/public/*
-!/public/typo3conf
-/public/typo3conf/*
-!/public/typo3conf/LocalConfiguration.php
-!/public/typo3conf/AdditionalConfiguration.php
+var/*
+!var/labels
+vendor
+!public/fileadmin/user_upload/logo
+public/*
+!public/typo3conf
+public/typo3conf/*
+
+# ISPConfig resources
+stats/
+error/
+logs/
+
+# Mode Resources
+node_modules/

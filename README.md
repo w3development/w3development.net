@@ -1,58 +1,35 @@
-# TYPO3 CMS Base Distribution
+Steps to start working on this project
 
-Get going quickly with TYPO3 CMS.
+## Download source
+git clone git clone https://github.com/w3development/w3development.net.git .
 
-## Prerequisites
+git checkout develop
 
-* PHP 7.2
-* [Composer](https://getcomposer.org/download/)
+ddev start
 
-## Quickstart
+## Setup
+ddev composer install
+ddev import-db --file=docker/db/dump/db-dump-2023-10-14.sql
 
-* `composer create-project typo3/cms-base-distribution project-name ^9`
-* `cd project-name`
 
-**Setup:**
 
-To start an interactive installation, you can do so by executing the following
-command and then follow the wizard:
 
-```
-php vendor/bin/typo3cms install:setup
-```
 
-**Setup unattended (optional):**
 
-If you're a more advanced user, you might want to leverage the unattended installation.
-To do this, you need to execute the following command and substite the arguments
-with your own environment configuration.
-
-```
-php vendor/bin/typo3cms install:setup \
-    --no-interaction \
-    --database-user-name=typo3 \
-    --database-user-password=typo3 \
-    --database-host-name=127.0.0.1 \
-    --database-port=3306 \
-    --database-name=typo3 \
-    --use-existing-database \
-    --admin-user-name=admin \
-    --admin-password=password \
-    --site-setup-type=site
-```
-
-**Development server:**
-
-While it's advised to use a more sophisticated web server such as
-Apache 2 or nginx, you can instantly run the project by using PHPs` built-in
-[web server](http://php.net/manual/en/features.commandline.webserver.php).
-
-* `TYPO3_CONTEXT=Development php -S localhost:8000 -t public`
-* open your browser at "http://localhost:8000"
-
-Please be aware that the built-in web server is single threaded. Which is ultimately
-a performance killer and may result in deadlocks if you execute too many requests at once.
-
-# License
-
-GPL-2.0 or later
+## System requirements
+Operating System:
+    Linux, Microsoft Windows or macOS (this also includes hosting on all common cloud environments)
+Webserver:
+    Apache httpd, Nginx, Microsoft IIS, Caddy Server
+Supported Browsers
+- Chrome (latest)
+- Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+Composer	Composer >= 2.1
+Database	MariaDB >= 10.3.0 <= 10.11.99
+MySQL >= 8.0.0 <= 8.0.99
+PostgreSQL >= 10.0
+SQLite >= 3.8.3
+Hardware	RAM >= 256 MB
+PHP	PHP >= 8.1.0 <= 8.2.99

@@ -29,7 +29,39 @@
   }
 }
 
-h2.blog.headings{
-  font-size: 2rem;
-  margin-bottom: 10px;
+.blog-posts {
+
+    font-size: 1.125rem;
+
+    .blog-single-post{
+        padding-right:4em;
+    }
+
+	.post-content-header h1 {
+		color: #fff;
+		letter-spacing: 1px;
+	}
+
+	.post-content-header .meta .author,
+	.post-content-header .meta .date {
+		color: #fff;
+	}
+
+	.blog-headings {
+		margin-bottom: 0.5em;
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
+
+    .post-content-body{
+        .frame{
+            header{
+                width: 70%;
+                h2{
+                    font-weight: bold;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
 }

@@ -1,6 +1,5 @@
 .DS_Store
 .idea
-.ddev
 nbproject
 var/*
 !var/labels

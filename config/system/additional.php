@@ -58,3 +58,24 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
         ]
     ]
 );
+
+
+if($_SERVER['HTTP_HOST'] == 'local.w3development.net'){
+    $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
+        $GLOBALS['TYPO3_CONF_VARS'],
+        [
+            'DB' => [
+                'Connections' => [
+                    'Default' => [
+                        'dbname' => 'db',
+                        'driver' => 'mysqli',
+                        'host' => 'db',
+                        'password' => 'db',
+                        'port' => '3306',
+                        'user' => 'db',
+                    ],
+                ],
+            ],
+        ]
+    );
+}

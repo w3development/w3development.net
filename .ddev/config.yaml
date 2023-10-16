@@ -4,7 +4,7 @@ docroot: "public"
 php_version: "8.2"
 webserver_type: nginx-fpm
 router_http_port: 8086
-xdebug_enabled: false
+xdebug_enabled: true
 additional_fqdns:
     - local.w3development.net
 additional_hostnames: []

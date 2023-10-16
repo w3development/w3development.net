@@ -438,7 +438,7 @@ require valid-user
 	# RewriteRule ^(.*)/$ /$1 [L,R]
 
 	# Rules to set ApplicationContext based on hostname
-	RewriteCond %{HTTP_HOST} ^dev\.w3development\.net$
+	RewriteCond %{HTTP_HOST} ^local\.w3development\.net$
 	RewriteRule .? - [E=TYPO3_CONTEXT:Development]
 
 	# Sitemap

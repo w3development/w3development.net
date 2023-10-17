@@ -1,0 +1,35 @@
+<f:for each="{mainNavigation}" as="mainNavigationItem">
+    <f:if condition="{mainNavigationItem.hasSubpages}">
+        <f:then>
+            <li class="nav-item dropdown {f:if(condition: mainNavigationItem.active, then: 'active')}">
+                <a  class="nav-link dropdown-toggle" 
+                    href="{mainNavigationItem.link}"
+                    target="{mainNavigationItem.target}" 
+                    title="{mainNavigationItem.title}"
+                    role="button" 
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    {mainNavigationItem.title}
+                </a>
+                <ul class="dropdown-menu">
+                    <f:for each="{mainNavigationItem.children}" as="subNavigationItem">
+                        <li class="{f:if(condition: subNavigationItem.active, then: 'active')}">
+                            <a class="dropdown-item" href="{subNavigationItem.link}"
+                                target="{subNavigationItem.target}" title="{subNavigationItem.title}">
+                                {subNavigationItem.title}
+                            </a>
+                        </li>
+                    </f:for>
+                </ul>
+            </li>
+        </f:then>
+        <f:else>
+            <li class="nav-item {f:if(condition: mainNavigationItem.active, then: 'active')}">
+                <a class="nav-link" href="{mainNavigationItem.link}"
+                    target="{mainNavigationItem.target}" title="{mainNavigationItem.title}">
+                    {mainNavigationItem.title}
+                </a>
+            </li>
+        </f:else>
+    </f:if>
+</f:for>

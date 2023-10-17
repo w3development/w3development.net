@@ -57,6 +57,14 @@ page {
       excludeFromConcatenation = 1
       crossorigin = anonymous
     }
+
+    Bootstrap = https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+    Bootstrap {
+      external = 1
+      disableCompression = 1
+      excludeFromConcatenation = 1
+      crossorigin = anonymous
+    }
   }
 
   headerData{
@@ -91,11 +99,23 @@ page {
 		templateRootPaths {
 			0 = EXT:theme/Resources/Private/Templates/Page/
 		}
+
 		partialRootPaths {
 			0 = EXT:theme/Resources/Private/Partials/Page/
 		}
+
 		layoutRootPaths {
 			0 = EXT:theme/Resources/Private/Layouts/Page/
 		}
+
+    dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 {
+        levels = 2
+        includeSpacer = 1
+        as = mainNavigation
+      }
+    }
+
 	}
 }

@@ -2,7 +2,7 @@
 <f:render partial="BodyTag/GtmNoScript" />
 <div class="wrapper body">
     <header id="header">
-        <f:render partial="Header/Main" />
+        <f:render partial="Header/Main" arguments="{_all}" />
     </header>
     <main role="main" class="main">
         <section class="section section-text-light bg-primary">
@@ -115,8 +115,8 @@
         </section>
     </main>
 </div>
-<div class="bottom">
-    <footer class="short" id="footer">
-        <f:render partial="Footer/Main" />
-    </footer>
-</div>
+    <div class="bottom">
+        <footer class="short" id="footer">
+            <f:render partial="Footer/Main" />
+        </footer>
+    </div>

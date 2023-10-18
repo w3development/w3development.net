@@ -1,0 +1,25 @@
+<!-- <hr class="solid">
+<div class="col-lg-6">
+    <f:comment>
+        <p>{f:translate(key: 'footercopyright')}</p>
+    </f:comment>
+</div>
+<div class="col-lg-6 text-right">
+    <ul class="social-icons float-right">
+    <li class="social-icons-facebook"><a href="https://www.facebook.com/w3developmentshpk/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    <li class="social-icons-twitter"><a href="https://twitter.com/w3devel" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/w3-development/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+    <span class="footer-email-custom float-right"><i class="fa fa-envelope text-color-primary"></i>
+    <f:comment>javascript:linkTo_UnCryptMailto('nbjmup;jogpAx4efwfmpqnfou/ofu');</f:comment>
+    <a href="#">info [at] w3development [dot] net</a></span>
+</div> -->
+
+<div class="languageswitcher float-end">
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.language')} == nono">
+        <f:then></f:then>
+        <f:else>
+            <f:cObject typoscriptObjectPath="lib.mainlanguagesiwtcher" />
+        </f:else>
+    </f:if>
+</div>

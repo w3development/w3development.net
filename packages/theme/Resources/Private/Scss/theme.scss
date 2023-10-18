@@ -76,16 +76,19 @@ $indent-amount: 40px !default;
 
 @import './elements/fonts';
 
-// @import './elements/grid';
-// @import './elements/elements';
-// @import './elements/typography';
-// @import './elements/custom';
-// @import './elements/tabs';
+@import './elements/grid';
+@import './elements/elements';
+@import './elements/typography';
+@import './elements/custom';
+@import './elements/tabs';
 
 // @import './page/header';
-// @import './page/navigation';
+@import './page/navigation';
 // @import './page/blog';
-// @import './page/section';
-// @import './page/footer';
+@import './page/section';
 
-// @import './elements/footer';
+/* Footer */
+@import './page/footer';
+@import './page/sticky-footer';
+
+@import './elements/footer';

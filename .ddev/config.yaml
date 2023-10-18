@@ -2,7 +2,7 @@ name: w3development
 type: typo3
 docroot: "public"
 php_version: "8.2"
-webserver_type: nginx-fpm
+webserver_type: apache-fpm
 router_http_port: 8086
 xdebug_enabled: true
 additional_fqdns:

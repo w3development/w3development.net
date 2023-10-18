@@ -7837,7 +7837,7 @@
         },
         {
             "name": "w3development/theme",
-            "version": "dev-system/update",
+            "version": "dev-develop",
             "dist": {
                 "type": "path",
                 "url": "./packages/theme",

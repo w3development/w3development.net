@@ -1,20 +1,20 @@
 @font-face {
     font-family: "PT Sans";
-    src: url('/typo3conf/ext/theme/Resources/Public/Fonts/PTSans/PTSans-Regular.eot');
-    src: url('/typo3conf/ext/theme/Resources/Public/Fonts/PTSans/PTSans-Regular.eot') format('embedded-opentype'),
-        url('/typo3conf/ext/theme/Resources/Public/Fonts/PTSans/PTSans-Regular.woff2') format('woff2'),
-        url('/typo3conf/ext/theme/Resources/Public/Fonts/PTSans/PTSans-Regular.woff') format('woff'),
-        url('/typo3conf/ext/theme/Resources/Public/Fonts/PTSans/PTSans-Regular.ttf') format('truetype');
+    src: url('Fonts/PTSans/PTSans-Regular.eot');
+    src: url('Fonts/PTSans/PTSans-Regular.eot') format('embedded-opentype'),
+        url('Fonts/PTSans/PTSans-Regular.woff2') format('woff2')
+        url('Fonts/PTSans/PTSans-Regular.woff') format('woff'),
+        url('Fonts/PTSans/PTSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'PT Sans';
-    src: url('/typo3conf/ext/theme/Resources/Public/Fonts/ptsans/PTSans-Bold.eot');
-    src: url('/typo3conf/ext/theme/Resources/Public/Fonts/ptsans/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/typo3conf/ext/theme/Resources/Public/Fonts/PTSans/PTSans-Bold.woff2') format('woff2'),
-        url('/typo3conf/ext/theme/Resources/Public/Fonts/PTSans/PTSans-Bold.woff') format('woff'),
-        url('/typo3conf/ext/theme/Resources/Public/Fonts/PTSans/PTSans-Bold.ttf') format('truetype'),
-        url('/typo3conf/ext/theme/Resources/Public/Fonts/PTSans/PTSans-Bold.svg#PTSans-Bold') format('svg');
+    src: url('Fonts/PTSans/PTSans-Bold.eot');
+    src: url('Fonts/PTSans/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Fonts/PTSans/PTSans-Bold.woff2') format('woff2'),
+        url('Fonts/PTSans/PTSans-Bold.woff') format('woff'),
+        url('Fonts/PTSans/PTSans-Bold.ttf') format('truetype'),
+        url('Fonts/PTSans/PTSans-Bold.svg#PTSans-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

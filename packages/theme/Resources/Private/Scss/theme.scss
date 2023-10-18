@@ -4,6 +4,8 @@
 @import "./node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
+$font-family-sans-serif:      "PT Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "./node_modules/bootstrap/scss/variables";
@@ -33,7 +35,7 @@
 @import "./node_modules/bootstrap/scss/nav";
 @import "./node_modules/bootstrap/scss/dropdown";
 
-// @import './elements/base';
+@import './elements/fonts';
 // @import './elements/grid';
 // @import './elements/elements';
 // @import './elements/typography';
@@ -98,25 +100,3 @@
 // $color-light:       #e0e0e0;
 // $color-black:       #272727;
 // $color-white:       #f9f9f9;
-
-// @font-face {
-//     font-family: "PT Sans";
-//     src: url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Regular.eot');
-//     src: url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Regular.eot') format('embedded-opentype'),
-//         url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Regular.woff2') format('woff2'),
-//         url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Regular.woff') format('woff'),
-//         url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Regular.ttf') format('truetype');
-// }
-
-// @font-face {
-//     font-family: 'PT Sans';
-//     src: url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.eot');
-//     src: url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
-//         url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.woff2') format('woff2'),
-//         url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.woff') format('woff'),
-//         url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.ttf') format('truetype'),
-//         url('/typo3conf/ext/theme/Resources/Public/fonts/ptsans/PTSans-Bold.svg#PTSans-Bold') format('svg');
-//     font-weight: bold;
-//     font-style: normal;
-//     font-display: swap;
-// }

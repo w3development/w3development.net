@@ -16,3 +16,7 @@ logs/
 
 # Mode Resources
 node_modules/
+
+# Theme
+packages/theme/Resources/Public/Stylesheets/theme.css
+packages/theme/Resources/Public/Stylesheets/theme.css.map

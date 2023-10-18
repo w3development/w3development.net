@@ -60,7 +60,7 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
 );
 
 
-if($_SERVER['HTTP_HOST'] == 'local.w3development.net'){
+if($_SERVER['IS_DDEV_PROJECT']){
     $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
         $GLOBALS['TYPO3_CONF_VARS'],
         [

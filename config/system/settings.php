@@ -78,12 +78,12 @@ return [
             'CMS' => [
                 'deprecations' => [
                     'writerConfiguration' => [
-                        'notice' => [
+                        5 => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                                 'disabled' => false,
                             ],
                         ],
-                        5 => [
+                        'notice' => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
                                 'disabled' => false,
                             ],
@@ -95,7 +95,7 @@ return [
     ],
     'MAIL' => [
         'transport' => 'sendmail',
-        'transport_sendmail_command' => '/usr/local/bin/mailhog sendmail -t test@example.org --smtp-addr 127.0.0.1:1025',
+        'transport_sendmail_command' => '/usr/local/bin/mailhog sendmail test@example.org --smtp-addr 127.0.0.1:1025',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
         'transport_smtp_server' => '',
@@ -105,24 +105,24 @@ return [
         'caching' => [
             'cacheConfigurations' => [
                 'hash' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend',
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                 ],
                 'imagesizes' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\SimpleFileBackend',
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
-                        'compression' => '__UNSET',
+                        'compression' => true,
                     ],
                 ],
                 'pages' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend',
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
-                        'compression' => '__UNSET',
+                        'compression' => true,
                     ],
                 ],
                 'rootline' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend',
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
-                        'compression' => '__UNSET',
+                        'compression' => true,
                     ],
                 ],
             ],

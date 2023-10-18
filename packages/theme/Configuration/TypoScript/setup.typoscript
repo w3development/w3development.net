@@ -45,7 +45,7 @@ page {
       media = all
     }
 
-    fontawesome = EXT:theme/Resources/Public/Stylesheets/all.css
+    // fontawesome = EXT:theme/Resources/Public/Stylesheets/all.css
   }
 
   includeJSFooterlibs {

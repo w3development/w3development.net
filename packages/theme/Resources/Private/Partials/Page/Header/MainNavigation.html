@@ -11,7 +11,7 @@
                     aria-expanded="false">
                     {mainNavigationItem.title}
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu bg-dark text-light">
                     <f:for each="{mainNavigationItem.children}" as="subNavigationItem">
                         <li class="{f:if(condition: subNavigationItem.active, then: 'active')}">
                             <a class="dropdown-item" href="{subNavigationItem.link}"

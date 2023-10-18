@@ -10,8 +10,8 @@ mod.web_layout.BackendLayouts {
 					1 {
 						columns {
 							1 {
-								name = About
-								colPos = 0
+								name = Hero
+								colPos = 1
 								colspan = 2
 							}
 						}
@@ -19,14 +19,9 @@ mod.web_layout.BackendLayouts {
 					2 {
 						columns {
 							1 {
-								name = Company
-								colPos = 1
-							}
-						}
-						columns {
-							2 {
-								name = Mission
-								colPos = 2
+								name = Content
+								colPos = 0
+								colspan = 2
 							}
 						}
 					}
@@ -36,6 +31,11 @@ mod.web_layout.BackendLayouts {
 								name = Team
 								colPos = 3
 								colspan = 2
+							}
+
+							2 {
+								name = Mission
+								colPos = 2
 							}
 						}
 					}

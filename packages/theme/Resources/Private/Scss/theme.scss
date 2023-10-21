@@ -3,6 +3,7 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "./node_modules/bootstrap/scss/functions";
 
+$bs-btn-color: #fff;
 // 2. Include any default variable overrides here
 $font-family-sans-serif:      "PT Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
@@ -46,6 +47,15 @@ $lead-font-size: 4.5rem;
 // The amount lists and blockquotes are indented.
 $indent-amount: 40px !default;
 
+// Buttons
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius: 0;
+
+// Forms
+$input-border-radius:                   0;
+$input-border-radius-sm:                0;
+$input-border-radius-lg:                0;
+
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "./node_modules/bootstrap/scss/variables";
 @import "./node_modules/bootstrap/scss/variables-dark";
@@ -73,11 +83,13 @@ $indent-amount: 40px !default;
 @import "./node_modules/bootstrap/scss/navbar";
 @import "./node_modules/bootstrap/scss/nav";
 @import "./node_modules/bootstrap/scss/dropdown";
+@import './node_modules/bootstrap/scss/forms';
+@import './node_modules/bootstrap/scss/buttons';
 
-@import './elements/fonts';
+@import './elements/fonts'; 
 
-@import './elements/grid';
-@import './elements/elements';
+// @import './elements/grid';
+// @import './elements/elements';
 @import './elements/typography';
 @import './elements/custom';
 @import './elements/tabs';
@@ -92,3 +104,6 @@ $indent-amount: 40px !default;
 @import './page/sticky-footer';
 
 @import './elements/footer';
+
+/* Debug */
+@import './elements/debug';

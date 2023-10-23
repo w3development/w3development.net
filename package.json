@@ -24,8 +24,9 @@
   },
   "homepage": "w3development.net",
   "devDependencies": {
-    "node-sass": "^9.0.0",
+    "@fortawesome/fontawesome-free": "^6.4.2",
     "live-server": "^1.2.2",
+    "node-sass": "^9.0.0",
     "nodemon": "^3.0.1"
   },
   "dependencies": {

@@ -5,8 +5,8 @@
 
 $bs-btn-color: #fff;
 // 2. Include any default variable overrides here
-$font-family-sans-serif:      "PT Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif:      "PT Sans" !default;
+$font-family-monospace:       "PT Sans", monospace !default;
 
 
 // scss-docs-start theme-color-variables
@@ -87,28 +87,30 @@ $input-border-radius-lg:                0;
 @import './node_modules/bootstrap/scss/buttons';
 @import './node_modules/bootstrap/scss/transitions';
 
-@import './elements/fonts'; 
+$bootstrap-icons-font-dir: "./Fonts/BootstrapIcons/" !default;
+@import './node_modules/bootstrap-icons/font/bootstrap-icons.scss';
 
-// @import './elements/grid';
-// @import './elements/elements';
-@import './elements/typography';
-@import './elements/custom';
-@import './elements/tabs';
+@font-face {
+    font-family: 'PT Sans';
+    src: url("./Fonts/PTSans/PTSans-Regular.ttf") format('woff2');
+    font-weight: 400;
+}
 
-// @import './page/header';
-@import './page/navigation';
-// @import './page/blog';
-@import './page/section';
+@font-face {
+    font-family: 'PT Sans';
+    src: url("./Fonts/PTSans/PTSans-Bold.ttf") format('woff2');
+    font-weight: 700;
+}
 
-/* Footer */
-@import './page/footer';
+@font-face {
+    font-family: 'PT Sans';
+    src: url("./Fonts/PTSans/PTSans-Italic.ttf") format('woff2');
+    font-style: italic;
+}
 
-@import './elements/footer';
-
-/* Debug */
-@import './elements/debug';
-
-/* Font Awesome */
-@import './node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
-
-// $fa-font-path: "../webfonts";
+@font-face {
+    font-family: 'PT Sans';
+    src: url("./Fonts/PTSans/PTSans-BoldItalic.ttf") format('woff2');
+    font-style: italic;
+    font-weight: 700;
+}

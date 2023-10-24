@@ -10,37 +10,35 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    <header id="header">
-        <nav class="navbar navbar-dark py-3 bg-dark navbar-expand-lg">
-            <div class="container">
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-light bg-white navbar-expand-lg border-top border-3 border-primary">
+            <div class="container py-3 border-bottom border-light">
                 <a class="navbar-brand" href="/">
                     <img alt="W3Development SHPK - Web Development Company"
                         src="https://local.w3development.net/_assets/b3b027297226c7ca589459daaf1b2e06/Images/Logo/logo.svg"
                         width="196" height="38" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="/" target="" title="Home">
+                <div class="collapse navbar-collapse justify-content-middle px-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav fw-bold text-uppercase">
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-primary" href="/" target="" title="Home">
                                 Home
                             </a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/about" target="" title="About">
+                        <li class="nav-item px-3 active">
+                            <a class="nav-link text-primary" href="/about" target="" title="About">
                                 About
                             </a>
                         </li>
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle" href="/services" target="" title="Services"
+                        <li class="nav-item px-3 dropdown">
+                            <a class="nav-link text-primary dropdown-toggle" href="/services" target="" title="Services"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
-                            <ul class="dropdown-menu bg-dark text-light">
+                            <ul class="dropdown-menu">
                                 <li class="">
                                     <a class="dropdown-item" href="/services/typo3" target="" title="TYPO3">
                                         TYPO3
@@ -58,24 +56,51 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="/blog" target="" title="Blog">
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-primary" href="/blog" target="" title="Blog">
                                 Blog
                             </a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="/contact" target="" title="Contact">
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-primary" href="/contact" target="" title="Contact">
                                 Contact
                             </a>
                         </li>
                     </ul>
                 </div>
+                <div class="d-inline-flex justify-content-end">
+                    <div class="px-2">
+                        <a href="" class="btn btn-outline-secondary">
+                            <i class="bi bi-telephone"></i>
+                            355-69-3858950
+                        </a>
+                    </div>
+                    <a href="#" class="btn btn-primary px-3 text-white">
+                        <span class="">CONTACT</span>
+                        <i class="bi bi-envelope-at-fill m-1"></i>
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
-    <main role="main" class="flex-shrink-0">
+    <main role="main" class="pt-5 mt-5 flex-shrink-0">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                <img src="pexels-mikhail-nilov-7988079.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                <p class="">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                </div>
+                </div>
+            </div>
+        </div>
          <div class="container">
-            <p>
+            <!-- <p class="">
                 BEGIN: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tellus mi, suscipit hendrerit sapien in,
                 malesuada euismod urna. Praesent vitae placerat nibh. Donec lacus ligula, blandit quis ante et, euismod
                 lobortis dolor. Duis accumsan nisi massa, ac mollis mauris iaculis tristique. Nulla vitae nunc id sapien
@@ -94,7 +119,7 @@
                 Nunc ultrices rhoncus fermentum. Pellentesque laoreet nunc eget sem feugiat pretium. Duis consequat, odio ut
                 dictum sagittis, nunc lacus rutrum nisl, in faucibus leo nulla aliquam mauris. Proin vulputate ipsum
                 faucibus aliquam cursus. Phasellus dignissim egestas velit. Sed eleifend lacinia rutrum.</p>
-            <!-- <p>
+            <p>
                 Pellentesque a condimentum massa. Donec aliquam, dolor ac suscipit facilisis, risus augue blandit turpis, at
                 aliquam leo ante et libero. Vestibulum pretium ante blandit, porttitor dolor sed, ullamcorper neque. Morbi
                 iaculis neque lobortis orci bibendum, in mollis sem efficitur. Praesent ultrices massa a bibendum rutrum.
@@ -132,11 +157,49 @@
                 odio at egestas dignissim, turpis metus mollis enim, eu sollicitudin ex elit eu diam. Ut nec libero et est
                 congue rutrum.</p> -->
         </div>
+        <section class="container my-3 py-5">
+            <div class="col-8 m-auto mb-5">
+                <p class="h5 text-secondary fw-bold text-center m-0">BLOG</p>
+                <h2 class="display-4 text-center fw-bold text-primary">Items from our blog</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img src="placeholder.png" class="card-img-top" alt="..." width="auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer mt-auto pt-5 bg-dark text-white">
+    <footer class="footer mt-auto pt-5 text-bg-light text-primary">
         <div class="container py-3">
             <div class="row">
-                <div class="col col-12 col-md-4 col-lg-3">
+                <div class="col col-12 col-md-4 col-lg-4 pe-5">
                     <div class="">
                         <a href="/" class="logo">
                             <img src="../../Public/Images/Logo/w3development-white.svg"
@@ -145,74 +208,94 @@
                         </a>
                         <p class="fs-6 lh-md">Ut eget tempus sem. Sed hendrerit ex ut mi fermentum eleifend.Ut nec libero et est congue rutrum.</p>
                     </div>
+                    <div class="py-3">
+                        <address class="p-3">
+                            <dl class="row">
+                                <dt class="float-start col-1"><i class="bi bi-geo-alt-fill text-secondary text-right"></i></dt>
+                                <dd class="float-start col-9">Vasil Shanto, Bulevardi Skenderbeu<br/>Shkoder, 4001</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="float-start col-1"><i class="bi bi-telephone-fill text-secondary text-right"></i></dt>
+                                <dd class="float-start col-9">(355) 69-3858950</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="float-start col-1"><i class="bi bi-envelope-fill text-secondary text-right"></i></dt>
+                                <dd class="float-start col-9">info@w3development.net</dd>
+                            </dl>
+                        </address>
+                    </div>
                 </div>
-                <div class="col col-12 col-md-4 col-lg-6">
+                <div class="col col-12 col-md-4 col-lg-4">
                     <div class="footer-links">
                         <div class="row">
                             <div class="col col-4 col-sm-4 col-md-4 gx-5">
+                                <h6 class="h6 fw-bold">AGENCY</h6>
+                                <hr class="border border-primary border-1 opacity-25">
                                 <nav class="nav flex-column">
-                                    <h6 class="h6 fw-bold opacity-75">LINKS</h6>
-                                    <hr class="border border-1 opacity-50" />
-                                    <a class="nav-link ps-0 active" href="#">Active</a>
-                                    <a class="nav-link ps-0" href="#">Link</a>
-                                    <a class="nav-link ps-0" href="#">Link</a>
-                                    <a class="nav-link ps-0" href="#">Link</a>
+                                    <a class="nav-link ps-0 pt-0 active" href="#">Active</a>
+                                    <a class="nav-link ps-0 pt-0" href="#">Link</a>
+                                    <a class="nav-link ps-0 pt-0" href="#">Link</a>
+                                    <a class="nav-link ps-0 pt-0" href="#">Link</a>
                                 </nav>
                             </div>
                             <div class="col col-4 col-sm-4 col-md-4 gx-5">
+                                <h6 class="h6 fw-bold">SERVICES</h6>
+                                <hr class="border border-primary border-1 opacity-25">
                                 <nav class="nav flex-column">
-                                    <h6 class="h6 fw-bold opacity-75">LINKS</h6>
-                                    <hr class="border border-1 opacity-50" />
-                                    <a class="nav-link ps-0 active" href="#">Active</a>
-                                    <a class="nav-link ps-0" href="#">Link</a>
-                                    <a class="nav-link ps-0" href="#">Link</a>
-                                    <a class="nav-link ps-0" href="#">Link</a>
+                                    <a class="nav-link ps-0 pt-0 active" href="#">Active</a>
+                                    <a class="nav-link ps-0 pt-0" href="#">Link</a>
+                                    <a class="nav-link ps-0 pt-0" href="#">Link</a>
+                                    <a class="nav-link ps-0 pt-0" href="#">Link</a>
                                 </nav>
                             </div>
                             <div class="col col-4 col-sm-4 col-md-4 gx-5">
+                                <h6 class="h6 fw-bold">SUPPORT</h6>
+                                <hr class="border border-primary border-1 opacity-25">
                                 <nav class="nav flex-column">
-                                    <h6 class="h6 fw-bold opacity-75">LINKS</h6>
-                                    <hr class="border border-1 opacity-50" />
-                                    <a class="nav-link ps-0 active" href="#">Active</a>
-                                    <a class="nav-link ps-0" href="#">Link</a>
-                                    <a class="nav-link ps-0" href="#">Link</a>
-                                    <a class="nav-link ps-0" href="#">Link</a>
+                                    <a class="nav-link ps-0 pt-0 active" href="#">Active</a>
+                                    <a class="nav-link ps-0 pt-0" href="#">Link</a>
+                                    <a class="nav-link ps-0 pt-0" href="#">Link</a>
+                                    <a class="nav-link ps-0 pt-0" href="#">Link</a>
                                 </nav>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-4 col-lg-3">
+                <div class="col col-12 col-md-4 col-lg-4 ps-5">
                     <div class="footer-last-row">
-                        <h6 class="h6 text-white">SUBSCRIBE TO OUR NEWSLETTER</h6>
-                        <hr class="border border-1 opacity-50">
+                        <h6 class="h6 fw-bold">SUBSCRIBE TO OUR NEWSLETTER</h6>
+                        <hr class="border border-primary border-1 opacity-25">
                     </div>
-                    <div class="d-flex flex-row">
-                        <input type="text" class="form-control p-2" placeholder="Enter you email here" aria-label="First name">
-                        <button type="submit" class="p-2 btn btn-primary">Subscribe</button>
-                    </div>
-                    <div class="d-flex flex-row justify-content-start">
-                        <nav class="nav py-5">
+                    <form action="" method="post">
+                        <div class="d-flex flex-row">
+                            <input type="text" class="form-control p-2" placeholder="E-Mail Address" aria-label="First name">
+                            <button type="submit" class="p-2 btn btn-secondary text-uppercase text-white">Subscribe</button>
+                        </div>
+                        <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                 I have read the <a href="http://privacy.com">privacy policy</a> page on our website. 
+                            </label>
+                        </div>
+                    </form>
+                    <div class="d-flex flex-column justify-content-start py-5">
+                        <div class="footer-social-row">
+                            <h6 class="h6 fw-bold">FOLLOW US</h6>
+                            <hr class="border border-primary border-1 opacity-25">
+                        </div>
+                        <nav class="nav">
                             <div class="btn-group">
-                                <a href="http://linkedin.com/" target="_blank" class="btn btn-outline-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                                    </svg>
+                                <a href="http://linkedin.com/" target="_blank" class="btn">
+                                    <i class="bi bi-linkedin fs-3 text-primary opacity-75"></i>
                                 </a>
-                                <a href="http://facebook.com/" target="_blank" class="btn btn-outline-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                                    </svg>
+                                <a href="http://facebook.com/" target="_blank" class="btn">
+                                    <i class="bi bi-facebook fs-3 text-primary opacity-75"></i>
                                 </a>
-                                <a href="http://x.com/" target="_blank" class="btn btn-outline-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
-                                    </svg>
+                                <a href="http://x.com/" target="_blank" class="btn">
+                                    <i class="bi bi-twitter-x fs-3 text-primary opacity-75"></i>
                                 </a>
-                                <a href="http://github.com/" target="_blank" class="btn btn-outline-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                    </svg>
+                                <a href="http://github.com/" target="_blank" class="btn">
+                                    <i class="bi bi-github fs-3 text-primary opacity-75"></i>
                                 </a>
                             </div>
                         </nav>
@@ -220,21 +303,17 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="background-color: #153241;">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-gray opacity-50">
-                        <div class="py-2 align-middle">&copy; 2015 - 2023 W3DEVELOPMENT,&nbsp;shpk.&nbsp; All Rights Reserved.</div>
-                    </div>
-                    <div class="col text-gray opacity-50">
-                        <nav class="nav justify-content-end">
-                            <a class="nav-link text-uppercase" href="#">GDPR</a>
-                            <a class="nav-link text-uppercase" href="#">Cookies</a>
-                            <a class="nav-link text-uppercase" href="#">TOS</a>
-                            <a class="nav-link text-uppercase" href="#">Policies</a>
-                            <a class="nav-link text-uppercase" href="#">Imprint</a>
-                        </nav>
-                    </div>
+        <div class="container-fluid">
+            <div class="container mb-3">
+                <div class="flex-row-reverse d-flex justify-content-between text-bg-primary">
+                    <nav class="nav">
+                        <a class="nav-link text-uppercase text-white opacity-50" href="#">GDPR</a>
+                        <a class="nav-link text-uppercase text-white opacity-50" href="#">Cookies</a>
+                        <a class="nav-link text-uppercase text-white opacity-50" href="#">TOS</a>
+                        <a class="nav-link text-uppercase text-white opacity-50" href="#">Policies</a>
+                        <a class="nav-link text-uppercase text-white opacity-50" href="#">Imprint</a>
+                    </nav>
+                    <div class="p-2 justify-content-start opacity-50">&copy; 2015 - 2023 W3DEVELOPMENT,&nbsp;shpk.&nbsp; All Rights Reserved.</div>
                 </div>
             </div>
         </div>

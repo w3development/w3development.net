@@ -7,6 +7,7 @@ config {
   linkVars = L
   language = en
   htmlTag_langKey = en
+  htmlTag_setParams = xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US"
   locale_all = english
   locale_all = en
   sys_language_uid = 0

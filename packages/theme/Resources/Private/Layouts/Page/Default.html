@@ -1,19 +1,15 @@
 <f:layout name="Default" />
 <f:render partial="BodyTag/GtmNoScript" />
-<div class="wrapper body">
-    <div role="main" class="main">
-        <header id="header">
-            <f:render partial="Header/Main" arguments="{_all}"/>
-        </header>
-        <section>
-            <div class="container">
-                <f:render section="Content" />
-            </div>
-        </section>
-    </div>
-</div>
-<div class="bottom">
-    <footer class="short" id="footer">
-        <f:render partial="Footer/Main" />
-    </footer>
-</div>
+<header id="header">
+    <f:render partial="Header/Main" arguments="{_all}"/>
+</header>
+<main role="main" class="pt-5 mt-5 flex-shrink-0">
+    <section>
+        <div class="container">
+            <f:render section="Content" />
+        </div>
+    </section>
+</main>
+<footer class="footer mt-auto pt-5 text-bg-light text-primary">
+    <f:render partial="Footer/Main" />
+</footer>

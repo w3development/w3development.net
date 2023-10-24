@@ -1,5 +1,5 @@
-<nav class="navbar navbar-dark py-3 bg-dark navbar-expand-lg">
-  <div class="container">
+<nav class="navbar navbar-light bg-white navbar-expand-lg border-top border-3 border-primary">
+  <div class="container py-3 border-bottom border-light">
       <a class="navbar-brand" href="/">
         <f:image src="EXT:theme/Resources/Public/Images/Logo/logo.svg" width="auto" height="38px" alt="W3Development SHPK - Web Development Company"/>
       </a>
@@ -7,10 +7,22 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav" >
+      <div class="collapse navbar-collapse justify-content-middle px-5" id="navbarSupportedContent">
+          <ul class="navbar-nav fw-bold text-uppercase" >
             <f:render partial="Header/MainNavigation" arguments="{_all}"/>
           </ul>
       </div>
+      <div class="d-inline-flex justify-content-end">
+        <div class="px-2">
+            <a href="" class="btn btn-outline-secondary">
+              <i class="bi bi-telephone"></i>
+              355-69-3858950
+            </a>
+        </div>
+        <a href="#" class="btn btn-primary px-3 text-white">
+          <span class="">CONTACT</span>
+          <i class="bi bi-envelope-at-fill m-1"></i>
+        </a>
+    </div>
   </div>
 </nav>

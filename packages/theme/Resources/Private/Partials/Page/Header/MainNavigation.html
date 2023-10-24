@@ -1,17 +1,17 @@
 <f:for each="{mainNavigation}" as="mainNavigationItem">
     <f:if condition="{mainNavigationItem.hasSubpages}">
         <f:then>
-            <li class="nav-item dropdown {f:if(condition: mainNavigationItem.active, then: 'active')}">
-                <a  class="nav-link dropdown-toggle" 
+            <li class="nav-item px-3 dropdown {f:if(condition: mainNavigationItem.active, then: 'active')}">
+                <a  class="nav-link text-primary dropdown-toggle" 
                     href="{mainNavigationItem.link}"
-                    target="{mainNavigationItem.target}" 
+                    target="{mainNavigationItem.target}"
                     title="{mainNavigationItem.title}"
                     role="button" 
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
                     {mainNavigationItem.title}
                 </a>
-                <ul class="dropdown-menu bg-dark text-light">
+                <ul class="dropdown-menu">
                     <f:for each="{mainNavigationItem.children}" as="subNavigationItem">
                         <li class="{f:if(condition: subNavigationItem.active, then: 'active')}">
                             <a class="dropdown-item" href="{subNavigationItem.link}"
@@ -24,8 +24,8 @@
             </li>
         </f:then>
         <f:else>
-            <li class="nav-item {f:if(condition: mainNavigationItem.active, then: 'active')}">
-                <a class="nav-link" href="{mainNavigationItem.link}"
+            <li class="nav-item px-3 {f:if(condition: mainNavigationItem.active, then: 'active')}">
+                <a class="nav-link text-primary" href="{mainNavigationItem.link}"
                     target="{mainNavigationItem.target}" title="{mainNavigationItem.title}">
                     {mainNavigationItem.title}
                 </a>

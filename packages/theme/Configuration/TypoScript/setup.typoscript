@@ -15,10 +15,16 @@
 // dynamic content element base on colPos.
 @import 'EXT:theme/Configuration/TypoScript/Helper/DynamicContent.typoscript'
 
+config{
+  htmlTag_setParams = lang="en" class="h-100"
+}
+
+
 page = PAGE
 page {
   # Favicon Configurations
   shortcutIcon = EXT:theme/Resources/Public/Images/Favicon/favicon-16x16.png
+  bodyTagAdd = class="d-flex flex-column h-100"
 
   meta {
     X-UA-Compatible = IE=edge

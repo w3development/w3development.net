@@ -5,30 +5,7 @@
 @import "./fontawesome/scss/brands.scss";
 
 
-@font-face {
-    font-family: 'PT Sans';
-    src: url("../../Public/Fonts/pt-sans/PTSans-Regular.ttf") format('woff2');
-    font-weight: 400;
-}
 
-@font-face {
-    font-family: 'PT Sans';
-    src: url("../../Public/Fonts/pt-sans/PTSans-Bold.ttf") format('woff2');
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'PT Sans';
-    src: url("../../Public/Fonts/pt-sans/PTSans-Italic.ttf") format('woff2');
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'PT Sans';
-    src: url("../../Public/Fonts/pt-sans/PTSans-BoldItalic.ttf") format('woff2');
-    font-style: italic;
-    font-weight: 700;
-}
 
 // Boostrap 5.3
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)

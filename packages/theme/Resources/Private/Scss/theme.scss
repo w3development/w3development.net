@@ -99,9 +99,20 @@ $input-border-radius-lg:                0;
 @import './node_modules/bootstrap/scss/transitions';
 @import './node_modules/bootstrap/scss/card';
 
+// 8.1 Add bootstrap icons here
 $bootstrap-icons-font-dir: "./Fonts/BootstrapIcons/" !default;
 @import './node_modules/bootstrap-icons/font/bootstrap-icons.scss';
 
+// 8.2 Add Font Awesome styling here.
+$fa-font-path: "./Fonts/FontAwesome/" !default;
+
+@import './node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import './node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import './node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import './node_modules/@fortawesome/fontawesome-free/scss/regular';
+
+
+// 8.3 Add custom website font.
 @font-face {
     font-family: 'PT Sans';
     src: url("./Fonts/PTSans/PTSans-Regular.ttf") format('woff2');
@@ -126,3 +137,29 @@ $bootstrap-icons-font-dir: "./Fonts/BootstrapIcons/" !default;
     font-style: italic;
     font-weight: 700;
 }
+
+$color-primary: #1f3a47;
+$color-secondary: #171717;
+$color-tertiary: #007bff;
+$color-accent: #171717;
+$color-light: #dcdcdc;
+$color-dark: #333333;
+
+// 8.4 Add website fonts.
+@import './elements/base';
+@import './elements/custom';
+@import './elements/elements';
+@import './elements/fonts';
+@import './elements/footer';
+@import './elements/forms';
+@import './elements/grid';
+@import './elements/tabs';
+@import './elements/typography';
+@import './elements/headings.scss';
+@import './elements/typo3';
+
+@import './page/blog';
+@import './page/footer';
+@import './page/header';
+@import './page/navigation';
+@import './page/section';

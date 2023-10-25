@@ -1,62 +1,59 @@
 <f:layout name="BlogDetail" />
 <f:render partial="BodyTag/GtmNoScript" />
-<div class="body">
-	<header id="header">
-		<f:render partial="Header/Main" arguments="{_all}"/>
-	</header>
-	<div role="main" class="main">
-		<div class="container">
-			<div class="row blog-posts single-post">
-				<article class="blog blog-detail-left-page post post-large blog-single-post col-md-8">
-					<div class="post-content post-content-header">
-						<div class="container">
-							<div class="row justify-content-left headline">
-								<div class="text-left">
-									<h1 class="font-weight-semibold">{record.title}</h1>
-									<div class="meta text-uppercase text-muted">
-										<f:if condition="{record.author}">
-											<span class="author">by&nbsp;{record.author}</span>
-										</f:if>
-										<f:if condition="{record.author}">
-											<span class="date">on&nbsp;<f:format.date format="F d, Y">{record.lastUpdated}</f:format.date></span>
-										</f:if>
-									</div>
-								</div>
-							</div>
-							<div class="row justify-content-left teaser">
-								<div class="teaser-image-box">
-									<f:render section="TeaserImage" />
+<header id="header">
+	<f:render partial="Header/Main" arguments="{_all}"/>
+</header>
+<main role="main" class="flex-shrink-0 pt-99">
+	<div class="container">
+		<div class="row blog-posts single-post">
+			<article class="blog blog-detail-left-page post post-large blog-single-post col-md-8">
+				<div class="post-content post-content-header">
+					<div class="container">
+						<div class="row justify-content-left headline">
+							<div class="text-left">
+								<h1 class="font-weight-semibold">{record.title}</h1>
+								<div class="meta text-uppercase text-muted">
+									<f:if condition="{record.author}">
+										<span class="author">by&nbsp;{record.author}</span>
+									</f:if>
+									<f:if condition="{record.author}">
+										<span class="date">on&nbsp;<f:format.date format="F d, Y">{record.lastUpdated}</f:format.date></span>
+									</f:if>
 								</div>
 							</div>
 						</div>
+						<div class="row justify-content-left teaser">
+							<div class="teaser-image-box">
+								<f:render section="TeaserImage" />
+							</div>
+						</div>
 					</div>
-					<div class="post-content post-content-body">
-						<f:render section="Content" />
-					</div>
-				</article>
-				<aside class="col-md-4">
-					<div class="sidebar-nav">
-						<ul>
-							<li class="header">
-								<h3>Our Web Development Services</h3>
-							</li>
-							<li>
-								<a href="https://w3development.net/services/typo3">TYPO3 Programming<i class="fas fa-external-link-alt"></i></a>
-							</li>
-							<li>
-								<a href="https://w3development.net/services/magento">Magento Development<i class="fas fa-external-link-alt"></i></a>
-							</li>
-							<li>
-								<a href="https://w3development.net/services/wordpress">Wordpress Web Design<i class="fas fa-external-link-alt"></i></a>
-							</li>
-						</ul>
-					</div>
-				</aside>
-			</div>
+				</div>
+				<div class="post-content post-content-body">
+					<f:render section="Content" />
+				</div>
+			</article>
+			<aside class="col-md-4">
+				<div class="sidebar-nav">
+					<ul>
+						<li class="header">
+							<h3>Our Web Development Services</h3>
+						</li>
+						<li>
+							<a href="https://w3development.net/services/typo3">TYPO3 Programming<i class="fas fa-external-link-alt"></i></a>
+						</li>
+						<li>
+							<a href="https://w3development.net/services/magento">Magento Development<i class="fas fa-external-link-alt"></i></a>
+						</li>
+						<li>
+							<a href="https://w3development.net/services/wordpress">Wordpress Web Design<i class="fas fa-external-link-alt"></i></a>
+						</li>
+					</ul>
+				</div>
+			</aside>
 		</div>
 	</div>
-</div>
-
- <footer class="short" id="footer">
-    <f:render partial="Footer/Main" />
- </footer>
+</main>
+<footer class="footer mt-auto pt-5 text-bg-light text-primary">
+	<f:render partial="Footer/Main" />
+</footer>

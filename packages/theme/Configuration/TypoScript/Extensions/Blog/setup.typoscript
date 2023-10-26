@@ -16,7 +16,7 @@ page {
             -1579272243 = EXT:blog/Resources/Private/Layouts/Page/
         }
         templateRootPaths {
-            -1579272243 = EXT:blog/Resources/Private/Templates/Page/
+            -1579272243 = EXT:theme/Resources/Private/Templates/Extension/Blog/Page/
         }
     }
 }

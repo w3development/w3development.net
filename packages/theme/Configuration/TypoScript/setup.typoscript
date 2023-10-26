@@ -125,3 +125,6 @@ page {
 
 	}
 }
+
+# Setup
+@import 'EXT:theme/Configuration/TypoScript/Extensions/Blog/setup.typoscript'

@@ -1,0 +1,16 @@
+<f:layout name="Default" />
+<f:section name="Content">
+    <div class="blogcontainer container">
+        <div class="blogcontainer-main">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+        </div>
+        <aside class="blogcontainer-sidebar">
+            <f:render section="renderPlugin" arguments="{listType: 'blog_sidebar'}" />
+        </aside>
+    </div>
+</f:section>
+<f:section name="renderPlugin">
+    {blogvh:data.contentListOptions(listType: listType)}
+    <f:cObject typoscriptObjectPath="tt_content.list" data="{contentObjectData}" table="tt_content"/>
+</f:section>
+

@@ -1,14 +1,10 @@
 <f:layout name="Default" />
 <f:render partial="BodyTag/GtmNoScript" />
-<header id="header">
+<header id="header" class="fixed-top">
     <f:render partial="Header/Main" arguments="{_all}"/>
 </header>
-<main role="main" class="flex-shrink-0 p-99">
-    <section>
-        <div class="container">
-            <f:render section="Content" />
-        </div>
-    </section>
+<main role="main" class="flex-shrink-0 pt-99">
+    <f:render section="Content" />
 </main>
 <footer class="footer mt-auto pt-5 text-bg-light text-primary">
     <f:render partial="Footer/Main" />

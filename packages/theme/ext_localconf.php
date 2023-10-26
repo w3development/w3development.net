@@ -16,11 +16,14 @@ ExtensionManagementUtility::addUserTSConfig(
 );
 
 
-call_user_func(function()
-{
-    ExtensionManagementUtility::addTypoScript(
-      TYPO3_THEME,
-      'setup',
+call_user_func(function() {
+    ExtensionManagementUtility::addTypoScriptSetup(
       "@import 'EXT:" . TYPO3_THEME . "/Configuration/TypoScript/setup.typoscript'"
+   );
+});
+
+call_user_func(function() {
+    ExtensionManagementUtility::addTypoScriptConstants(
+      "@import 'EXT:" . TYPO3_THEME . "/Configuration/TypoScript/constants.typoscript'"
    );
 });

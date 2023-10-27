@@ -50,10 +50,11 @@ TCEFORM {
         }
     }
 
+    // Settings for the blog setup
     pages{
-        tags.PAGE_TSCONFIG_ID       = 145
-        authors.PAGE_TSCONFIG_ID    = 142
-        categories.PAGE_TSCONFIG_ID = 143
+        tags.PAGE_TSCONFIG_ID       = 137
+        authors.PAGE_TSCONFIG_ID    = 137
+        categories.PAGE_TSCONFIG_ID = 137
     }
 }
 

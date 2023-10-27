@@ -4,11 +4,17 @@
 plugin.tx_blog {
   settings {
     blogUid = 6
-    authorUid = 142
+    authorUid = 146
     categoryUid = 143
     tagUid = 145
     archiveUid = 144
     storagePid = 137
+    lists {
+      featuredImage{
+        width  = 500c
+        height = 
+      }
+    }
   }
   view {
     templateRootPaths = EXT:theme/Resources/Private/Templates/Extension/Blog/

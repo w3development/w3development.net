@@ -1,8 +1,0 @@
-TYPO3:
-  CMS:
-    Form:
-      persistenceManager:
-        allowedExtensionPaths:
-          10: EXT:theme/Resources/Private/Forms/
-        allowSaveToExtensionPaths: false
-        allowDeleteFromExtensionPaths: false

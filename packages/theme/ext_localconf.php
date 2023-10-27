@@ -27,3 +27,17 @@ call_user_func(function() {
       "@import 'EXT:" . TYPO3_THEME . "/Configuration/TypoScript/constants.typoscript'"
    );
 });
+
+call_user_func(function(){
+     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup(
+         trim('
+             module.tx_form {
+                 settings {
+                     yamlConfigurations {
+                         100 = EXT:theme/Configuration/Form/ContactFormular.yaml
+                     }
+                 }
+             }
+         ')
+     );
+});

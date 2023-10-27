@@ -1,0 +1,9 @@
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
+
+plugin.tx_form {
+    settings {
+        yamlConfigurations {
+            100 = EXT:theme/Configuration/Form/ContactFormular.yaml
+        }
+    }
+}

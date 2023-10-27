@@ -34,7 +34,7 @@ call_user_func(function(){
              module.tx_form {
                  settings {
                      yamlConfigurations {
-                         100 = EXT:theme/Configuration/Form/ContactFormular.yaml
+                         100 = EXT:theme/Configuration/Form/Setup.yaml
                      }
                  }
              }

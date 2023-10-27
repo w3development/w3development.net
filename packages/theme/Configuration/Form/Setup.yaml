@@ -1,0 +1,17 @@
+prototypes:
+  standard:
+    formElementsDefinition:
+      Form:
+        renderingOptions:
+          templateRootPaths:
+            20: 'EXT:theme/Resources/Private/Templates/Form/Frontend/'
+          partialRootPaths:
+            20: 'EXT:theme/Resources/Private/Partials/Form/Frontend/'
+          layoutRootPaths:
+            20: 'EXT:theme/Resources/Private/Layouts/Form/Frontend/'
+
+persistenceManager:
+  allowedExtensionPaths:
+    10: EXT:theme/Resources/Private/Forms/
+  allowSaveToExtensionPaths: true
+  allowDeleteFromExtensionPaths: true

@@ -20,6 +20,11 @@ finishers:
       useFluidEmail: false
       title: ''
     identifier: EmailToReceiver
+  -
+    options:
+      message: 'Email has been sent.'
+      contentElementUid: ''
+    identifier: Confirmation
 renderables:
   -
     renderingOptions:
@@ -105,10 +110,3 @@ renderables:
               minimum: '10'
               maximum: '500'
             identifier: StringLength
-  -
-    renderingOptions:
-      previousButtonLabel: 'Previous step'
-      nextButtonLabel: 'Next step'
-    type: SummaryPage
-    identifier: summarypage-1
-    label: 'Summary step'

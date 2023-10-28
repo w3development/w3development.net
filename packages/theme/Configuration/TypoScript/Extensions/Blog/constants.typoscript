@@ -10,6 +10,9 @@ plugin.tx_blog {
     archiveUid = 149
     storagePid = 137
     lists {
+      pagination{
+        itemsPerPage = 9
+      }
       featuredImage{
         width  = 500c
         height = 

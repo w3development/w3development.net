@@ -42,3 +42,5 @@ languages:
     flag: al
 errorHandling: {  }
 routes: {  }
+# imports:
+#    - { resource: "EXT:blog/Configuration/Routes/Default.yaml" }

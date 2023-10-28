@@ -5,9 +5,9 @@ plugin.tx_blog {
   settings {
     blogUid = 6
     authorUid = 146
-    categoryUid = 143
-    tagUid = 145
-    archiveUid = 144
+    categoryUid = 148
+    tagUid = 147
+    archiveUid = 149
     storagePid = 137
     lists {
       featuredImage{

@@ -1,3 +1,6 @@
+# Import the default constants of EXT:fluid_styled_content
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
+
 @import 'EXT:theme/Configuration/TypoScript/Extensions/Blog/constants.typoscript'
 @import 'EXT:theme/Configuration/TypoScript/Extensions/Seo/constants.typoscript'
 

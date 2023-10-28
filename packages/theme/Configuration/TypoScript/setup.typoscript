@@ -1,4 +1,7 @@
+# Import the default setup of EXT:fluid_styled_content
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+
+# Import the default CSS of EXT:fluid_styled_content
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/Styling/setup.typoscript'
 @import 'EXT:theme/Configuration/TypoScript/Extensions/Form/setup.typoscript'
 

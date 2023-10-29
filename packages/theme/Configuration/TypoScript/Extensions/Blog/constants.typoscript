@@ -18,6 +18,12 @@ plugin.tx_blog {
         height = 
       }
     }
+    post{
+      featuredImage{
+        width  = 1400
+        height = 500c
+      }
+    }
   }
   view {
     templateRootPaths = EXT:theme/Resources/Private/Templates/Extension/Blog/

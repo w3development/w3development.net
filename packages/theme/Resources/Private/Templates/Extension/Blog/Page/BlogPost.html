@@ -1,18 +1,24 @@
 <f:layout name="Default" />
 <f:section name="Content">
-    <div class="blogcontainer container py-3">
-        <div class="blogcontainer-main">
-            <f:render section="renderPlugin" arguments="{listType: 'blog_header'}" />
-            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
-            <f:render section="renderPlugin" arguments="{listType: 'blog_footer'}" />
-            <f:render section="renderPlugin" arguments="{listType: 'blog_authors'}" />
-            <f:render section="renderPlugin" arguments="{listType: 'blog_comments'}" />
-            <f:render section="renderPlugin" arguments="{listType: 'blog_commentform'}" />
-            <f:render section="renderPlugin" arguments="{listType: 'blog_relatedposts'}" />
+    <div class="container py-3">
+        <div class="row">
+            <div class="col">
+                <f:render section="renderPlugin" arguments="{listType: 'blog_header'}" />
+            </div>
         </div>
-        <aside class="blogcontainer-sidebar">
-            <f:render section="renderPlugin" arguments="{listType: 'blog_sidebar'}" />
-        </aside>
+        <div class="row">
+            <div class="col-md-9">
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+                <!-- <f:render section="renderPlugin" arguments="{listType: 'blog_footer'}" /> -->
+                <!-- <f:render section="renderPlugin" arguments="{listType: 'blog_authors'}" /> -->
+                <!-- <f:render section="renderPlugin" arguments="{listType: 'blog_comments'}" /> -->
+                <!-- <f:render section="renderPlugin" arguments="{listType: 'blog_commentform'}" /> -->
+                <!-- <f:render section="renderPlugin" arguments="{listType: 'blog_relatedposts'}" /> -->
+            </div>
+            <aside class="col-md-3">
+                <f:render section="renderPlugin" arguments="{listType: 'blog_sidebar'}" />
+            </aside>
+        </div>
     </div>
 </f:section>
 <f:section name="renderPlugin">

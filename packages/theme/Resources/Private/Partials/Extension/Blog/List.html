@@ -1,11 +1,10 @@
 <div class="postlist{f:if(condition: type, then: ' postlist--{type}')}">
-
     <f:if condition="{pagination} && {pagination.paginatedItems}">
         <f:then>
             <f:if condition="{settings.lists.pagination.insertAbove}">
                 <f:render partial="Pagination/Pagination" arguments="{pagination: pagination}" />
             </f:if>
-            <div class="card-group row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4">
+            <div class="card-group row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4 py-3">
                 <f:for each="{pagination.paginatedItems}" iteration="iterator" as="post">
                     <div class="col">
                         <blogvh:cache post="{post}" />
@@ -16,10 +15,9 @@
             <f:if condition="{settings.lists.pagination.insertBelow}">
                 <f:render partial="Pagination/Pagination" arguments="{pagination: pagination}" />
             </f:if>
-
         </f:then>
         <f:else if="{posts}">
-            <div class="card-group row row-cols-1 row-cols-md-3 g-4">
+            <div class="card-group row row-cols-1 row-cols-md-3 g-4 py-3">
                 <f:for each="{posts}" iteration="iterator" as="post">
                     <div class="col">
                         <blogvh:cache post="{post}" />
@@ -34,5 +32,4 @@
             </div>
         </f:else>
     </f:if>
-
 </div>

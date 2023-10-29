@@ -29,3 +29,7 @@ page {
     }
 }
 [end]
+
+page.includeCSSLibs {
+    blogFrontend >
+}

@@ -1,0 +1,16 @@
+<f:layout name="Post" />
+<f:section name="Content">
+    <header class="card text-bg-dark">
+        <f:if condition="{post.featuredImage}">
+            <f:render partial="General/FeaturedImage" arguments="{image: post.featuredImage, settings: settings.post.featuredImage}" />
+        </f:if>
+        <div class="card-img-overlay col-lg-6 mx-lg-3 my-lg-5">
+            <h1 class="card-title fw-bold display-5 my-5 text-uppercase opacity-75">{post.title}</h1>
+            <f:if condition="{settings.meta.postheader.enable}">
+                <div class="card-text container">
+                    <f:render partial="Meta/PostHeader" arguments="{_all}" />
+                </div>
+            </f:if>
+        </div>
+    </header>
+</f:section>

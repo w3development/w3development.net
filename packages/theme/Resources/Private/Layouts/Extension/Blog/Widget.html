@@ -1,8 +1,10 @@
 <f:spaceless>
-    <aside class="card m-3">
-        <h3 class="card-header">
+    <aside class="blogwidget card m-3">
+        <h3 class="blogwidget__title card-header">
             <span><f:render section="Title" /></span>
         </h3>
-        <f:render section="Content" />
+        <div class="blogwidget__content">
+            <f:render section="Content" />
+        </div>
     </aside>
 </f:spaceless>

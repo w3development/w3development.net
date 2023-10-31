@@ -1,15 +1,15 @@
 <f:if condition="!{name}"><f:variable name="name">default</f:variable></f:if>
-<div class="col-lg-4 d-flex flex-row postmetagroup__item--{name}">
+<div class="col-lg-4 d-flex flex-row postmetagroup__item postmetagroup__item--{name}">
     <div class="">
         <f:if condition="{icon}">
             <div class="d-inline postmetagroup__icon">
-                <span class="blogicon border border-2 p-3 bg-primary" style="height:100px; width:100px;">
-                    <i class="fas fa-user-edit fs-3"></i>
+                <span class="blogicon border border-2 p-3 bg-primary">
+                    {icon -> f:format.raw()}
                 </span>
             </div>
         </f:if>
     </div>
-    <div class="">
+    <div class="postmetagroup__body">
         <f:if condition="{prefix}">
             <div class="d-inline postmetagroup__prefix">{prefix -> f:format.raw()}</div>
         </f:if>

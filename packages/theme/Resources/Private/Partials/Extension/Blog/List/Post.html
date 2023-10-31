@@ -6,19 +6,19 @@
     </f:if>
     <div class="p-3">
         <h3 class="postlist__posttitle card-title h3" itemprop="name">
-            <blogvh:link.post post="{post}" class="text-decoration-none" />
+        <blogvh:link.post post="{post}" class="text-decoration-none" />
         </h3>
-        <!-- <f:render partial="Meta/ListHeader" arguments="{_all}" /> -->
-        <f:if condition="{post.abstract}">
-            <f:then>
-                <p class="postlist__postdescription card-text" itemprop="description">{post.abstract}</p>
-            </f:then>
-            <f:else>
-                <p class="postlist__postdescription card-text" itemprop="description">{post.description}</p>
-            </f:else>
-        </f:if>
-        <!-- <div class="card-footer">
-            <f:render partial="Meta/ListFooter" arguments="{_all}" />
-        </div> -->
+    <!-- <f:render partial="Meta/ListHeader" arguments="{_all}" /> -->
+    <f:if condition="{post.abstract}">
+        <f:then>
+            <p class="postlist__postdescription card-text" itemprop="description">{post.abstract}</p>
+        </f:then>
+        <f:else>
+            <p class="postlist__postdescription card-text" itemprop="description">{post.description}</p>
+        </f:else>
+    </f:if>
+<!-- <div class="card-footer">
+    <f:render partial="Meta/ListFooter" arguments="{_all}" />
+</div> -->
     </div>
 </article>

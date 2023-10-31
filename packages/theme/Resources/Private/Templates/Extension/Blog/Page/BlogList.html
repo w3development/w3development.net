@@ -1,12 +1,14 @@
 <f:layout name="Default" />
-<f:section name="Content">
+<f:section name="Main">
     <div class="blogcontainer container">
-        <div class="blogcontainer-main">
-            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+        <div class="blogcontainer">
+            <main class="blogcontainer-main" role="main">
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+            </main>
+            <aside class="blogcontainer-sidebar">
+                <f:render section="renderPlugin" arguments="{listType: 'blog_sidebar'}" />
+            </aside>
         </div>
-        <aside class="blogcontainer-sidebar">
-            <f:render section="renderPlugin" arguments="{listType: 'blog_sidebar'}" />
-        </aside>
     </div>
 </f:section>
 <f:section name="renderPlugin">

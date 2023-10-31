@@ -11,7 +11,7 @@ plugin.tx_blog {
     storagePid = 137
     lists {
       pagination{
-        itemsPerPage = 9
+        itemsPerPage = 12
       }
       featuredImage{
         width  = 500c

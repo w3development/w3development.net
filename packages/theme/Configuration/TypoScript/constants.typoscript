@@ -24,11 +24,11 @@ page{
 styles{
   templates {
     # cat=theme/templates/b1; type=string; label= Path of Fluid Templates for all defined content elements
-    templateRootPath = EXT:theme/Resources/Private/Content/Templates/
+    templateRootPath = EXT:theme/Resources/Private/Templates/Content/
     # cat=theme/templates/b2; type=string; label= Path of Fluid Partials for all defined content elements
-    partialRootPath = EXT:theme/Resources/Private/Content/Partials/
+    partialRootPath = EXT:theme/Resources/Private/Partials/Content/
     # cat=theme/templates/b3; type=string; label= Path of Fluid Layouts for all defined content elements
-    layoutRootPath =  EXT:theme/Resources/Private/Content/Layouts/
+    layoutRootPath =  EXT:theme/Resources/Private/Layouts/Content/
   }
 }
 

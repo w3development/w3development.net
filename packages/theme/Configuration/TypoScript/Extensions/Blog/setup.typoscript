@@ -33,3 +33,8 @@ page {
 page.includeCSSLibs {
     blogFrontend >
 }
+
+plugin.tx_blog.settings.sidebarWidgets.10 >
+plugin.tx_blog.settings.sidebarWidgets.40 >
+plugin.tx_blog.settings.sidebarWidgets.50 >
+plugin.tx_blog.settings.sidebarWidgets.60 >

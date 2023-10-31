@@ -9,7 +9,7 @@ TCEFORM {
         tx_imagecycle_activate.disabled = 1
         tx_imagecycle_duration.disabled = 1
 
-    ### Content - Header Layouts ###
+        ### Content - Header Layouts ###
         header_layout {
             altLabels{
                 1 = h1
@@ -17,6 +17,14 @@ TCEFORM {
                 3 = h3
                 4 = h4
                 5 = h5
+            }
+            # Add another header_layout option:
+            // addItems.1525215969 = Another header layout
+            # Add another one with localized label, icon and group
+            addItems {
+                11 = Page Title [h1]
+                11.icon = EXT:theme/Resources/Public/Icons/display.svg
+                11.group = special
             }
         }
 
